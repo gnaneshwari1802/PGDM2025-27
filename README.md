@@ -15,3 +15,4 @@ Additional Training
 This training will likely help students prepare for job placements and career opportunities.
 
 Dhiral Event Management:- +91 87993 07628
+https://rajeevdave.in/
