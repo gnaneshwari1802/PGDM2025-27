@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DukaanGo — Live Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12203F;
+  --ink2:#3A4C78;
+  --marigold:#F5A623;
+  --marigold-d:#C97C00;
+  --green:#0F7A5A;
+  --green-l:#E3F3ED;
+  --paper:#FFF9F0;
+  --card:#FFFFFF;
+  --line:#EADFCB;
+  --muted:#6B7793;
+  --shell-bg:#F0E6D6;
+  --shell-fg:#12203F;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root:not([data-theme="light"]){
+  @media (prefers-color-scheme: dark){
+    --shell-bg:#131A29;
+    --shell-fg:#E8EDF7;
+  }
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --shell-bg:#131A29; --shell-fg:#E8EDF7; }
+}
+:root[data-theme="dark"]{ --shell-bg:#131A29; --shell-fg:#E8EDF7; }
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;height:100%;
+  background:var(--shell-bg);
+  color:var(--shell-fg);
+  font-family:'Mukta',system-ui,-apple-system,'Segoe UI',sans-serif;
+  display:flex;align-items:center;justify-content:center;
+}
+.stage{width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:0}
+@media(min-width:820px){ .stage{padding:24px;gap:40px} }
+
+/* ---------- phone ---------- */
+.phone{
+  position:relative;width:100%;max-width:430px;height:100%;
+  background:var(--paper);overflow:hidden;
+  display:flex;flex-direction:column;
+}
+@media(min-width:820px){
+  .phone{height:min(880px,94vh);border-radius:38px;border:9px solid #0C1526;
+    box-shadow:0 30px 70px rgba(6,12,28,.45);max-width:400px}
+}
+.screen{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+.pad{padding:18px 20px 30px}
+
+/* ---------- type ---------- */
+h1,h2,h3,.disp{font-family:'Baloo 2',cursive;margin:0;line-height:1.15;color:var(--ink)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.4px}
+h2{font-size:21px;font-weight:700}
+h3{font-size:16px;font-weight:700}
+p{margin:0;line-height:1.55;color:var(--ink2);font-size:15px}
+.sm{font-size:13px;color:var(--muted);line-height:1.5}
+.dev{font-family:'Mukta',sans-serif}
+
+/* ---------- topbar ---------- */
+.top{
+  display:flex;align-items:center;gap:12px;padding:14px 18px 12px;
+  background:var(--ink);color:#fff;position:sticky;top:0;z-index:30;
+}
+.top .back{background:rgba(255,255,255,.14);border:0;color:#fff;width:32px;height:32px;
+  border-radius:10px;font-size:17px;cursor:pointer;flex:none;line-height:1}
+.top .tt{font-family:'Baloo 2',cursive;font-weight:700;font-size:17px;color:#fff}
+.top .sub{font-size:11.5px;color:#A9B8DA;margin-top:-3px}
+
+/* ---------- buttons ---------- */
+.btn{display:block;width:100%;border:0;border-radius:14px;padding:15px 18px;
+  font-family:'Baloo 2',cursive;font-weight:700;font-size:16px;cursor:pointer;
+  background:var(--ink);color:#fff;text-align:center}
+.btn:active{transform:scale(.985)}
+.btn.gold{background:var(--marigold);color:#2A1B00}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.grn{background:var(--green);color:#fff}
+.btn:focus-visible,button:focus-visible{outline:3px solid var(--marigold);outline-offset:2px}
+
+/* ---------- language ---------- */
+.langwrap{padding:34px 22px 26px;min-height:100%;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:11px;margin-bottom:26px}
+.logo{width:46px;height:46px;border-radius:13px;background:var(--marigold);
+  display:grid;place-items:center;font-family:'Baloo 2';font-weight:800;font-size:25px;color:#2A1B00;flex:none}
+.langgrid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:20px}
+.lang{background:var(--card);border:1.5px solid var(--line);border-radius:15px;padding:15px 12px;
+  cursor:pointer;text-align:left;font-family:'Mukta'}
+.lang b{display:block;font-family:'Baloo 2';font-size:21px;color:var(--ink);font-weight:700;line-height:1.2}
+.lang span{font-size:12px;color:var(--muted)}
+.lang[aria-pressed="true"]{border-color:var(--ink);background:#FFFDF8;box-shadow:0 0 0 3px rgba(18,32,63,.09)}
+
+/* ---------- cards ---------- */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:12px}
+.row{display:flex;align-items:center;gap:12px}
+.chip{display:inline-block;background:var(--green-l);color:var(--green);font-size:12px;font-weight:600;
+  padding:4px 10px;border-radius:99px;margin:3px 4px 0 0}
+.chip.gold{background:#FDF0D5;color:var(--marigold-d)}
+
+/* ---------- mic ---------- */
+.micwrap{text-align:center;padding:16px 0 4px}
+.mic{width:96px;height:96px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--marigold);color:#2A1B00;font-size:38px;line-height:1;
+  box-shadow:0 8px 0 var(--marigold-d);display:inline-grid;place-items:center}
+.mic:active{transform:translateY(3px);box-shadow:0 5px 0 var(--marigold-d)}
+.mic.rec{background:#D4342B;color:#fff;box-shadow:0 8px 0 #90201A;animation:pulse 1.1s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@media(prefers-reduced-motion:reduce){.mic.rec{animation:none}}
+.wave{height:42px;display:flex;align-items:center;justify-content:center;gap:4px;margin:14px 0 6px}
+.wave i{width:4px;border-radius:2px;background:var(--ink);height:8px;display:block;opacity:.25}
+.wave.on i{opacity:1;animation:bar .7s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.wave.on i{animation:none;height:22px}}
+@keyframes bar{0%,100%{height:8px}50%{height:34px}}
+.transcript{background:#FFFDF8;border:1.5px dashed var(--line);border-radius:14px;
+  padding:14px 15px;min-height:56px;font-size:17px;color:var(--ink);line-height:1.5}
+.transcript.empty{color:#A9A092;font-size:14.5px}
+.thinking{display:flex;align-items:center;gap:9px;color:var(--green);font-weight:600;font-size:14px;margin-top:12px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:blink 1s infinite}
+.dot:nth-child(2){animation-delay:.15s}.dot:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+
+/* ---------- storefront ---------- */
+.shopbanner{background:linear-gradient(160deg,var(--ink),#28407A);color:#fff;border-radius:18px;padding:20px;position:relative;overflow:hidden}
+.shopbanner::after{content:"";position:absolute;right:-30px;top:-30px;width:130px;height:130px;
+  border-radius:50%;background:rgba(245,166,35,.22)}
+.shopbanner h2{color:#fff}
+.stars{color:var(--marigold);font-size:14px}
+.prod{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.prod:last-child{border-bottom:0}
+.thumb{width:50px;height:50px;border-radius:12px;display:grid;place-items:center;font-size:24px;flex:none;background:#FDF0D5}
+.price{margin-left:auto;font-family:'Baloo 2';font-weight:700;color:var(--ink);font-size:16px;white-space:nowrap}
+
+/* ---------- poster ---------- */
+.poster{border-radius:16px;overflow:hidden;background:linear-gradient(165deg,#F5A623,#E07B00);
+  padding:22px 20px;color:#2A1B00;text-align:center;position:relative}
+.poster .big{font-family:'Baloo 2';font-size:40px;font-weight:800;line-height:1;margin:6px 0}
+.poster .cut{background:#12203F;color:#fff;display:inline-block;padding:5px 14px;border-radius:99px;
+  font-family:'Baloo 2';font-weight:700;font-size:14px}
+
+/* ---------- consumer feed ---------- */
+.shopcard{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);
+  border-radius:15px;padding:13px;margin-top:10px}
+.avatar{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:23px;flex:none;background:var(--green-l)}
+.dist{margin-left:auto;text-align:right}
+.dist b{font-family:'Baloo 2';color:var(--green);font-size:15px;display:block}
+
+/* ---------- chat ---------- */
+.msg{max-width:78%;padding:10px 13px;border-radius:15px;font-size:14.5px;line-height:1.45;margin-top:9px}
+.msg.them{background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px}
+.msg.me{background:#DCF7C5;margin-left:auto;border-bottom-right-radius:5px;color:#12321A}
+
+/* ---------- stats ---------- */
+.stat{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:14px;text-align:center}
+.stat b{font-family:'Baloo 2';font-size:26px;color:var(--green);display:block;line-height:1.1}
+.stat span{font-size:12px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+
+/* ---------- bottom nav ---------- */
+.nav{display:flex;background:var(--card);border-top:1px solid var(--line);
+  padding-bottom:env(safe-area-inset-bottom,0px);flex:none}
+.nav button{flex:1;background:none;border:0;padding:9px 2px 11px;cursor:pointer;
+  font-family:'Mukta';font-size:10.5px;color:var(--muted);display:grid;gap:3px;justify-items:center}
+.nav button b{font-size:19px;line-height:1;font-weight:400}
+.nav button[aria-current="true"]{color:var(--ink);font-weight:700}
+
+/* ---------- auth ---------- */
+.authwrap{padding:34px 22px 26px;min-height:100%;display:flex;flex-direction:column}
+.tabs{display:flex;background:var(--card);border:1.5px solid var(--line);border-radius:13px;padding:4px;margin-top:22px}
+.tabs button{flex:1;border:0;background:none;padding:10px 4px;border-radius:10px;cursor:pointer;
+  font-family:'Baloo 2';font-weight:700;font-size:14.5px;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:#fff}
+.field{margin-top:14px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.field input{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;
+  font-family:'Mukta';font-size:15.5px;background:var(--card);color:var(--ink)}
+.field input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(18,32,63,.09)}
+.field .err{color:#D4342B;font-size:12.5px;margin-top:5px;display:none}
+.field.invalid input{border-color:#D4342B}
+.field.invalid .err{display:block}
+.pwrow{position:relative}
+.pwrow button{position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  background:none;border:0;font-size:12px;color:var(--muted);cursor:pointer;font-family:'Mukta';font-weight:600}
+.authmsg{margin-top:12px;font-size:13px;border-radius:11px;padding:10px 13px;display:none}
+.authmsg.show{display:block}
+.authmsg.bad{background:#FFE9E4;color:#A32117}
+.authmsg.good{background:var(--green-l);color:var(--green)}
+.or{display:flex;align-items:center;gap:10px;margin:20px 0 14px;color:var(--muted);font-size:12.5px}
+.or::before,.or::after{content:"";height:1px;background:var(--line);flex:1}
+.whoami{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid var(--line);
+  border-radius:14px;padding:12px 14px;margin-top:12px}
+.whoami .av{width:38px;height:38px;border-radius:11px;background:var(--marigold);color:#2A1B00;
+  display:grid;place-items:center;font-family:'Baloo 2';font-weight:800;font-size:16px;flex:none}
+.whoami b{font-family:'Baloo 2';font-size:15px;color:var(--ink);display:block}
+.whoami span{font-size:12px;color:var(--muted)}
+.logoutbtn{background:none;border:0;color:#D4342B;font-family:'Mukta';font-weight:600;font-size:13px;
+  cursor:pointer;padding:6px 0}
+
+.hide{display:none!important}
+.steps{display:flex;gap:5px;margin:16px 0 4px}
+.steps i{height:3px;flex:1;border-radius:2px;background:var(--line)}
+.steps i.on{background:var(--marigold)}
+.note{background:#FDF0D5;border-radius:12px;padding:11px 13px;font-size:13px;color:#6B4E00;line-height:1.5;margin-top:12px}
+.modes{margin-top:14px}
+.typepane .field input{font-size:16px}
+.typepane .btn{margin-top:18px}
+.typepane .tip{margin-top:10px}
+</style>
+</head>
+<body>
+<div class="stage">
+<div class="phone">
+
+  <!-- ============ TOP ============ -->
+  <div class="top hide" id="topbar">
+    <button class="back" id="backBtn" aria-label="Go back">‹</button>
+    <div><div class="tt" id="topTitle">DukaanGo</div><div class="sub" id="topSub"></div></div>
+  </div>
+
+  <div class="screen" id="screen">
+
+    <!-- ============ 0. AUTH ============ -->
+    <section id="s-auth">
+      <div class="authwrap">
+        <div class="brand">
+          <div class="logo">दु</div>
+          <div>
+            <h1 style="font-size:26px">DukaanGo</h1>
+            <div class="sm">आपकी दुकान, अब ऑनलाइन</div>
+          </div>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button role="tab" id="tabSignup" aria-selected="true">Create account</button>
+          <button role="tab" id="tabLogin" aria-selected="false">Log in</button>
+        </div>
+
+        <!-- SIGN UP -->
+        <form id="formSignup" novalidate>
+          <div class="field" id="fNameWrap">
+            <label for="suName">Your name</label>
+            <input id="suName" type="text" autocomplete="name" placeholder="e.g. Ramesh Patel">
+            <div class="err">Please enter your name.</div>
+          </div>
+          <div class="field" id="fPhoneWrap">
+            <label for="suPhone">Phone number</label>
+            <input id="suPhone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number" maxlength="10">
+            <div class="err">Enter a valid 10-digit phone number.</div>
+          </div>
+          <div class="field" id="fPassWrap">
+            <label for="suPass">Create a password</label>
+            <div class="pwrow">
+              <input id="suPass" type="password" autocomplete="new-password" placeholder="At least 4 characters">
+              <button type="button" data-toggle="suPass">SHOW</button>
+            </div>
+            <div class="err">Password must be at least 4 characters.</div>
+          </div>
+          <div class="authmsg bad" id="signupMsg"></div>
+          <button class="btn gold" type="submit" style="margin-top:18px">Create account</button>
+        </form>
+
+        <!-- LOG IN -->
+        <form id="formLogin" class="hide" novalidate>
+          <div class="field" id="fLPhoneWrap">
+            <label for="liPhone">Phone number</label>
+            <input id="liPhone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number" maxlength="10">
+            <div class="err">Enter your registered phone number.</div>
+          </div>
+          <div class="field" id="fLPassWrap">
+            <label for="liPass">Password</label>
+            <div class="pwrow">
+              <input id="liPass" type="password" autocomplete="current-password" placeholder="Your password">
+              <button type="button" data-toggle="liPass">SHOW</button>
+            </div>
+            <div class="err">Incorrect password.</div>
+          </div>
+          <div class="authmsg bad" id="loginMsg"></div>
+          <button class="btn gold" type="submit" style="margin-top:18px">Log in</button>
+        </form>
+
+        <div class="or">or</div>
+        <button class="btn ghost" id="guestBtn">Continue without an account</button>
+        <div class="note" style="margin-top:16px">This prototype stores accounts on your own device, so you can sign up and log back in right here. A production version would move this to a secure cloud backend.</div>
+      </div>
+    </section>
+
+    <!-- ============ 1. LANGUAGE ============ -->
+    <section id="s-lang" class="hide">
+      <div class="langwrap">
+        <div class="brand">
+          <div class="logo">दु</div>
+          <div>
+            <h1 style="font-size:26px">DukaanGo</h1>
+            <div class="sm">आपकी दुकान, अब ऑनलाइन</div>
+          </div>
+        </div>
+        <h2>अपनी भाषा चुनें</h2>
+        <p class="sm" style="margin-top:4px">Pick the language you speak at the shop.</p>
+        <div class="langgrid">
+          <button class="lang" data-lang="हिन्दी" aria-pressed="false"><b>हिन्दी</b><span>Hindi</span></button>
+          <button class="lang" data-lang="తెలుగు" aria-pressed="false"><b>తెలుగు</b><span>Telugu</span></button>
+          <button class="lang" data-lang="தமிழ்" aria-pressed="false"><b>தமிழ்</b><span>Tamil</span></button>
+          <button class="lang" data-lang="मराठी" aria-pressed="false"><b>मराठी</b><span>Marathi</span></button>
+          <button class="lang" data-lang="ಕನ್ನಡ" aria-pressed="false"><b>ಕನ್ನಡ</b><span>Kannada</span></button>
+          <button class="lang" data-lang="English" aria-pressed="false"><b>English</b><span>English</span></button>
+        </div>
+        <div class="note">Speak or type, whichever is easier for you. You can switch any time.</div>
+        <div style="margin-top:auto;padding-top:22px">
+          <button class="btn gold" id="langNext" disabled style="opacity:.45">Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. SETUP ============ -->
+    <section id="s-setup" class="hide">
+      <div class="pad">
+        <div class="steps"><i class="on"></i><i id="st2"></i><i id="st3"></i></div>
+        <h2>Set up your shop</h2>
+        <p class="sm" style="margin-top:5px">Say or type your shop name, what you sell, and where you are.</p>
+
+        <div class="tabs modes" role="tablist" aria-label="How do you want to enter details?" data-modes="setup">
+          <button type="button" role="tab" aria-selected="true" data-mode="voice">🎙 Speak</button>
+          <button type="button" role="tab" aria-selected="false" data-mode="text">⌨️ Type</button>
+        </div>
+
+        <div id="pane-setup-voice">
+          <div class="micwrap">
+            <button class="mic" id="micSetup" aria-label="Record shop details">🎙</button>
+            <div class="wave" id="waveSetup"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="sm" id="micHintSetup">Tap to speak</div>
+          </div>
+          <div class="transcript empty" id="trSetup">आपकी आवाज़ यहाँ दिखेगी…</div>
+        </div>
+
+        <form class="typepane hide" id="pane-setup-text" novalidate>
+          <div class="field" id="fShopName">
+            <label for="inShopName">Shop name</label>
+            <input id="inShopName" type="text" autocomplete="off" placeholder="e.g. रमेश किराना स्टोर">
+            <div class="err">Enter your shop name.</div>
+          </div>
+          <div class="field" id="fShopCat">
+            <label for="inShopCat">What you sell</label>
+            <input id="inShopCat" type="text" autocomplete="off" placeholder="e.g. Grocery / Kirana">
+            <div class="err">Tell us what your shop sells.</div>
+          </div>
+          <div class="field" id="fShopArea">
+            <label for="inShopArea">Area and city</label>
+            <input id="inShopArea" type="text" autocomplete="off" placeholder="e.g. Vijay Nagar, Indore">
+            <div class="err">Enter your area and city.</div>
+          </div>
+          <div class="field" id="fShopTime">
+            <label for="inShopTime">Timings (optional)</label>
+            <input id="inShopTime" type="text" autocomplete="off" placeholder="e.g. 8:00 AM – 9:30 PM" enterkeyhint="send">
+          </div>
+          <div class="sm tip">Type in any language you like.</div>
+          <button class="btn gold" type="submit">Build my shop page</button>
+        </form>
+
+        <div id="setupThink" class="thinking hide"><span class="dot"></span><span class="dot"></span><span class="dot"></span> DukaanGo is building your shop page…</div>
+
+        <div id="setupResult" class="hide">
+          <div class="card">
+            <h3>Shop details filled in</h3>
+            <div style="margin-top:10px">
+              <div class="row" style="padding:7px 0"><span class="sm" style="width:92px">Shop name</span><b id="setName" style="font-family:'Baloo 2';color:var(--ink)">रमेश किराना स्टोर</b></div>
+              <div class="row" style="padding:7px 0"><span class="sm" style="width:92px">Category</span><span id="setCat">Grocery / Kirana</span></div>
+              <div class="row" style="padding:7px 0"><span class="sm" style="width:92px">Area</span><span id="setArea">Vijay Nagar, Indore</span></div>
+              <div class="row" style="padding:7px 0"><span class="sm" style="width:92px">Timings</span><span id="setTime">8:00 AM – 9:30 PM</span></div>
+            </div>
+            <div style="margin-top:8px">
+              <span class="chip">Google Business ✓</span><span class="chip">Maps ✓</span><span class="chip">WhatsApp ✓</span>
+            </div>
+          </div>
+          <div class="note" id="setupNote">Ramesh spoke for 11 seconds. His shop is now searchable on Google Maps.</div>
+          <button class="btn gold" style="margin-top:14px" data-go="s-home">Open my dukaan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. HOME ============ -->
+    <section id="s-home" class="hide">
+      <div class="pad">
+        <div class="shopbanner">
+          <div class="sm" style="color:#A9B8DA" id="homeGreeting">नमस्ते, रमेश जी 👋</div>
+          <h2 class="js-shopname" style="margin-top:3px">रमेश किराना स्टोर</h2>
+          <div class="stars" style="margin-top:5px">★★★★☆ <span style="color:#D6E0F5;font-size:12.5px">4.3 · 27 reviews · Open now</span></div>
+        </div>
+
+        <div class="grid2">
+          <div class="stat"><b>+38</b><span>new customers this month</span></div>
+          <div class="stat"><b>₹14,200</b><span>orders via app</span></div>
+        </div>
+
+        <h3 style="margin-top:20px">What do you want to do?</h3>
+        <div class="card row" style="cursor:pointer" data-go="s-add">
+          <div class="thumb">➕</div><div><h3>Add a product</h3><div class="sm">Say or type the name and price</div></div>
+        </div>
+        <div class="card row" style="cursor:pointer" data-go="s-poster">
+          <div class="thumb" style="background:var(--green-l)">🎨</div><div><h3>Make today's offer poster</h3><div class="sm">Ready for WhatsApp &amp; Instagram</div></div>
+        </div>
+        <div class="card row" style="cursor:pointer" data-go="s-store">
+          <div class="thumb" style="background:#E6ECFA">🏪</div><div><h3>See my online shop</h3><div class="sm">What customers see on Google</div></div>
+        </div>
+        <div class="card row" style="cursor:pointer" data-go="s-orders">
+          <div class="thumb" style="background:#DCF7C5">💬</div><div><h3>Orders &amp; payments</h3><div class="sm">2 new messages</div></div>
+        </div>
+
+        <div class="whoami" id="whoamiBox">
+          <div class="av" id="whoamiAv">R</div>
+          <div style="flex:1"><b id="whoamiName">Ramesh (Guest)</b><span id="whoamiSub">Browsing without an account</span></div>
+          <button class="logoutbtn" id="logoutBtn">Log out</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. ADD PRODUCT ============ -->
+    <section id="s-add" class="hide">
+      <div class="pad">
+        <h2>Add a product</h2>
+        <p class="sm" style="margin-top:5px">Say or type the product, quantity and price the way you'd tell a customer.</p>
+
+        <div class="tabs modes" role="tablist" aria-label="How do you want to add the product?" data-modes="add">
+          <button type="button" role="tab" aria-selected="true" data-mode="voice">🎙 Speak</button>
+          <button type="button" role="tab" aria-selected="false" data-mode="text">⌨️ Type</button>
+        </div>
+
+        <div id="pane-add-voice">
+          <div class="micwrap">
+            <button class="mic" id="micAdd" aria-label="Record product">🎙</button>
+            <div class="wave" id="waveAdd"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="sm" id="micHintAdd">Tap to speak</div>
+          </div>
+          <div class="transcript empty" id="trAdd">जैसे — "हल्दी पाउडर, सौ ग्राम, चालीस रुपये"</div>
+        </div>
+
+        <form class="typepane hide" id="pane-add-text" novalidate>
+          <div class="field" id="fAddText">
+            <label for="inAdd">Product, quantity and price</label>
+            <input id="inAdd" type="text" autocomplete="off" placeholder="e.g. Haldi powder, 100 g, ₹40" enterkeyhint="send">
+            <div class="err" id="errAdd">Type the product, quantity and price.</div>
+          </div>
+          <div class="sm tip">Type it the way you'd say it. Any language works.</div>
+          <button class="btn gold" type="submit">Create listing</button>
+        </form>
+
+        <div id="addThink" class="thinking hide"><span class="dot"></span><span class="dot"></span><span class="dot"></span> Writing the listing for you…</div>
+
+        <div id="addResult" class="hide">
+          <div class="card">
+            <div class="row">
+              <div class="thumb" id="addThumb">🌿</div>
+              <div><h3 id="addTitle">Haldi Powder (Turmeric)</h3><div class="sm" id="addQty">100 g pack</div></div>
+              <div class="price" id="addPrice">₹40</div>
+            </div>
+            <p class="sm" id="addDesc" style="margin-top:12px">Fresh ground turmeric powder, sourced locally. Everyday cooking essential with natural colour and aroma.</p>
+            <div style="margin-top:9px" id="addChips">
+              <span class="chip gold">Spices</span><span class="chip gold">Masala</span><span class="chip gold">Daily needs</span>
+            </div>
+            <div class="sm" style="margin-top:11px;color:var(--green);font-weight:600">Description, category and tags written by DukaanGo AI</div>
+          </div>
+          <div class="note" id="addNote">Ramesh never typed a word. The listing is already live on his storefront.</div>
+          <button class="btn grn" style="margin-top:14px" id="saveProduct" data-go="s-store">Save to my shop</button>
+          <button class="btn ghost" style="margin-top:9px" id="addAgain">Add another</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. POSTER ============ -->
+    <section id="s-poster" class="hide">
+      <div class="pad">
+        <h2>Today's offer poster</h2>
+        <p class="sm" style="margin-top:5px">Say or type the offer. You get a poster ready to send.</p>
+
+        <div class="tabs modes" role="tablist" aria-label="How do you want to enter the offer?" data-modes="post">
+          <button type="button" role="tab" aria-selected="true" data-mode="voice">🎙 Speak</button>
+          <button type="button" role="tab" aria-selected="false" data-mode="text">⌨️ Type</button>
+        </div>
+
+        <div id="pane-post-voice">
+          <div class="micwrap">
+            <button class="mic" id="micPost" aria-label="Record offer">🎙</button>
+            <div class="wave" id="wavePost"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="sm" id="micHintPost">Tap to speak</div>
+          </div>
+          <div class="transcript empty" id="trPost">जैसे — "आज चीनी पर दस रुपये की छूट"</div>
+        </div>
+
+        <form class="typepane hide" id="pane-post-text" novalidate>
+          <div class="field" id="fPostText">
+            <label for="inPost">Today's offer</label>
+            <input id="inPost" type="text" autocomplete="off" placeholder="e.g. ₹10 off on sugar today" enterkeyhint="send">
+            <div class="err">Type today's offer.</div>
+          </div>
+          <div class="sm tip">Keep it short. The poster shows exactly what you type.</div>
+          <button class="btn gold" type="submit">Make my poster</button>
+        </form>
+
+        <div id="postThink" class="thinking hide"><span class="dot"></span><span class="dot"></span><span class="dot"></span> Designing your poster…</div>
+
+        <div id="postResult" class="hide">
+          <div class="poster" style="margin-top:14px">
+            <span class="cut" id="postCut">आज का ऑफर</span>
+            <div class="big" id="postBig">चीनी</div>
+            <div id="postLine" style="font-family:'Baloo 2';font-size:19px;font-weight:700">₹10 की छूट — प्रति किलो</div>
+            <div id="postShop" style="margin-top:12px;font-size:13.5px;font-weight:600">रमेश किराना स्टोर · विजय नगर, इंदौर</div>
+            <div id="postCall" style="margin-top:3px;font-size:12px">📞 ऑर्डर के लिए WhatsApp करें</div>
+          </div>
+          <div class="grid2" style="margin-top:12px">
+            <button class="btn grn" style="font-size:14px;padding:13px 8px">Send on WhatsApp</button>
+            <button class="btn ghost" style="font-size:14px;padding:13px 8px">Post to Instagram</button>
+          </div>
+          <div class="note">FMCG-style marketing, made in 8 seconds, at zero cost.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. STOREFRONT ============ -->
+    <section id="s-store" class="hide">
+      <div class="pad">
+        <div class="shopbanner">
+          <h2 class="js-shopname">रमेश किराना स्टोर</h2>
+          <div class="sm" id="storeSub" style="color:#D6E0F5;margin-top:4px">Grocery · Vijay Nagar, Indore · Open till 9:30 PM</div>
+          <div class="stars" style="margin-top:7px">★★★★☆ <span style="color:#D6E0F5;font-size:12.5px">4.3</span></div>
+        </div>
+        <div class="grid2" style="margin-top:12px">
+          <button class="btn grn" style="font-size:14px;padding:13px 8px">Order on WhatsApp</button>
+          <button class="btn ghost" style="font-size:14px;padding:13px 8px">Get directions</button>
+        </div>
+
+        <h3 style="margin-top:20px" id="catalogCount" data-count="34">Catalog (34 items)</h3>
+        <div class="card" style="padding:4px 16px" id="catalogList">
+          <div class="prod"><div class="thumb">🌿</div><div><h3>Haldi Powder</h3><div class="sm">100 g</div></div><div class="price">₹40</div></div>
+          <div class="prod"><div class="thumb" style="background:#E6ECFA">🍚</div><div><h3>Basmati Rice</h3><div class="sm">1 kg</div></div><div class="price">₹95</div></div>
+          <div class="prod"><div class="thumb" style="background:#DCF7C5">🫘</div><div><h3>Toor Dal</h3><div class="sm">1 kg</div></div><div class="price">₹148</div></div>
+          <div class="prod"><div class="thumb" style="background:#FDF0D5">🧂</div><div><h3>Sugar</h3><div class="sm">1 kg · offer</div></div><div class="price">₹42</div></div>
+          <div class="prod"><div class="thumb" style="background:#FFE9E4">🫒</div><div><h3>Mustard Oil</h3><div class="sm">1 L</div></div><div class="price">₹172</div></div>
+        </div>
+        <div class="note">This page is what a customer finds when they search "grocery near me" on Google.</div>
+        <button class="btn" style="margin-top:14px" data-go="s-consumer">See the customer's view</button>
+      </div>
+    </section>
+
+    <!-- ============ 7. CONSUMER ============ -->
+    <section id="s-consumer" class="hide">
+      <div class="pad">
+        <h2>Shops near you</h2>
+        <p class="sm" style="margin-top:5px">The DukaanGo customer app — hyperlocal discovery for the neighbourhood.</p>
+        <div class="shopcard">
+          <div class="avatar">🏪</div>
+          <div><h3 class="js-shopname">रमेश किराना स्टोर</h3><div class="sm">Grocery · Open · ★ 4.3</div>
+            <span class="chip gold">₹10 off sugar</span></div>
+          <div class="dist"><b>240 m</b><span class="sm">8 min</span></div>
+        </div>
+        <div class="shopcard">
+          <div class="avatar" style="background:#FDF0D5">✂️</div>
+          <div><h3>Sharma Tailors</h3><div class="sm">Tailoring · Open · ★ 4.6</div></div>
+          <div class="dist"><b>410 m</b><span class="sm">11 min</span></div>
+        </div>
+        <div class="shopcard">
+          <div class="avatar" style="background:#FFE9E4">🍵</div>
+          <div><h3>Anand Chai Corner</h3><div class="sm">Tea stall · Open · ★ 4.8</div></div>
+          <div class="dist"><b>120 m</b><span class="sm">4 min</span></div>
+        </div>
+        <div class="shopcard">
+          <div class="avatar" style="background:#E6ECFA">💇</div>
+          <div><h3>Style Point Salon</h3><div class="sm">Salon · Closes 8 PM · ★ 4.1</div></div>
+          <div class="dist"><b>530 m</b><span class="sm">14 min</span></div>
+        </div>
+        <div class="note">The young couple across the street can finally find Ramesh's shop.</div>
+      </div>
+    </section>
+
+    <!-- ============ 8. ORDERS ============ -->
+    <section id="s-orders" class="hide">
+      <div class="pad">
+        <h2>Orders &amp; payments</h2>
+        <p class="sm" style="margin-top:5px">Every order lands in one inbox — WhatsApp, calls and app orders together.</p>
+
+        <div class="card" style="background:#F3F6FB">
+          <div class="sm" style="font-weight:600;color:var(--ink)">Priya S. · 240 m away</div>
+          <div class="msg them">2 kg chini aur 1 kg toor dal bhej dijiye?</div>
+          <div class="msg me">Ji bilkul. ₹232 total. 20 min me bhej deta hoon 🙏</div>
+          <div class="msg them">UPI se bhej rahi hoon ✅</div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <div class="thumb" style="background:#DCF7C5">✅</div>
+            <div><h3>₹232 received</h3><div class="sm">UPI · Priya S. · just now</div></div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:20px">Digital khata</h3>
+        <div class="card" style="padding:4px 16px">
+          <div class="prod"><div class="thumb" style="background:#FFE9E4">👤</div><div><h3>Verma ji</h3><div class="sm">Udhaar · 4 days</div></div><div class="price" style="color:#C4342B">₹480</div></div>
+          <div class="prod"><div class="thumb" style="background:#FFE9E4">👤</div><div><h3>Sunita didi</h3><div class="sm">Udhaar · 2 days</div></div><div class="price" style="color:#C4342B">₹215</div></div>
+        </div>
+
+        <div class="grid2">
+          <div class="stat"><b>35%</b><span>sales drop, reversed</span></div>
+          <div class="stat"><b>10 min</b><span>to get online</span></div>
+        </div>
+        <div class="note">Ramesh's shop is visible, discoverable and taking digital payments — without learning a single new app.</div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav hide" id="nav">
+    <button data-go="s-home"><b>🏠</b>Dukaan</button>
+    <button data-go="s-add"><b>➕</b>Add</button>
+    <button data-go="s-poster"><b>🎨</b>Poster</button>
+    <button data-go="s-store"><b>🏪</b>Shop</button>
+    <button data-go="s-orders"><b>💬</b>Orders</button>
+  </nav>
+
+</div>
+</div>
+
+<script>
+(function(){
+  var TITLES = {
+    's-auth'    : ['DukaanGo',''],
+    's-lang'    : ['DukaanGo',''],
+    's-setup'   : ['Shop setup','Step 1 of 3'],
+    's-home'    : ['My Dukaan','रमेश किराना स्टोर'],
+    's-add'     : ['Add product','Speak or type'],
+    's-poster'  : ['Offer poster','Made by AI'],
+    's-store'   : ['My online shop','Live on Google'],
+    's-consumer': ['Nearby shops','Customer app'],
+    's-orders'  : ['Orders','WhatsApp + UPI']
+  };
+  var NAVFOR = ['s-home','s-add','s-poster','s-store','s-orders','s-consumer'];
+  var history_ = [];
+  var cur = 's-auth';
+
+  function $(id){ return document.getElementById(id); }
+  function show(id, push){
+    if(push !== false && id !== cur) history_.push(cur);
+    document.querySelectorAll('section').forEach(function(s){ s.classList.add('hide'); });
+    var el = $(id); if(!el) return;
+    el.classList.remove('hide');
+    cur = id;
+    var t = TITLES[id] || ['DukaanGo',''];
+    $('topTitle').textContent = t[0];
+    $('topSub').textContent = t[1];
+    $('topbar').classList.toggle('hide', id === 's-lang' || id === 's-auth');
+    $('nav').classList.toggle('hide', NAVFOR.indexOf(id) === -1);
+    document.querySelectorAll('#nav button').forEach(function(b){
+      b.setAttribute('aria-current', b.dataset.go === id ? 'true' : 'false');
+    });
+    $('screen').scrollTop = 0;
+  }
+
+  document.addEventListener('click', function(e){
+    var g = e.target.closest('[data-go]');
+    if(g){ show(g.dataset.go); }
+  });
+
+  $('backBtn').addEventListener('click', function(){
+    var prev = history_.pop();
+    show(prev || 's-home', false);
+  });
+
+  /* ---- language ---- */
+  var chosen = null;
+  document.querySelectorAll('.lang').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('.lang').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+      b.setAttribute('aria-pressed','true');
+      chosen = b.dataset.lang;
+      var n = $('langNext');
+      n.disabled = false; n.style.opacity = '1';
+      n.textContent = chosen === 'English' ? 'Continue' : 'आगे बढ़ें';
+    });
+  });
+  $('langNext').addEventListener('click', function(){ if(chosen) show('s-setup'); });
+
+  /* ---- shop details (defaults are the Ramesh demo shop) ---- */
+  var DEFAULT_SHOP = {
+    name:'रमेश किराना स्टोर', cat:'Grocery / Kirana', area:'Vijay Nagar, Indore',
+    time:'8:00 AM – 9:30 PM', sub:'Grocery · Vijay Nagar, Indore · Open till 9:30 PM',
+    posterLine:'रमेश किराना स्टोर · विजय नगर, इंदौर'
+  };
+  var shop = Object.assign({}, DEFAULT_SHOP);
+
+  function applyShop(){
+    document.querySelectorAll('.js-shopname').forEach(function(el){ el.textContent = shop.name; });
+    $('storeSub').textContent = shop.sub;
+    TITLES['s-home'][1] = shop.name;
+  }
+  function resetShop(){ shop = Object.assign({}, DEFAULT_SHOP); applyShop(); }
+
+  /* ---- input screens: every one supports Speak and Type ---- */
+  var UI = {
+    setup:{ mic:'micSetup', wave:'waveSetup', tr:'trSetup', hint:'micHintSetup', think:'setupThink', res:'setupResult',
+            empty:'आपकी आवाज़ यहाँ दिखेगी…' },
+    add:  { mic:'micAdd',   wave:'waveAdd',   tr:'trAdd',   hint:'micHintAdd',   think:'addThink',   res:'addResult',
+            empty:'जैसे — "हल्दी पाउडर, सौ ग्राम, चालीस रुपये"' },
+    post: { mic:'micPost',  wave:'wavePost',  tr:'trPost',  hint:'micHintPost',  think:'postThink',  res:'postResult',
+            empty:'जैसे — "आज चीनी पर दस रुपये की छूट"' }
+  };
+  var runs = { setup:0, add:0, post:0 };   // bumping a counter cancels any pending animation
+
+  function resetInputUI(key){
+    var u = UI[key], mic = $(u.mic), tr = $(u.tr);
+    runs[key]++;
+    mic.classList.remove('rec');
+    mic.dataset.busy = '0';
+    $(u.wave).classList.remove('on');
+    tr.textContent = u.empty;
+    tr.classList.add('empty');
+    $(u.hint).textContent = 'Tap to speak';
+    $(u.think).classList.add('hide');
+    $(u.res).classList.add('hide');
+    if(key === 'setup'){ $('st2').classList.remove('on'); $('st3').classList.remove('on'); }
+  }
+
+  /* voice: simulated capture, then the result */
+  function speak(key, text, after){
+    var u = UI[key], mic = $(u.mic), wave = $(u.wave), tr = $(u.tr),
+        hint = $(u.hint), think = $(u.think), res = $(u.res);
+    if(mic.dataset.busy === '1') return;
+    mic.dataset.busy = '1';
+    var run = ++runs[key];
+
+    res.classList.add('hide');
+    think.classList.add('hide');
+    tr.textContent = '';
+    tr.classList.remove('empty');
+    mic.classList.add('rec');
+    wave.classList.add('on');
+    wave.querySelectorAll('i').forEach(function(b,i){
+      b.style.animationDelay = (i * 0.06) + 's';
+    });
+    hint.textContent = 'सुन रहे हैं… / Listening…';
+
+    var i = 0;
+    var typer = setInterval(function(){
+      if(runs[key] !== run){ clearInterval(typer); return; }
+      i++;
+      tr.textContent = text.slice(0, i);
+      if(i >= text.length){
+        clearInterval(typer);
+        mic.classList.remove('rec');
+        wave.classList.remove('on');
+        hint.textContent = 'Tap to speak again';
+        think.classList.remove('hide');
+        setTimeout(function(){
+          if(runs[key] !== run) return;
+          think.classList.add('hide');
+          if(after) after();
+          res.classList.remove('hide');
+          mic.dataset.busy = '0';
+          res.scrollIntoView({behavior:'smooth', block:'nearest'});
+        }, 1250);
+      }
+    }, 55);
+  }
+
+  /* text: same result, no microphone */
+  function runText(key, apply){
+    var u = UI[key], think = $(u.think), res = $(u.res);
+    var run = ++runs[key];
+    res.classList.add('hide');
+    think.classList.remove('hide');
+    setTimeout(function(){
+      if(runs[key] !== run) return;
+      think.classList.add('hide');
+      apply();
+      res.classList.remove('hide');
+      res.scrollIntoView({behavior:'smooth', block:'nearest'});
+    }, 900);
+  }
+
+  /* Speak / Type switch */
+  document.querySelectorAll('[data-modes]').forEach(function(group){
+    var key = group.dataset.modes;
+    group.querySelectorAll('button').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var mode = btn.dataset.mode;
+        group.querySelectorAll('button').forEach(function(b){
+          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+        });
+        $('pane-' + key + '-voice').classList.toggle('hide', mode !== 'voice');
+        $('pane-' + key + '-text').classList.toggle('hide', mode !== 'text');
+        resetInputUI(key);
+        if(mode === 'text'){
+          var first = $('pane-' + key + '-text').querySelector('input');
+          if(first) first.focus();
+        }
+      });
+    });
+  });
+
+  /* ---- setup ---- */
+  function showSetupResult(spoken){
+    $('setName').textContent = shop.name;
+    $('setCat').textContent = shop.cat;
+    $('setArea').textContent = shop.area;
+    $('setTime').textContent = shop.time || 'Not added';
+    $('setupNote').textContent = spoken
+      ? 'Ramesh spoke for 11 seconds. His shop is now searchable on Google Maps.'
+      : shop.name + ' is now searchable on Google Maps.';
+    $('st2').classList.add('on'); $('st3').classList.add('on');
+  }
+
+  $('micSetup').addEventListener('click', function(){
+    speak('setup', 'रमेश किराना स्टोर, विजय नगर इंदौर। किराना का सामान बेचता हूँ, सुबह आठ से रात साढ़े नौ बजे तक।', function(){
+      resetShop();
+      showSetupResult(true);
+    });
+  });
+
+  $('pane-setup-text').addEventListener('submit', function(e){
+    e.preventDefault();
+    var n = $('inShopName').value.trim(), c = $('inShopCat').value.trim(),
+        a = $('inShopArea').value.trim(), tm = $('inShopTime').value.trim();
+    setInvalid('fShopName', !n); setInvalid('fShopCat', !c); setInvalid('fShopArea', !a);
+    if(!n || !c || !a) return;
+    shop = {
+      name:n, cat:c, area:a, time:tm,
+      sub: c.split('/')[0].trim() + ' · ' + a + (tm ? ' · ' + tm : ''),
+      posterLine: n + ' · ' + a
+    };
+    runText('setup', function(){ applyShop(); showSetupResult(false); });
+  });
+
+  /* ---- add product ---- */
+  var lastProduct = null, productSaved = false;
+  var HALDI_RE = /haldi|turmeric|हल्दी/i;
+
+  function normUnit(u){
+    u = u.toLowerCase();
+    if(/^(gm|gms|gram|grams|g|ग्राम)$/.test(u)) return 'g';
+    if(/^(kg|kgs|किलो)$/.test(u)) return 'kg';
+    if(/^(l|ltr|litre|litres|liter|liters|लीटर)$/.test(u)) return 'L';
+    if(/^(pc|pcs|piece|pieces)$/.test(u)) return 'pc';
+    return u;
+  }
+
+  /* pulls name, quantity and price out of a typed line like "Sugar 1 kg ₹42" */
+  function parseProduct(raw){
+    var t = ' ' + raw.replace(/[।,;]+/g, ' ') + ' ';
+    var price = null, qty = '', m;
+
+    m = t.match(/(?:₹|rs\.?|rupees?)\s*(\d+(?:\.\d+)?)/i) ||
+        t.match(/(\d+(?:\.\d+)?)\s*(?:₹|rs\.?|rupees?|रुपये|रुपए|रु)/i);
+    if(m){ price = parseFloat(m[1]); t = t.replace(m[0], ' '); }
+
+    m = t.match(/(\d+(?:\.\d+)?)\s*(kgs?|gms?|grams?|g|ml|ltr|litres?|liters?|l|pcs?|pieces?|dozen|packet|pack|ग्राम|किलो|लीटर)(?![a-z])/i);
+    if(m){ qty = m[1] + ' ' + normUnit(m[2]); t = t.replace(m[0], ' '); }
+
+    if(price === null){
+      var nums = t.match(/\d+(?:\.\d+)?/g);
+      if(nums){
+        var last = nums[nums.length - 1];
+        price = parseFloat(last);
+        var at = t.lastIndexOf(last);
+        t = t.slice(0, at) + ' ' + t.slice(at + last.length);
+      }
+    }
+
+    var name = t.replace(/₹/g, ' ').replace(/\s+/g, ' ').trim()
+                .replace(/^(?:add|the)\s+/i, '').replace(/\s+(?:at|for|price|rate|only)$/i, '');
+    name = name.charAt(0).toUpperCase() + name.slice(1);
+    return { name:name, qty:qty, price:price };
+  }
+
+  function showProduct(p, spoken){
+    var haldi = HALDI_RE.test(p.name);
+    var prod;
+    if(haldi){
+      prod = { emoji:'🌿', title:'Haldi Powder (Turmeric)', qty:p.qty || '100 g', price:p.price != null ? p.price : 40,
+               desc:'Fresh ground turmeric powder, sourced locally. Everyday cooking essential with natural colour and aroma.',
+               chips:['Spices','Masala','Daily needs'], inCatalog:true };
+    } else {
+      prod = { emoji:'🛒', title:p.name, qty:p.qty, price:p.price,
+               desc:'Quality ' + p.name + ' from your local shop. Fresh stock at a fair price, ready to order on WhatsApp.',
+               chips:['Daily needs','Local'], inCatalog:false };
+    }
+    lastProduct = prod; productSaved = false;
+
+    $('addThumb').textContent = prod.emoji;
+    $('addTitle').textContent = prod.title;
+    $('addQty').textContent = prod.qty ? prod.qty + ' pack' : 'Per piece';
+    $('addPrice').textContent = '₹' + prod.price;
+    $('addDesc').textContent = prod.desc;
+    var chips = $('addChips');
+    chips.textContent = '';
+    prod.chips.forEach(function(c){
+      var s = document.createElement('span');
+      s.className = 'chip gold'; s.textContent = c;
+      chips.appendChild(s);
+    });
+    $('addNote').textContent = spoken
+      ? 'Ramesh never typed a word. The listing is already live on his storefront.'
+      : 'One line typed, and the listing is already live on the storefront.';
+  }
+
+  $('micAdd').addEventListener('click', function(){
+    speak('add', 'हल्दी पाउडर, सौ ग्राम, चालीस रुपये।', function(){
+      showProduct({ name:'Haldi Powder', qty:'100 g', price:40 }, true);
+    });
+  });
+
+  $('pane-add-text').addEventListener('submit', function(e){
+    e.preventDefault();
+    var raw = $('inAdd').value.trim();
+    var err = $('errAdd');
+    var p = raw ? parseProduct(raw) : null;
+    var msg = '';
+    if(!raw) msg = 'Type the product, quantity and price.';
+    else if(!p.name) msg = 'Add the product name too, like "Sugar 1 kg ₹42".';
+    else if(p.price == null) msg = 'Add a price, like ₹40.';
+    err.textContent = msg;
+    setInvalid('fAddText', !!msg);
+    if(msg) return;
+    runText('add', function(){ showProduct(p, false); });
+  });
+
+  $('saveProduct').addEventListener('click', function(){
+    if(!lastProduct || productSaved || lastProduct.inCatalog) return;
+    productSaved = true;
+    var list = $('catalogList');
+    var row = document.createElement('div'); row.className = 'prod';
+    var th = document.createElement('div'); th.className = 'thumb'; th.textContent = lastProduct.emoji;
+    var mid = document.createElement('div');
+    var h = document.createElement('h3'); h.textContent = lastProduct.title;
+    var s = document.createElement('div'); s.className = 'sm'; s.textContent = lastProduct.qty || 'Per piece';
+    mid.appendChild(h); mid.appendChild(s);
+    var pr = document.createElement('div'); pr.className = 'price'; pr.textContent = '₹' + lastProduct.price;
+    row.appendChild(th); row.appendChild(mid); row.appendChild(pr);
+    list.insertBefore(row, list.firstChild);
+    var count = parseInt($('catalogCount').dataset.count, 10) + 1;
+    $('catalogCount').dataset.count = count;
+    $('catalogCount').textContent = 'Catalog (' + count + ' items)';
+  });
+
+  $('addAgain').addEventListener('click', function(){
+    resetInputUI('add');
+    $('inAdd').value = '';
+    setInvalid('fAddText', false);
+    var textMode = !$('pane-add-text').classList.contains('hide');
+    if(textMode){ $('inAdd').focus(); $('inAdd').scrollIntoView({behavior:'smooth', block:'center'}); }
+    else { $('micAdd').scrollIntoView({behavior:'smooth', block:'center'}); }
+  });
+
+  /* ---- offer poster ---- */
+  function showPoster(text, spoken){
+    var big = $('postBig'), line = $('postLine');
+    if(spoken){
+      $('postCut').textContent = 'आज का ऑफर';
+      big.textContent = 'चीनी';
+      big.style.fontSize = ''; big.style.lineHeight = '';
+      line.textContent = '₹10 की छूट — प्रति किलो';
+      line.classList.remove('hide');
+      $('postCall').textContent = '📞 ऑर्डर के लिए WhatsApp करें';
+    } else {
+      var dev = /[\u0900-\u097F]/.test(text);
+      $('postCut').textContent = dev ? 'आज का ऑफर' : "Today's offer";
+      big.textContent = text;
+      big.style.fontSize = text.length <= 12 ? '40px' : (text.length <= 28 ? '30px' : '24px');
+      big.style.lineHeight = '1.15';
+      line.classList.add('hide');
+      $('postCall').textContent = dev ? '📞 ऑर्डर के लिए WhatsApp करें' : '📞 Order on WhatsApp';
+    }
+    $('postShop').textContent = shop.posterLine;
+  }
+
+  $('micPost').addEventListener('click', function(){
+    speak('post', 'आज चीनी पर दस रुपये की छूट।', function(){ showPoster('', true); });
+  });
+
+  $('pane-post-text').addEventListener('submit', function(e){
+    e.preventDefault();
+    var text = $('inPost').value.trim();
+    setInvalid('fPostText', !text);
+    if(!text) return;
+    runText('post', function(){ showPoster(text, false); });
+  });
+
+  /* ================= AUTH ================= */
+
+  var STORE_KEY = 'dukaango_users_v1';
+  var SESSION_KEY = 'dukaango_session_v1';
+
+  function safeGet(key){
+    try { var v = localStorage.getItem(key); return v ? JSON.parse(v) : null; }
+    catch(e){ return null; }
+  }
+  function safeSet(key, val){
+    try { localStorage.setItem(key, JSON.stringify(val)); return true; }
+    catch(e){ return false; }
+  }
+  function safeRemove(key){ try { localStorage.removeItem(key); } catch(e){} }
+
+  function getUsers(){ return safeGet(STORE_KEY) || {}; }
+  function saveUsers(u){ safeSet(STORE_KEY, u); }
+
+  function setInvalid(fieldId, on){
+    var el = $(fieldId);
+    if(el) el.classList.toggle('invalid', !!on);
+  }
+  function showMsg(id, text, ok){
+    var el = $(id);
+    el.textContent = text;
+    el.classList.remove('bad','good');
+    el.classList.add(ok ? 'good' : 'bad', 'show');
+  }
+  function hideMsg(id){ $(id).classList.remove('show'); }
+
+  function setSession(user){
+    safeSet(SESSION_KEY, { name: user.name, phone: user.phone, guest: false });
+    applySession();
+  }
+  function setGuestSession(){
+    safeSet(SESSION_KEY, { name: 'Ramesh', phone: null, guest: true });
+    applySession();
+  }
+  function clearSession(){
+    safeRemove(SESSION_KEY);
+  }
+  function getSession(){ return safeGet(SESSION_KEY); }
+
+  function applySession(){
+    var s = getSession();
+    if(!s) return;
+    var greetEl = $('homeGreeting');
+    if(greetEl) greetEl.textContent = 'नमस्ते, ' + s.name + ' जी 👋';
+    var av = $('whoamiAv'), nm = $('whoamiName'), sub = $('whoamiSub');
+    if(av) av.textContent = (s.name || 'R').trim().charAt(0).toUpperCase();
+    if(nm) nm.textContent = s.guest ? (s.name + ' (Guest)') : s.name;
+    if(sub) sub.textContent = s.guest ? 'Browsing without an account' : ('Signed in · ' + s.phone);
+  }
+
+  /* tabs */
+  $('tabSignup').addEventListener('click', function(){
+    $('tabSignup').setAttribute('aria-selected','true');
+    $('tabLogin').setAttribute('aria-selected','false');
+    $('formSignup').classList.remove('hide');
+    $('formLogin').classList.add('hide');
+    hideMsg('loginMsg'); hideMsg('signupMsg');
+  });
+  $('tabLogin').addEventListener('click', function(){
+    $('tabLogin').setAttribute('aria-selected','true');
+    $('tabSignup').setAttribute('aria-selected','false');
+    $('formLogin').classList.remove('hide');
+    $('formSignup').classList.add('hide');
+    hideMsg('loginMsg'); hideMsg('signupMsg');
+  });
+
+  /* show/hide password */
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var inp = $(btn.dataset.toggle);
+      var isPw = inp.type === 'password';
+      inp.type = isPw ? 'text' : 'password';
+      btn.textContent = isPw ? 'HIDE' : 'SHOW';
+    });
+  });
+
+  /* signup */
+  $('formSignup').addEventListener('submit', function(e){
+    e.preventDefault();
+    hideMsg('signupMsg');
+    var name = $('suName').value.trim();
+    var phone = $('suPhone').value.trim();
+    var pass = $('suPass').value;
+    var ok = true;
+
+    setInvalid('fNameWrap', false); setInvalid('fPhoneWrap', false); setInvalid('fPassWrap', false);
+
+    if(!name){ setInvalid('fNameWrap', true); ok = false; }
+    if(!/^\d{10}$/.test(phone)){ setInvalid('fPhoneWrap', true); ok = false; }
+    if(!pass || pass.length < 4){ setInvalid('fPassWrap', true); ok = false; }
+    if(!ok) return;
+
+    var users = getUsers();
+    if(users[phone]){
+      showMsg('signupMsg', 'An account with this number already exists. Try logging in instead.', false);
+      return;
+    }
+    users[phone] = { name: name, phone: phone, pass: pass, createdAt: Date.now() };
+    saveUsers(users);
+    showMsg('signupMsg', 'Account created! Taking you in…', true);
+    setSession(users[phone]);
+    setTimeout(function(){ show('s-lang'); }, 500);
+  });
+
+  /* login */
+  $('formLogin').addEventListener('submit', function(e){
+    e.preventDefault();
+    hideMsg('loginMsg');
+    var phone = $('liPhone').value.trim();
+    var pass = $('liPass').value;
+    setInvalid('fLPhoneWrap', false); setInvalid('fLPassWrap', false);
+
+    var users = getUsers();
+    var u = users[phone];
+    if(!u){
+      setInvalid('fLPhoneWrap', true);
+      showMsg('loginMsg', 'No account found with this number. Create one instead?', false);
+      return;
+    }
+    if(u.pass !== pass){
+      setInvalid('fLPassWrap', true);
+      showMsg('loginMsg', 'Incorrect password. Try again.', false);
+      return;
+    }
+    showMsg('loginMsg', 'Welcome back, ' + u.name + '!', true);
+    setSession(u);
+    setTimeout(function(){ show('s-lang'); }, 450);
+  });
+
+  /* guest */
+  $('guestBtn').addEventListener('click', function(){
+    setGuestSession();
+    show('s-lang');
+  });
+
+  /* logout */
+  $('logoutBtn').addEventListener('click', function(){
+    clearSession();
+    history_ = [];
+    document.querySelectorAll('.lang').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+    var n = $('langNext'); n.disabled = true; n.style.opacity = '.45'; n.textContent = 'Continue';
+    $('formSignup').reset(); $('formLogin').reset();
+    hideMsg('signupMsg'); hideMsg('loginMsg');
+    resetShop();
+    show('s-auth', false);
+  });
+
+  /* on load: skip straight in if a session already exists on this device */
+  var existingSession = getSession();
+  if(existingSession){
+    applySession();
+    show('s-lang', false);
+  } else {
+    show('s-auth', false);
+  }
+})();
+</script>
+</body>
+</html>
