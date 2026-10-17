@@ -1,1 +1,252 @@
+# AI Tools & Technologies Learning Roadmap
 
+> A structured checklist of AI tools, frameworks, platforms, and infrastructure spanning analytics, AI agents, LLM engineering, cloud AI, MLOps, quantum computing, robotics, and edge AI.
+
+## How to Use This Roadmap
+
+- [ ] Not started
+- [ ] Currently learning
+- [ ] Practiced in a project
+- [ ] Comfortable using independently
+
+Mark an item as complete by changing `- [ ]` to `- [x]`.
+Focus on a career-relevant path first; this list is a reference map, not a requirement to master every tool.
+
+---
+
+## 1. AI Agents — No-Code
+
+- [ ] [Bolt.new](https://bolt.new/)
+- [ ] [Make.com](https://www.make.com/)
+- [ ] [OpenAI](https://openai.com/) Agent Builder
+- [ ] [Airtable](https://www.airtable.com/)
+- [ ] [Zapier](https://zapier.com/)
+- [ ] [Bubble](https://bubble.io/)
+
+## 2. AI Agents — Low-Code
+
+- [ ] [n8n](https://n8n.io/)
+- [ ] [Streamlit](https://streamlit.io/)
+- [ ] [Gradio](https://www.gradio.app/)
+- [ ] [Supabase](https://supabase.com/)
+- [ ] [Microsoft Power Apps](https://www.microsoft.com/power-platform/products/power-apps)
+
+## 3. AI IDEs & Coding Assistants
+
+- [ ] [Cursor](https://cursor.com/)
+- [ ] [GitHub Copilot](https://github.com/features/copilot)
+- [ ] [Claude Code](https://www.anthropic.com/claude-code)
+- [ ] [Google Antigravity](https://antigravity.google/)
+
+## 4. Agentic AI Frameworks
+
+- [ ] [LangChain](https://www.langchain.com/)
+- [ ] [LlamaIndex](https://www.llamaindex.ai/)
+- [ ] [LangGraph](https://www.langchain.com/langgraph)
+- [ ] [Microsoft AutoGen](https://microsoft.github.io/autogen/)
+- [ ] [CrewAI](https://www.crewai.com/)
+- [ ] BabyAGI — research the original project and current maintenance status before choosing it for a new project
+
+## 5. Python — Data Analysis
+
+- [ ] [Pandas](https://pandas.pydata.org/)
+- [ ] [NumPy](https://numpy.org/)
+- [ ] [Matplotlib](https://matplotlib.org/)
+- [ ] [Seaborn](https://seaborn.pydata.org/)
+
+## 6. Python — Machine Learning & AI
+
+- [ ] [Scikit-learn](https://scikit-learn.org/)
+- [ ] [TensorFlow](https://www.tensorflow.org/)
+- [ ] [Keras](https://keras.io/)
+- [ ] [PyTorch](https://pytorch.org/)
+- [ ] [Hugging Face Transformers](https://huggingface.co/docs/transformers)
+
+## 7. Business Intelligence & Python for BI
+
+- [ ] [Microsoft Power BI](https://powerbi.microsoft.com/)
+- [ ] [Tableau](https://www.tableau.com/)
+- [ ] Advanced Excel
+- [ ] DAX
+- [ ] Power Query
+- [ ] Python for BI workflows
+
+## 8. Automation & Enterprise
+
+- [ ] [Microsoft Power Automate](https://www.microsoft.com/power-platform/products/power-automate)
+- [ ] [Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio)
+- [ ] [Microsoft SharePoint](https://www.microsoft.com/microsoft-365/sharepoint/collaboration)
+- [ ] [Notion](https://www.notion.so/)
+- [ ] [Zapier](https://zapier.com/)
+
+## 9. Daily AI Productivity
+
+- [ ] [ChatGPT](https://chatgpt.com/)
+- [ ] [Claude Projects](https://claude.ai/)
+- [ ] [NotebookLM](https://notebooklm.google.com/)
+- [ ] [Perplexity](https://www.perplexity.ai/)
+- [ ] [Gemini Gems](https://gemini.google.com/)
+- [ ] [Gamma](https://gamma.app/)
+- [ ] [Canva](https://www.canva.com/)
+
+## 10. Web & App Deployment
+
+- [ ] [GitHub](https://github.com/)
+- [ ] [Vercel](https://vercel.com/)
+- [ ] [Netlify](https://www.netlify.com/)
+- [ ] [Docker](https://www.docker.com/)
+- [ ] [Render](https://render.com/)
+- [ ] [Railway](https://railway.app/)
+
+## 11. Cloud AI — Amazon Web Services (AWS)
+
+- [ ] [Amazon SageMaker](https://aws.amazon.com/sagemaker/)
+- [ ] [Amazon Bedrock](https://aws.amazon.com/bedrock/)
+- [ ] [Amazon EC2](https://aws.amazon.com/ec2/)
+- [ ] [Amazon EKS](https://aws.amazon.com/eks/)
+- [ ] [Amazon S3](https://aws.amazon.com/s3/)
+- [ ] [Amazon RDS](https://aws.amazon.com/rds/)
+- [ ] [AWS Lambda](https://aws.amazon.com/lambda/)
+- [ ] AWS Trainium / Inferentia — AI training and inference chips
+
+## 12. Cloud AI — Google Cloud
+
+- [ ] [Vertex AI](https://cloud.google.com/vertex-ai)
+- [ ] [Google AI Studio](https://aistudio.google.com/)
+- [ ] [Gemini API](https://ai.google.dev/)
+- [ ] Cloud TPU
+- [ ] [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine)
+- [ ] [BigQuery ML](https://cloud.google.com/bigquery/docs/bqml-introduction)
+- [ ] [Google Colab](https://colab.research.google.com/)
+
+## 13. Cloud AI — Azure & Cloudflare
+
+- [ ] [Azure Machine Learning](https://azure.microsoft.com/products/machine-learning)
+- [ ] [Azure AI Foundry](https://ai.azure.com/)
+- [ ] [Azure OpenAI](https://azure.microsoft.com/products/ai-foundry/models/openai)
+- [ ] [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/products/kubernetes-service)
+- [ ] [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)
+- [ ] [Cloudflare Vectorize](https://developers.cloudflare.com/vectorize/)
+- [ ] [Cloudflare R2](https://developers.cloudflare.com/r2/)
+
+## 14. Frontier & Open Models
+
+Explore model capabilities, licensing, access options, and suitability for each task.
+
+- [ ] [Claude](https://claude.ai/)
+- [ ] [ChatGPT / GPT models](https://chatgpt.com/)
+- [ ] [Gemini](https://gemini.google.com/)
+- [ ] [Grok](https://grok.com/)
+- [ ] [Llama](https://www.llama.com/)
+- [ ] [Mistral](https://mistral.ai/)
+- [ ] [DeepSeek](https://www.deepseek.com/)
+- [ ] [Qwen](https://qwen.ai/)
+- [ ] [Hugging Face Hub](https://huggingface.co/models)
+
+## 15. LLM & SLM Engineering
+
+- [ ] Understand pre-training and fine-tuning
+- [ ] LoRA / QLoRA
+- [ ] PEFT (Parameter-Efficient Fine-Tuning)
+- [ ] RLHF (Reinforcement Learning from Human Feedback)
+- [ ] DPO (Direct Preference Optimization)
+- [ ] Model distillation
+- [ ] Model quantisation
+- [ ] On-device Small Language Models (SLMs)
+- [ ] Model evaluation and benchmarking
+
+## 16. Serving & Inference
+
+- [ ] [vLLM](https://docs.vllm.ai/)
+- [ ] [Ollama](https://ollama.com/)
+- [ ] [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [ ] [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
+- [ ] [NVIDIA Triton Inference Server](https://github.com/triton-inference-server/server)
+- [ ] [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference)
+- [ ] KV cache and batching
+- [ ] Streaming inference
+
+## 17. Vector Databases & RAG Infrastructure
+
+- [ ] [pgvector](https://github.com/pgvector/pgvector)
+- [ ] [Pinecone](https://www.pinecone.io/)
+- [ ] [Weaviate](https://weaviate.io/)
+- [ ] [Qdrant](https://qdrant.tech/)
+- [ ] [Milvus](https://milvus.io/)
+- [ ] Embeddings
+- [ ] Hybrid search
+- [ ] Rerankers
+- [ ] Retrieval-Augmented Generation (RAG) architecture and evaluation
+
+## 18. MLOps & Observability
+
+- [ ] [MLflow](https://mlflow.org/)
+- [ ] [Weights & Biases](https://wandb.ai/)
+- [ ] [Kubeflow](https://www.kubeflow.org/)
+- [ ] [Apache Airflow](https://airflow.apache.org/)
+- [ ] [DVC](https://dvc.org/)
+- [ ] [LangSmith](https://www.langchain.com/langsmith)
+- [ ] [Grafana](https://grafana.com/)
+- [ ] [Prometheus](https://prometheus.io/)
+
+## 19. Infrastructure & Scale
+
+- [ ] [Kubernetes](https://kubernetes.io/)
+- [ ] [Terraform](https://www.terraform.io/)
+- [ ] [Docker](https://www.docker.com/)
+- [ ] [NVIDIA CUDA](https://developer.nvidia.com/cuda-zone)
+- [ ] GPU vs TPU selection
+- [ ] Distributed training
+- [ ] Hyperscaler setup and architecture
+- [ ] Data-centre fundamentals
+- [ ] Cloud and model cost optimisation
+
+## 20. Quantum, Robotics & Edge AI
+
+### Quantum Computing
+
+- [ ] [Qiskit](https://www.ibm.com/quantum/qiskit)
+- [ ] [PennyLane](https://pennylane.ai/)
+- [ ] [Cirq](https://quantumai.google/cirq)
+- [ ] Quantum machine learning
+- [ ] Variational Quantum Eigensolver (VQE) / Quantum Approximate Optimization Algorithm (QAOA)
+
+### Robotics & Edge AI
+
+- [ ] [Arduino](https://www.arduino.cc/)
+- [ ] [Raspberry Pi](https://www.raspberrypi.com/)
+- [ ] [NVIDIA Jetson](https://developer.nvidia.com/embedded/jetson)
+- [ ] [ROS 2](https://docs.ros.org/)
+- [ ] Drones: [PX4](https://px4.io/) / [ArduPilot](https://ardupilot.org/)
+- [ ] TinyML
+
+---
+
+## Suggested Learning Order
+
+For a learner focused on business analytics and practical AI applications, consider this sequence:
+
+1. Python, SQL, Pandas, NumPy, Excel, Power BI, DAX, and Power Query
+2. GitHub, Streamlit, and one deployment platform
+3. AI productivity tools and no-code/low-code automation
+4. Scikit-learn and machine learning fundamentals
+5. LLM APIs, embeddings, RAG, and one agent framework
+6. Cloud AI fundamentals and deployment
+7. MLOps, model serving, and advanced LLM engineering
+8. Quantum, robotics, and edge AI only if they align with a specific goal
+
+## Project Tracker
+
+| Project | Status | Repository / Demo | Key Learning |
+|---|---|---|---|
+| Business analytics dashboard | Not started | Add link | Power BI, SQL, DAX |
+| Workflow automation | Not started | Add link | n8n / Make.com / Zapier |
+| Document Q&A assistant | Not started | Add link | LLM API, embeddings, RAG |
+| Deployed AI application | Not started | Add link | GitHub, Streamlit, cloud |
+| ML model with evaluation | Not started | Add link | Scikit-learn, metrics, MLflow |
+
+## Notes
+
+- Tool names, product features, URLs, pricing, and availability can change. Check official documentation before implementation.
+- Some topics require substantial foundations in programming, statistics, linear algebra, or cloud infrastructure.
+- Prefer a small number of completed, well-documented projects over shallow exposure to every tool.
