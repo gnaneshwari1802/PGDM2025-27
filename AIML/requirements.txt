@@ -1,0 +1,31 @@
+# ==============================================================================
+# Hexaware Technologies - Agentic AI Course Dependencies
+# Recommended Python Version: Python 3.12
+# ==============================================================================
+
+# Core Agentic AI & LLM Frameworks
+ollama>=0.4.0
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+langgraph>=0.2.0
+
+# Telemetry & Observability
+mlflow>=2.16.0
+
+# Vector Embeddings & Document Ingestion
+sentence-transformers>=3.0.0
+numpy>=1.26.0
+python-docx>=1.1.0
+
+# Environment & Configuration Management
+python-dotenv>=1.0.0
+
+# Data Validation & Interactive Execution
+pydantic>=2.8.0
+ipykernel>=6.29.0
+nbformat>=5.9.0
+requests>=2.31.0
+
+crewai>=0.80.0
+chromadb>=0.5.0
