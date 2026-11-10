@@ -1,3 +1,21 @@
 Advanced Predictive Modeling & Decision Analytics - 5
 
 (BA) [Mr. Daniel]
+
+Before, we start the sessions, keep this application downloaded and installed in ur respective laptops.
+
+https://ollama.com/download/windows
+
+https://apps.microsoft.com/detail/XP9KHM4BK9FZ7Q?hl=en-US&gl=IN&ocid=pdpshare
+
+[3:39 pm, 10/11/2026] Gnaneshwari: python -m venv venv
+[3:39 pm, 10/11/2026] Gnaneshwari: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+[3:39 pm, 10/11/2026] Gnaneshwari: ollama pull llama3.2:1b
+[3:40 pm, 10/11/2026] Gnaneshwari: pip install -r requirements.txt
+[3:40 pm, 10/11/2026] Gnaneshwari: ollama list
+[3:40 pm, 10/11/2026] Gnaneshwari: ollama pull all-MiniLM-L6-v2
+[3:40 pm, 10/11/2026] Gnaneshwari: run this cmd
+[3:40 pm, 10/11/2026] Gnaneshwari: Hi Everyone, PFA files
+[3:40 pm, 10/11/2026] Gnaneshwari: PFA - Please find the attached files
+[3:40 pm, 10/11/2026] Gnaneshwari: And will share the exam pattern today
+
