@@ -3,3 +3,38 @@ rajesh sir
 orange data mining software
 
 anaconda jupyter notebook
+
+[9:00 pm, 11/11/2026] Gnaneshwari: import data mtcars.csv and Column Statistics
+change datatype of am, gear, carb,vs,cyl into categiorical
+Distrubutions of - mpg, wt, hp, drat, am, cyl
+Pivot Table of following -
+- Average mpg by am
+- Median hp by cyl
+- Median wt by gear
+- Average drat by carb
+
+Test Null Average mpg of different am identical
+Test Null Average wt of different am identical
+Test Null Average mpg of different cyl identical
+Test Null Average hp of different carb identical
+Test Null No Association between am and carb
+Test Null No Association between carb and gear
+
+Build Multiple Linear Regression model with mpg as Target Variable and all other variables as Independent variables. Identify R Square and RMSE.
+[9:00 pm, 11/11/2026] Gnaneshwari: import classification dataset and column statistics
+change variable type to categorical - contract type, internet service, online security, paperless & churn
+Distributions - total_charges, age, tenure, churn, contract_type
+Pivot Table
+- Average total Charges by churn
+- Median tenure by churn
+-Average age by contract type
+- Average total charges by contract type
+
+Test Null Average total charges by churn identical
+Test Null Average tenure by churn identical
+Test Null Average total charges by contract type identical
+Test Null Avergae tenure by contract type identical
+Test Null No Association between churn and contract type
+Test Null No Association between churn and paperless
+
+Build Logistic Regression using churn as Target Variaable and idnetify CA(Classification Accuracy & F1 Score)
