@@ -1,3 +1,75 @@
+Recapped data lakehouse and medallion (bronze/silver/gold) architecture, data types and Hadoop; students must research, rank and present big data tools for their business function next week.
+
+
+
+Lakehouse and Medallion Architecture Recap
+
+Lakehouse combines cheap, flexible data lake storage with warehouse reliability and governance.
+
+Bronze: raw ingestion and replay; silver: cleansed, deduplicated truth; gold: business-ready aggregates
+
+Copy-paste pipelines that move data without refining it inflate cloud costs and maintenance.
+
+Well-modeled gold layer cut a 10-minute query to about 300 milliseconds
+
+Data Vault suits enterprises integrating many source systems
+
+Relevance drives data cleaning: TEDx registration example showed gender and age add little value at a women's college.
+
+
+
+Data Types and Storage Choices
+
+Structured data (invoices, tables, CSVs) suits relational databases like MySQL and Oracle.
+
+Semi-structured JSON/XML, e.g. calendar events with mixed date formats, needs unifying via frameworks like Hadoop.
+
+NoSQL tools (MongoDB, Redis, Cassandra) handle flexible, rapidly changing data.
+
+Data lakes support immersive, adaptive learning content via a framework called CROM (possibly SCORM).
+
+
+
+Big Data and Hadoop
+
+Big data defined by five V's: volume, velocity, variety, veracity, value.
+
+Hadoop stores data in HDFS as replicated chunks across nodes and processes it with MapReduce in parallel.
+
+A textbook covering SQL, MySQL, Python, Cassandra and Hadoop was pinned in chat for download.
+
+
+
+Assignment and Scheduling
+
+Assignment: rank top 4 big data tools for your business function (HR, marketing, finance) and which organizations use them.
+
+Build the framework for the top tool, demo via open-source sandbox or AV, upload a PPT
+
+AI tools allowed for early research only
+
+Next week (16th to 20th) needs about 4 hours: 2 for instructor's cloud sandbox demo, 2 for student presentations.
+
+BA FS students may have a mid-exam next week; TEDx thought to be November 30 or later.
+
+Attendance counts toward scoring; absent students urged to attend.
+
+
+
+Next Steps
+
+(Dr.Sreekanth Yerramilli) Talk with Pujitha ma'am about the schedule to fit next week's two sessions
+
+(Dr.Sreekanth Yerramilli) Confirm the next session date (possibly Wednesday) after checking calendar
+
+(Dr.Sreekanth Yerramilli) Present a live HR cloud sandbox session on big data processing
+
+(Students) Complete the big data tools assignment and present it, possibly Thursday next week
+
+(Students) Get the MaxHub synced with HDMI/extension via the AV team before next sessions
+
+(Students) Share the pinned textbook link with classmates who missed the session
+
 Dr.Sreekanth Yerramilli: Yes.
 Dr.Sreekanth Yerramilli:  ஒரு ரெட் இருந்தது. எடா.
 Dr.Sreekanth Yerramilli:  மிடில்.
