@@ -1,6 +1,7 @@
 The subjects for Trimester 1, including:
 
 Academic Subjects
+
 101 – Marketing Management (Faculty: Dr. Nagaraj Samala)   
 102 – Organizational Behaviour (Faculty: Prof. K. L. Revathi)   
 103 – Financial Reporting and Analysis (Faculty: Dr. Narsimhulu Siddula)   
@@ -8,6 +9,17 @@ Academic Subjects
 105 – Microsoft Excel for Managers (Certification) (Faculty: Dr. Roopa Modam)   
 106 – Business Communication – I (Faculty: Dr. Subha Gora)   
 107 – Quantitative Methods (Data Science) – I (Faculty: Dr. Rajkumar Rayabaram) 
+
+Term - 2
+
+201 – Financial Institutions and Markets (Faculty: Subramanyam – Visiting Faculty | 3 Credits)   
+202 – Corporate Finance (Faculty: Dr. Siddula | 3 Credits)   
+203 – Human Resource Management (Faculty: Prof. KL Revathi | 3 Credits)   
+204 – Quantitative Methods (Data Science) II (Faculty: Dr. Raj Kumar | 3 Credits)   
+205A – Ethics, Responsibility, and Sustainability (Faculty: Dr. Samala | 1.5 Credits)   
+205B – Legal Environment of Business (Faculty: Vikranth – Visiting Faculty | 1.5 Credits)   
+206 – Production and Operations Management (Faculty: Pradeep – Visiting Faculty | 3 Credits)   
+207 – Business Intelligence Tools (Faculty: Dr. Roopa | 3 Credits)   
 
 Term - 4
 
