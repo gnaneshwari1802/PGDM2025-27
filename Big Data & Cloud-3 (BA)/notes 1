@@ -1,0 +1,315 @@
+Dr.Sreekanth Yerramilli: Yes.
+Dr.Sreekanth Yerramilli:  ஒரு ரெட் இருந்தது. எடா.
+Dr.Sreekanth Yerramilli:  மிடில்.
+Dr.Sreekanth Yerramilli:  இப்போ தவளை பெட்டு. நானும் மாடு பெட்டு வந்தேன்.
+Dr.Sreekanth Yerramilli:  இது வீட்டுல பெட்டிலா, டப்பாலா? டப்பா வந்துரும்.
+Dr.Sreekanth Yerramilli:  இது எது? பிரசித்தி எடுத்து.
+Dr.Sreekanth Yerramilli:  தொப்பி பாரிசம் தானே? வாட்கொட்டைன்னா தொப்பி பாரிசம். 
+Dr.Sreekanth Yerramilli: ம்ம்.
+Dr.Sreekanth Yerramilli:  பர்ஃபார்மன்ஸ் மேனேஜ்மெண்ட். 
+Dr.Sreekanth Yerramilli: ரைட். நல்லா லாஜிக்கா.
+Dr.Sreekanth Yerramilli:  நோ.
+Dr.Sreekanth Yerramilli:  பர்ஃபார்மன்ஸ் மேனேஜ்மெண்ட்.
+Dr.Sreekanth Yerramilli:  சர்வீஸ்.
+Dr.Sreekanth Yerramilli:  எஸ் ஆர்.
+Dr.Sreekanth Yerramilli:  வண்டி.
+Dr.Sreekanth Yerramilli:  லோகே.
+Dr.Sreekanth Yerramilli:  டேட்ஸ்.
+Dr.Sreekanth Yerramilli:  ஒமே.
+Dr.Sreekanth Yerramilli:  நம்ம இன்னைக்கு கொஞ்சம் பண்ணிப்போமா?
+Dr.Sreekanth Yerramilli:  ஏம், ஏம்.
+Dr.Sreekanth Yerramilli:  மார்க்கெட்டிங் ரிசர்ச்.
+Dr.Sreekanth Yerramilli:  பெஞ்சிங்.
+Dr.Sreekanth Yerramilli:  Hi, everyone. Very good afternoon, or rather good morning.
+Dr.Sreekanth Yerramilli:  So how is it all good?
+Dr.Sreekanth Yerramilli:  So yesterday, a quick recap of what we were doing. I'll try to do just in one slide what exactly we're doing about, and then those of you, I think you went off in the mid of the session, right?
+Dr.Sreekanth Yerramilli:  And so for your benefits, I'll run that, and then we will try to see a new concept of understanding today. Okay?
+Dr.Sreekanth Yerramilli:  Just let me share my screen and video. Let me know if you're not able to hear or listen to.
+Dr.Sreekanth Yerramilli:  Give me like about 2 minutes, I'll just pull it up for you.
+Dr.Sreekanth Yerramilli:  అమీర్ మాకు ఇప్పుడు ఆన్‌లైన్ సెషన్ ఉంది. ఆన్‌లైన్‌లో క్లాస్ ఉంది.
+Dr.Sreekanth Yerramilli:  I was yesterday trying to share this video for you guys on explainer about the data modeling and how things work. We will try to quickly recap this, and then we'll get to our today's part of the session.
+Dr.Sreekanth Yerramilli:  Okay? This is just for those of them whoever has missed out yesterday.
+Dr.Sreekanth Yerramilli:  Along with that, a recap for those who have missed out on making a note of it. Let's dive into it.
+Dr.Sreekanth Yerramilli:  Okay, sir.
+Speaker 2:  Okay, let's dive right into this explainer. Imagine this scenario for a second. You've just inherited a massive, completely disorganized data swamp at a Fortune 500 company.
+Speaker 2:  The business side is literally knocking down your door demanding real-time analytics. But your queries?
+Speaker 2:  Yeah, they're taking hours. If you've been around the data space recently, you know the architectural shift to the data lakehouse promises to fix all of this.
+Speaker 2:  But listen, a new tool isn't some magic bullet. Without a rigorous real-world blueprint, you're just going to build a faster swamp.
+Speaker 2:  So today, we're putting on our solutions architect hats. We're going to demystify exactly how to model data, from basic ingestion to ultimate scale, really focusing on the why and the how behind the modern enterprise tech stack.
+Speaker 2:  We're going to take a maturity journey together today, walking through these five distinct stages of data refinement. Section 1, the data lakehouse era.
+Speaker 2:  Section 2, the medallion architecture. Section 3, the copy-paste trap.
+Speaker 2:  Section 4, defining the gold cut. And finally, Section 5, scaling with Data Vault.
+Speaker 2:  Let's get right into it. The data lakehouse era, combining flexibility with reliability.
+Speaker 2:  So to really understand this, think about our initial state historically. It was incredibly fragmented.
+Speaker 2:  We had data lakes, right? Super cheap object storage for petabytes of raw data, but absolutely zero acid compliance or governance.
+Speaker 2:  Complete chaos. Then on the flip side, we had traditional data warehouses.
+Speaker 2:  Highly structured, sure, but super rigid and just unbelievably expensive to scale out. This data lakehouse paradigm we're looking at.
+Dr.Sreekanth Yerramilli:  We didn't discuss them.
+Speaker 2:  It gives you the best of both worlds. It unifies that flexibility of the lake with the reliability of the warehouse, bringing serious structure right to your cheap cloud storage. But here's the catch.
+Speaker 2:  To actually unlock its potential, just dumping data isn't going to cut it. We need a serious structural strategy.
+Speaker 2:  The medallion architecture, from raw ore to fine jewelry. Think of this as your intentional pipeline pattern.
+Speaker 2:  It's a way to cleanly isolate our engineering concerns. We push data through three very distinct stages: bronze, silver, and gold.
+Speaker 2:  Now, in a real-world implementation, every single hop to the right across this architecture isn't just a physical move of the data. It's an active application of compute to enforce schema, handle historical changes, and massively increase the value and reliability of that data for the end user.
+Speaker 2:  And here's how that transition actually works in practice. In the bronze layer, our sole purpose is stateful ingestion.
+Speaker 2:  We just land the raw, unstructured data exactly as it arrived. This gives us a fail-safe historical replay mechanism.
+Speaker 2:  We literally never let the business query the data. Then we move to silver.
+Speaker 2:  This is our cleansed enterprise truth. We deduplicate, we enforce data quality rules, we filter it.
+Speaker 2:  Now, you might be asking in a system design interview, why not just skip directly to gold? Well, if your business logic changes down the road, and it always does, you absolutely need this clean, filtered silver foundation so you can recalculate everything without having to re-ingest petabytes of raw data.
+Speaker 2:  Finally, we get to gold. This is the business-ready, aggregated data, perfectly modeled for analytics.
+Speaker 2:  The copy-paste trap. When moving data isn't enough.
+Speaker 2:  Now, pay attention here, because this is where so many migrations fail in the real world. You have to ask yourself a hard question.
+Speaker 2:  Are you actually building a refined pipeline, or have you fallen victim to the copy-paste architecture? Look, a lazy pipeline looks totally fine on paper, but in reality, it's just moving data across layers without adding any actual value.
+Speaker 2:  It's just duplicating it. The result of that?
+Speaker 2:  Exponentially increasing cloud storage costs and an absolute maintenance nightmare. A truly refined pipeline actively cleans, structures, and models the data at every step.
+Dr.Sreekanth Yerramilli:  I want to add a very important point here. Okay, so those of you yesterday in our interaction, you tried to correlate to this right example in the HRIS. Dr.
+Dr.Sreekanth Yerramilli:  Reddy said reference. Can you raise your hand who was actually yesterday doing it?
+Dr.Sreekanth Yerramilli:  Dr. Reddy's HRIS?
+Dr.Sreekanth Yerramilli:  Yes, sir, it was me, sir. Yeah, yeah.
+Dr.Sreekanth Yerramilli:  Can you explain for the benefit of this virtual audience what exactly you were doing? Sir, I was doing data reconciliation related to termination data, like employee termination data, where I had to find out what is their termination type.
+Dr.Sreekanth Yerramilli:  Is it voluntary or involuntary? It's like that.
+Dr.Sreekanth Yerramilli:  And the levels and the bands also, right? So the levels at which they were being terminated and what level of attrition was happening.
+Dr.Sreekanth Yerramilli:  So basically, you're working on the HRIS attrition analysis. Yes, sir.
+Dr.Sreekanth Yerramilli:  Okay. So similarly, when you have data, okay, remember from our, like, you know, of course we had so far around 6 to 7 classes lapsed, but in the earlier first instances when you're trying to understand about the data structures, we're trying to see data has got different actors and players whose need will be different in terms of accessing the data.
+Dr.Sreekanth Yerramilli:  So when you're adding layers to the data, you know, like I said about it, the factors or the variables will be innumerable. So you have so many number of layers.
+Dr.Sreekanth Yerramilli:  That's what he's trying to explain here. So the static data or the structured data to unstructured data, like we discussed yesterday about the data lake versus data warehouse, the biggest difference is about the dynamics, as in the different categories of information that is needed or the different layers of information that is needed from a particular category.
+Dr.Sreekanth Yerramilli:  Example, if I want to understand, like, you know, how many have registered for the ongoing PICC event or TED event in SOIAM, okay, and I want to understand the demographics of it, I would have the following parameters, like the gender, the age group, the subject area stream from which they are registering for the core area of substream of the business area, like marketing, HR, finance, which area they are representing from, and their, you know, interest background, their, you know, career background, if there are any, and also
+Dr.Sreekanth Yerramilli:  their scholastics, their information about their earlier existing records of their CGPAs or all that information, and a little bit about the geographical area and all that stuff. Notice something, when I said about this kind of factors and variables, all of them are mostly useless in terms of the TEDx registrations. You don't require gender.
+Dr.Sreekanth Yerramilli:  Obviously, like it's a, you know, women-empowered college. So you have everyone who have been into the same category of demographic.
+Dr.Sreekanth Yerramilli:  You don't have to understand the gender here. Number one.
+Dr.Sreekanth Yerramilli:  Number two, if you want to understand the age group, largely it will not be fundamentally varying, right? Between a window of maybe 3 to 4 years or 5 years max tops, if you're having any variance there.
+Dr.Sreekanth Yerramilli:  Like, you know, if faculty are also registering, something like that. So the demographics in terms of understanding itself as a one factor has got a lot of redundant information.
+Dr.Sreekanth Yerramilli:  So these kind of information is not needed for this registrations, right? So the relevance is something very highly important when it comes to the data cleaning and then data analysis.
+Dr.Sreekanth Yerramilli:  So in terms of big data, the layers in data lakes that we are talking about will talk largely about the relevance. That's what he was trying to explain.
+Dr.Sreekanth Yerramilli:  The bronze, the silver, and then the gold ultimately. Like, you know, when you want to make an ornamental gold, so how much amount of the cadmium you are mixing in it, what exactly is the element of the error that you are adding to make it fine crafting?
+Dr.Sreekanth Yerramilli:  Is that 18 karat, 22 karat, 24 karat? So you see the lot of variables, like what design you're making, straight fit, manual, or you want to automate it by using a machine.
+Dr.Sreekanth Yerramilli:  So machine cutting. So there's a lot of ifs and buts that you want to add to the factors one by one basing on your specific needs.
+Dr.Sreekanth Yerramilli:  That is extensive customization. So when it comes to data warehouse, that customization is not possible.
+Dr.Sreekanth Yerramilli:  So that's the reason why the warehouses and then the delta lakes and all that yesterday what we were discussing has come in play. Just watch, continue watching this video.
+Dr.Sreekanth Yerramilli:  You'll get more after that we'll discuss.
+Dr.Sreekanth Yerramilli:  Every single hop. Optimizing everything to drastically reduce compute costs for the next layer.
+Dr.Sreekanth Yerramilli:  So you really need to look at your setup and ask, are we actually transforming the data or just moving it? Seriously, if your pipelines are just acting like a glorified file transfer service, you completely negate the scalability the lakehouse is supposed to provide.
+Dr.Sreekanth Yerramilli:  Applying actual intent and robust business logic is exactly what separates a true mature data platform from a digital dumping ground. Defining the gold cut.
+Dr.Sreekanth Yerramilli:  Awakening the business domain. Once we fix that copy-paste issue, we hit the real challenge.
+Dr.Sreekanth Yerramilli:  Defining the gold cut by awakening the business domain. As an architect, this is where you have to stop thinking about data formats and start thinking like a chief financial officer.
+Dr.Sreekanth Yerramilli:  You have to understand those complex business needs. Structuring this final layer for pure query efficiency is how we overcome major customer challenges.
+Dr.Sreekanth Yerramilli:  And this is where you measure the actual real-world gain. When you do this right, a query that used to take 10 minutes brutally scanning raw data now delivers actionable insights in like 300 milliseconds.
+Dr.Sreekanth Yerramilli:  It's a total game changer. And this right here, this transition, is the true maturity stage.
+Dr.Sreekanth Yerramilli:  You've successfully moved from managing the absolute chaos of raw, unstructured data to curating these well-organized, highly efficient models. Your lakehouse is no longer just a massive cost center.
+Dr.Sreekanth Yerramilli:  It's a strategic business asset that's seamlessly serving actionable insights across the entire organization. Scaling with Data Vault.
+Dr.Sreekanth Yerramilli:  Reaching ultimate platform maturity. But what happens when things get insanely complex?
+Dr.Sreekanth Yerramilli:  Say you're a massive global enterprise. You're integrating dozens of different source systems because of constant acquisitions.
+Dr.Sreekanth Yerramilli:  Traditional models can actually become a huge bottleneck to maintain at that scale. That's exactly when senior architects start plotting out a Data Vault approach.
+Dr.Sreekanth Yerramilli:  Why choose this method? Because it ensures extreme scalability by organizing highly complex enterprise data domains.
+Dr.Sreekanth Yerramilli:  Yes, it absolutely introduces more upfront engineering complexity, but it heavily enhances long-term maintainability. It is the ultimate way to future-proof your architecture, letting you scale and add new sources without ever breaking your existing core models.
+Dr.Sreekanth Yerramilli:  Lead data engineer Luan Moreno completely hits the nail on the head here, summarizing our whole architectural philosophy for this explainer. He states organizations must adopt the right data modeling techniques to unlock its full potential, to ensure scalability, maintainability, and efficiency.
+Dr.Sreekanth Yerramilli:  The big takeaway here? Your underlying tech stack isn't going to save a bad design.
+Dr.Sreekanth Yerramilli:  Scalability and efficiency are engineered. They are not bought.
+Dr.Sreekanth Yerramilli:  So as you go back and evaluate your own infrastructure, leave yourself with this crucial systems design question. Is your data pipeline truly refined, adding real business value at every single step, or are you just hoarding digital bronze and footing a massive cloud bill for it?
+Dr.Sreekanth Yerramilli:  Keep that in the back of your mind for your next architectural design. Thanks so much for joining me on this explainer, and keep building better data platforms.
+Dr.Sreekanth Yerramilli:  Okay, so that's what exactly is the brief from yesterday, what we're trying to discuss. What is a data warehouse?
+Dr.Sreekanth Yerramilli:  What is a data lake? What is delta lake?
+Dr.Sreekanth Yerramilli:  And then, like, you know, what is the, you know, lake warehouse? We are trying to understand the different categories of data and their ecosystem and how they are going to benefit in terms of what we would want to do for our data needs.
+Dr.Sreekanth Yerramilli:  Now, allow me to present my slide.
+Dr.Sreekanth Yerramilli:  You guys should be able to see my screen already. Yes, sir.
+Dr.Sreekanth Yerramilli:  Great. So by now, so you understood about the choosing the right storage system and retrieval system, which is very important.
+Dr.Sreekanth Yerramilli:  We are trying to understand from a, you know, a lens of a business analyst or maybe a technical analyst and see to choose about it. Now, yesterday we were trying to discuss, if you remember, I was trying to present you what are the different tools at what levels that we'll be using.
+Dr.Sreekanth Yerramilli:  Example, to choose the right storage, like, you know, distinguishing the exact relationship database, like, you know, on, like, you know, if you want to, you know, any data that is relational in nature. Example, we are talking about two factors of, like, you know, gender and then the registrations or the age group versus the number of participants in the particular, you know, college section or academic stream or something like that.
+Dr.Sreekanth Yerramilli:  You'll be using, you know, NoSQL or warehouses and lakes as the ecosystem wherein you would want to do that. So if it is a structured data.
+Dr.Sreekanth Yerramilli:  As we were discussing yesterday, if the data is from the multiple sources, obviously you'll be using the, you know, Hadoop, like, you know, Spark and a few others, like, wherein, like, you know, the querying of the data retrieval is made through the ecosystem that is the framework that is made to make the data easy to access. Example, like, you know, when you say Hadoop, so what exactly is Hadoop?
+Dr.Sreekanth Yerramilli:  So it's basically a framework that is designed and developed to make the learning ecosystem, I mean, the broad data analysis ecosystem very easy to perform. So you have layers that will be added about, there is a different functionalities in the framework, like, you know, if it can work on both sides.
+Dr.Sreekanth Yerramilli:  Example, you have the query structured language, like, you know, as we have discussed about the warehouse child, you know, database system, you can still use it. Or if you'd want to analyze between or compare between the audio visual to images, as we are discussing about it, you can also retrieve the data and then you can be using about it.
+Dr.Sreekanth Yerramilli:  And for that, the big data analysis tools that we use in query language frameworks is like Hadoop, Spark, or Python Spark, as I was telling about it, PySpark and distributed computing, you know, that will be used in the frame system across the different applications. Example, if you have the data that is limited to SOIAM, okay, only SOIAM, as we are discussing in the example.
+Dr.Sreekanth Yerramilli:  Imagine if it is across all the institutions of GNR NMR group or maybe GPolarity group, okay? Then you have academic streams that are different, then the age groups are different, the priorities are different.
+Dr.Sreekanth Yerramilli:  So when you have varied variables on the X-axis, as we discussed about, and the independent variable, and also on the dependent variable, then your modus operandi will be totally different, okay? We will see this framework first.
+Dr.Sreekanth Yerramilli:  We will try to understand, you know, what exactly is the framework and then how it works on basing on this, okay? Connect the data to the value that is ultimately the final goal is to make sure that the information or the raw chunk of information, whatever data is there with you, is to be in the meaningful valued information format and insights for decision making.
+Dr.Sreekanth Yerramilli:  So decision engines are basically designed to give you meaningful outcomes from the bulk of the volume data. Like the examples I was telling about, the consumer satisfaction index or customer behavioral analytics and so on, okay?
+Dr.Sreekanth Yerramilli:  So why do organizations basically need this kind of different data stores? Like as you are talking about it yesterday itself and then you try to see in the video, audio visual.
+Dr.Sreekanth Yerramilli:  So there is structured data, there is semi-structured and also unstructured data. So example of structured data, as you have seen about it, any of the orders, like invoices, the amount, financial things, whatever is related to that, customer records of, like, you know, number of payments made, quantitative one, all that, whatever is quantitative.
+Dr.Sreekanth Yerramilli:  To put it very simple, all the structured data is more of a qualitative in nature. It's tangible, it's numbered, it's got rows and columns, as we discussed yesterday.
+Dr.Sreekanth Yerramilli:  The data will be in the form of pure tangible evidence. Usually organizations, you know, these data are used organized into the defined fields, as you're talking about, mostly the tables and CSVs, right?
+Dr.Sreekanth Yerramilli:  The class we are, that's what we discussed. Now, coming to the semi-structured.
+Dr.Sreekanth Yerramilli:  So JSON format, so XML. So these are the, you know, different formats in which you'll be finding data.
+Dr.Sreekanth Yerramilli:  So example, there is a calendar event, okay? So the calendar events, you know, example, Google Calendar events, and then you have virtual events and real-time events.
+Dr.Sreekanth Yerramilli:  Imagine, I'm talking about the data related to, you know, a learning center, and then you have the data that is in the format of, you know, JSON. What is JSON?
+Dr.Sreekanth Yerramilli:  JSON is basically a format in which the data is not in pure, you know, rows and columns, but is actually embedded into a calendar embedded system in a format that is plugged into the application suite. So one good example for that is you have Teams calendar schedule, okay?
+Dr.Sreekanth Yerramilli:  If you want to pull how many events have happened in my calendar cloud for my digital learning center in the past three months or one year, okay? You have around, you know, 500 to 200 different, different events happening across different locations virtually.
+Dr.Sreekanth Yerramilli:  In that case, that data will be in the form of JSON or XML or web events kind of, you know, a log. This log has to be converted into your typical structured format.
+Dr.Sreekanth Yerramilli:  So this has labels or tags usually. One very good example, you can also look at it from your mobile calendar plugins and then the other applications.
+Dr.Sreekanth Yerramilli:  A very good way to understand it. So usually, like, you know, calendars will be in the JSON.
+Dr.Sreekanth Yerramilli:  So that's why I'm taking that example for you to understand, okay? These labels and tags, but not always in a fixed table format.
+Dr.Sreekanth Yerramilli:  One good example is if you see dates, okay? The calendar dates will be dd, mm, yy in some calendar applications and some, in some, it will be on the mmddyy format or maybe word to the month and month to the year format.
+Dr.Sreekanth Yerramilli:  So there's a lot of things. If that information is to be brought into the structured format, how do you do that?
+Dr.Sreekanth Yerramilli:  This is a semi-structured one, right? Data is there.
+Dr.Sreekanth Yerramilli:  It is in the structured category that you are looking for, but it is alphanumeric, it is number, it is dd, mm, yy to mmddyy. So how do you variate this data?
+Dr.Sreekanth Yerramilli:  So you understand, right, what I'm trying to say is this is exactly what happened with the Y2K scenario way back when they're trying to do about it. So the formats were reset.
+Dr.Sreekanth Yerramilli:  So if this is about a manual thing, like, you know, have, you know, something like 6,000 students in, like, in your SOIAM case or maybe GNR NMR case, it's easy. Manually you would do by using a way of Excel.
+Dr.Sreekanth Yerramilli:  You try to correct by a formula. You try to use Power BI plugin and get it done.
+Dr.Sreekanth Yerramilli:  What if this data is distributed across in the JSON format across different calendars in the cloud? Example, in some it is in the Google Calendars, in some it is in Teams.
+Dr.Sreekanth Yerramilli:  Everything is being populated into your, you know, Teams structured calendar application or maybe your calendar suite that you have in your LMS or something. If you, now your task is to make sure that all this information is brought into one single unified format.
+Dr.Sreekanth Yerramilli:  This is what we are calling it as an example of semi-structured format. These kind of things for which you'll be using the frameworks like the Hadoop and a few others wherein you try to use a structured query language with the combination of the layers and other different frameworks to bring them together and analyze that kind of data.
+Dr.Sreekanth Yerramilli:  Now, what is unstructured data? As we discussed yesterday itself, unstructured data is a very painful data as we talked.
+Dr.Sreekanth Yerramilli:  It'll be in audio visuals. It'll be in the format that is related to the videos and so on and so forth.
+Dr.Sreekanth Yerramilli:  So there's a lot of insight and information in it, but, like, you know, the problem is it'll be in a pure humanist format, like a very high-level language format. And in order to get it converted into pure binaries and then the rows and columns, it'll be a difficult thing to do.
+Dr.Sreekanth Yerramilli:  So basically how the essence of a business analyst or maybe somebody working on a data as a data engineer or maybe a, you know, data analyst, not the scientist, data analyst, the major thing will be to choose the storage based on the data and then the tasks that need to be performed. So remember I told you always, when it comes to data, there are two things that are important.
+Dr.Sreekanth Yerramilli:  What is the causation, what is the cause, what is the effect, what is the outcome you are expecting out of this data? These two things are very, very important for anyone to work on.
+Dr.Sreekanth Yerramilli:  Moving on. So relational database versus, you know, NoSQL, structured query language.
+Dr.Sreekanth Yerramilli:  So what exactly is the difference? You know, relational database is basically the storage data is in tables with rows and columns, as we are already discussing always, and it is used in a defined relationships and schema.
+Dr.Sreekanth Yerramilli:  A classic case is your Excel any day, which you use, which you are very good at, okay? You're basically trying to compare between lookups and then lookup values and all that stuff, okay?
+Dr.Sreekanth Yerramilli:  So, you know, it's a strong fit for, you know, consistent transactions, anything that is purely structured in nature. Like, you know, if you have 10,000 calendar dates, everything is in dd, mm, yy.
+Dr.Sreekanth Yerramilli:  It's cakewalk, right? From one file of Excel to another file, from one dataset to another dataset, or maybe from one engine of data analysis to another, you can easily plug in, upload, and then analyze it.
+Dr.Sreekanth Yerramilli:  So SQL queries, basically MySQL and Oracle basically work on this kind of pure structured formats, okay? But now what is non-relational or NoSQL format?
+Dr.Sreekanth Yerramilli:  So storage data is flexible formats, documents, key values, pages, graphs, okay? It's more, you know, infographic and a lot of things that being there.
+Dr.Sreekanth Yerramilli:  There'll be a varied thing. It can be between anything that is unstructured to anything that is graphical in nature.
+Dr.Sreekanth Yerramilli:  So from there, so the useful, you know, useful for varied or, you know, rapidly changing data, which because everyday data keeps changing, right? So you keep updating the data.
+Dr.Sreekanth Yerramilli:  Calendar invites, example, you have your mobile plugin with calendar invites. They keep changing every day, right?
+Dr.Sreekanth Yerramilli:  Now, example, like you have a mail and there is a schedule for you that you are invited for a conference. And then on your mobile phone, your, you know, Android application, Google Calendar, you give a command to Gemini and ask it to sync it to your calendar.
+Dr.Sreekanth Yerramilli:  Now, how is a calendar going to do that at the back end? So they are trying to convert this non-relational NoSQL data into the relationship database.
+Dr.Sreekanth Yerramilli:  Understand? That's what is happening in the back end.
+Dr.Sreekanth Yerramilli:  So what is the application that is being used for it in the back end then? MongoDB, okay?
+Dr.Sreekanth Yerramilli:  MongoDB, Redis, Cassandra. These are the examples of the NoSQL models that are being used, frameworks are being used to transpose this data into the structured relationship database.
+Dr.Sreekanth Yerramilli:  Clear? So it's just to understand, like, you know, what exactly are the tools used at what level and what type of data, okay?
+Dr.Sreekanth Yerramilli:  So now we also, we already, I don't want to discuss much about it because we discussed enough in general about what is data warehouse and data lake, but in general, this is basically structured data. Like, you know, it basically supports anything on the KPIs, business reports, dashboards, and all the metrics, all the beautiful, anything related to numbers is here, data warehouse.
+Dr.Sreekanth Yerramilli:  Anything related to non-numbers, like verbal and, you know, in different formats, like the JSON and all that, what we have seen, audio visuals, and different sources, actually, more than that, more than different formats, different sources of data. Like, you know, example, Amazon wants to take it from Insta, Twitter, and all the social handles information on their product performance.
+Dr.Sreekanth Yerramilli:  In that kind of things, the data lake, you know, storage and framework system is being used. A large repository that can be having raw data in many formats.
+Dr.Sreekanth Yerramilli:  That's exactly what this is happening here. So in the cloud environment, so basically now we largely work on the data lake systems along with the data warehouse.
+Dr.Sreekanth Yerramilli:  Like I said about it, you know, from my LMS and cloud environment perspective, we call something for this data lake category is called as CROM, C-R-O-M, wherein it accommodates in the cloud interface, a learning content example I'm talking about, and the HR, the training system, and the training handle, we use something called as the CROM. CROM is something like a framework, that protocol that works basically on the, you know, data lake, you know, framework system, wherein you can have different kinds of data.
+Dr.Sreekanth Yerramilli:  Like, you know, example, you go to any Udemy or any courses, right? All those courses that have got one slide is actually somebody's walking into, they'll point to a room and then you'll be randomly going into a heat map, you know, point at the place where you have something, you point it, the question pops up.
+Dr.Sreekanth Yerramilli:  It's all more illustrative and virtual and then immersive, right? This kind of, you know, immersive experience and then illustrative experiences and all that stuff cannot be handled directly by any LMS application cloud.
+Dr.Sreekanth Yerramilli:  So how do you do that? You'll be using the data through data lakes.
+Dr.Sreekanth Yerramilli:  So example, you have an assessment. Assessment is adaptive in nature.
+Dr.Sreekanth Yerramilli:  That means that basing on your performance, the next question will be tougher. And if you are not able to perform well, the next question will be easier.
+Dr.Sreekanth Yerramilli:  One good example is IELTS exams, right? You do all the IELTS exam, versant, ballot, and all the exams, right?
+Dr.Sreekanth Yerramilli:  So you go there. So these are plugged into something like that virtual kind of environment.
+Dr.Sreekanth Yerramilli:  And for that more adaptive virtual environment of the learning and training, we use CROM. And CROM is something that falls into the data lakes category of, you know, data retrieval and storage.
+Dr.Sreekanth Yerramilli:  Clear? Clear here?
+Dr.Sreekanth Yerramilli:  I need feedback so that I'll know if you are not sleeping.
+Dr.Sreekanth Yerramilli:  Anyone?
+Dr.Sreekanth Yerramilli:  Yes, sir. Great.
+Dr.Sreekanth Yerramilli:  Sir, can you present the, like, slideshow?
+Dr.Sreekanth Yerramilli:  Sir.
+Dr.Sreekanth Yerramilli:  Hi, I'm sorry. There's a network snag.
+Dr.Sreekanth Yerramilli:  I just don't want to waste any bit of the time. Okay?
+Dr.Sreekanth Yerramilli:  Let me quickly share you this. You'll understand what is Hadoop, you know, very, very important one, okay?
+Dr.Sreekanth Yerramilli:  Just so you understand that well.
+Dr.Sreekanth Yerramilli:  Okay, let's dive right into this. Sorry.
+Speaker 2:  Headphones, but have you ever wondered how much data it generates in the form of texts, phone calls, emails, photos, videos, searches, and music? Approximately 40 exabytes of data gets generated every month by a single smartphone user. Now, imagine this number multiplied by 5 billion smartphone users.
+Speaker 2:  That's a lot for our mind to even process, isn't it? In fact, this amount of data is quite a lot for traditional computing systems to handle.
+Speaker 2:  And this massive amount of data is what we term as big data. Let's have a look at the data generated per minute on the internet.
+Speaker 2:  2.1 million snaps are shared on Snapchat. 3.8 million search queries are made on Google. 1 million people log onto Facebook.
+Speaker 2:  4.5 million videos are watched on YouTube. 188 million emails are sent. That's a lot of data.
+Dr.Sreekanth Yerramilli:  Notice this something very important. This is what we are talking about for one minute, okay? So Snapchat is 2.1 million, 3.8.
+Dr.Sreekanth Yerramilli:  In the other things, 4.5 million is for the YouTube. So this is the volume per minute of the data.
+Dr.Sreekanth Yerramilli:  So you can imagine how much of a pressure that is falling on each of our individual cloud servers, you know, applications that you'll be using, respectively, associated with the number of, you know, transactions that happen across to this mass hub, you know, of the respective YouTube and other things, like, you know, how much of server. That's the reason why we keep hearing, right, server crash and all that stuff.
+Dr.Sreekanth Yerramilli:  So in order to handle it effectively, that's when you need an effective data handling framework during the time of big data, you know, working frameworks, okay?
+Speaker 2:  Data. So how do you classify any data as big data? This is possible with the concept of five V's: volume, velocity, variety.
+Dr.Sreekanth Yerramilli:  Yes, we already know.
+Speaker 2:  Veracity, and value. Let us understand this with an example from the healthcare industry. Hospitals and clinics across the world generate massive volumes of data. 2,314 exabytes of data are collected annually in the form of patient records and test results.
+Speaker 2:  All this data is generated at a very high speed, which attributes to the velocity of big data. Variety refers to the various data types, such as structured, semi-structured, and unstructured data.
+Speaker 2:  Examples include Excel records, log files, and X-ray images. Accuracy and trustworthiness of the generated data is termed as veracity.
+Speaker 2:  Analyzing all this data will benefit the medical sector by enabling faster disease detection, better treatment, and reduced cost. This is known as the value of big data.
+Speaker 2:  But how do we store and process this big data? To do this job, we have various frameworks such as Cassandra, Hadoop, and Spark.
+Speaker 2:  Let us take Hadoop as an example and see how Hadoop stores and processes big data. Hadoop uses a distributed file system known as Hadoop Distributed File System to store big data.
+Speaker 2:  If you have a huge file, your file will be broken down into smaller chunks and stored in various machines. Not only that, when you break the file, you also make copies of it, which goes into different nodes.
+Speaker 2:  This way, you store your big data in a distributed way and make sure that even if one machine fails, your data is safe on another. Map reduce technique is used to process big data.
+Speaker 2:  A lengthy task A is broken into smaller tasks B, C, and D. Now, instead of one machine, three machines take up each task and complete it in a parallel fashion and assemble the results at the end.
+Speaker 2:  Thanks to this, the processing becomes easy and fast. This is known as parallel processing.
+Speaker 2:  Now that we have stored and processed our big data, we can analyze this data for numerous applications. In games like Halo 3 and Call of Duty, designers analyze user data to understand at which stage most of the users pause, restart, or quit playing.
+Speaker 2:  This insight can help them rework on the storyline of the game and improve the user experience, which in turn reduces the customer churn rate. Similarly, big data also helped with disaster management during Hurricane Sandy in 2012.
+Speaker 2:  It was used to gain a better understanding of the storm's effect on the East Coast of the US, and necessary measures were taken. It could predict the hurricane's landfall five days in advance, which wasn't possible earlier.
+Speaker 2:  These are some of the clear indications of how valuable big data can be once it is accurately processed and analyzed. So here's a question for you.
+Speaker 2:  Which of the following statements is not correct about Hadoop Distributed File System, HDFS? A, HDFS is the storage layer of Hadoop.
+Speaker 2:  B, data gets stored in a distributed manner in HDFS. C, HDFS performs parallel processing of data.
+Speaker 2:  D, smaller chunks of data are stored on multiple data nodes in HDFS. Give it a thought and leave your answers in the comment section below.
+Speaker 2:  Three lucky winners will receive Amazon gift vouchers.
+Dr.Sreekanth Yerramilli:  Okay. So got a fair idea about it. I hope you have now understood about, like, you know, what exactly is Hadoop in terms of understanding how the distributed framework works.
+Dr.Sreekanth Yerramilli:  Now, is it still active? Is it still valid in the current scenario?
+Dr.Sreekanth Yerramilli:  Because Hadoop has been there in the system for almost more than a decade now. It's been active and it's evolving.
+Dr.Sreekanth Yerramilli:  Does anyone have insights to share on this?
+Dr.Sreekanth Yerramilli:  Anyone? Anyone from your data background, in your engineering?
+Dr.Sreekanth Yerramilli:  No one? Okay.
+Dr.Sreekanth Yerramilli:  So the thing is, the database, you know, systems that you are seeing about are really evolving now at a new pace, okay? Now we are trying to get into new models and, you know, new systems, new way of, like, you know, understanding how the database is stored, retrieved, and so on.
+Dr.Sreekanth Yerramilli:  Now, having said that, so I just want to bring back to what we were discussing on the other day about the tasks that you have to perform, okay? So this is more of a refresher for those of you who have missed yesterday, and we wanted to just rebrush it and cover it.
+Dr.Sreekanth Yerramilli:  And also, importantly, give a fair idea about the MySQL, PySpark, Hadoop concepts, and importantly, about the frameworks that are being used in different areas of it and Cassandra and a few others. In order to give a fair overview about it, this, you know, presentation session was being sneaked in.
+Dr.Sreekanth Yerramilli:  Okay? Now, coming back to what you have to do, I hope you remember it.
+Dr.Sreekanth Yerramilli:  Yesterday we had an assignment that we have in our plate. Make sure that maybe the next half of the week after about three to four days, or maybe about, you know, five days, depending on my calendar, I'll try to, you know, get it scheduled.
+Dr.Sreekanth Yerramilli:  We'll be having this activity wherein you are asked yesterday, this is for those of you who missed it yesterday, to understand the download, that there are four things that you need to do about it. So number one is trying to understand what exactly are the top-notch, you know, frameworks and tools that are being used in the present-day scenario.
+Dr.Sreekanth Yerramilli:  Top four of them for the big data analytics. And what are the tools and applications being available in the current market?
+Dr.Sreekanth Yerramilli:  And then which organizations extensively use for the big data analytics in the age of AI 5.0, as we talk about. That's number one.
+Dr.Sreekanth Yerramilli:  Identify four, one being the top and four being the least, and then you rank them accordingly and you prioritize based on your business function. If you are from HR, you'd be working on the respective tools related to the big data analytics for using in HR.
+Dr.Sreekanth Yerramilli:  If you are into marketing, you'll use the relative tools and applications being available for using about it extensively in the marketing field. If you are into finance, accordingly.
+Dr.Sreekanth Yerramilli:  Okay? That's the top four that you would be doing your little research and try to get it, you know, made up.
+Dr.Sreekanth Yerramilli:  Number one. Number two is identifying the one that is the topmost one and then trying to build the framework structure and the data structure, how it's actually, what is the functionality, what is the modus operandi that this data framework is using for, you know, enabling your business function.
+Dr.Sreekanth Yerramilli:  So, like, you have identified four, out of which one you take up and you try to build across the framework on it. So I'll also do from my side of the story the same thing.
+Dr.Sreekanth Yerramilli:  I'll try to bring up from my business functionality what exactly are the top four tools and out of which, what is the big data tool that we would be using in a cloud application, and then what is its framework. I hope you got it.
+Dr.Sreekanth Yerramilli:  Number two. Number three task is to, you know, try to present its features if there is an open-source application available or an audio-visual.
+Dr.Sreekanth Yerramilli:  If the open-source live sandbox environment is not available, at least an AV that you can present it. I would request you to present that in terms of how the framework works and how the framework is trying to enable your business need or business problem statement based on your data analytics, you know, challenge area.
+Dr.Sreekanth Yerramilli:  And then the fifth one is, you know, trying to upload a PPT basing on this, and then this thing will be evaluated basing on your requirements. You know, you'll be doing a research analysis.
+Dr.Sreekanth Yerramilli:  You can use Meta, ChatGPT, whatever it is in the first phases. But obviously, at the fifth and the fourth, you may have to build your own, you know, ones as you can't directly customize it from ChatGPT.
+Dr.Sreekanth Yerramilli:  Clear? So that's the framework that you'll be working on over the weekend or whenever you have time next week across, perhaps we'll be having on Thursday.
+Dr.Sreekanth Yerramilli:  And there'll be a cloud sandbox environment session that we're conducting based on how the data is being processed from different nodes and how the data lakes, data warehousing, and data labeling and structuring works in a typical, you know, big data-enabled cloud application environment in the field of HR. I'll try to discuss that as a live case scenario.
+Dr.Sreekanth Yerramilli:  We can see a little hands-on it from the sandbox subsequently after your presentations. Okay?
+Dr.Sreekanth Yerramilli:  So that's for you for the upcoming. And now, just give me a quick minute.
+Dr.Sreekanth Yerramilli:  I want to share with you something very important. Since many of you have been asking about, we need some coordinates to work on, we need to have an overview about it.
+Dr.Sreekanth Yerramilli:  So this is a textbook that is largely, I mean, it's just a five-year-old textbook, but still active. It's got the fundamentals and basics of the data structures, how the querying works, what is a big data framework, what are the different types of the frameworks that are being largely in use, what are the classical theoretical models that are being available.
+Dr.Sreekanth Yerramilli:  Is available here. Please share it across to your friends as well.
+Dr.Sreekanth Yerramilli:  This textbook, you can download it. This can be your handy textbook for understanding the big data analytics and cloud computing in the present scenario.
+Dr.Sreekanth Yerramilli:  So it's got the SQL, MySQL, Python, like, you know, Cassandra, Hadoop, and a few other, you know, frameworks and systems for your understanding. You can, it's a page-turner.
+Dr.Sreekanth Yerramilli:  Take your time. You can also go through it beyond this class, whatever you want to study from.
+Dr.Sreekanth Yerramilli:  Okay? So it's available in the chat.
+Dr.Sreekanth Yerramilli:  Please share this link to them, your friends as well, and you can directly download it from that. If you want me to, I can pin it for you.
+Dr.Sreekanth Yerramilli:  Okay. So this message is pinned.
+Dr.Sreekanth Yerramilli:  So those of you who have missed it, please kindly share it across to that. Okay?
+Dr.Sreekanth Yerramilli:  Along with that, I also have a request, you know, those of you, whoever is actually not being able to attend the sessions, try to make it. The attendance is important.
+Dr.Sreekanth Yerramilli:  We are trying to mark it virtual or real-time. And the attendance is very important for your scoring to be populated.
+Dr.Sreekanth Yerramilli:  My hands are tied. I have to do what the Soyim is expecting me to, you know, bestow upon.
+Dr.Sreekanth Yerramilli:  So many of you, those of you who have missed the sessions, kindly try to be available for that. Okay?
+Dr.Sreekanth Yerramilli:  And anything more? So we'll be catching up in the next session on understanding about the frameworks, as we talked about machine learning, Hadoop, Spark, PySpark, Python, and so on, based applications and functions for your business area and sub-business area.
+Dr.Sreekanth Yerramilli:  Okay? Clear?
+Dr.Sreekanth Yerramilli:  Any more doubts on the assignment? Anything more that you'd want to add?
+Dr.Sreekanth Yerramilli:  Okay. So this is a sneak peek session.
+Dr.Sreekanth Yerramilli:  So we will reconnect back again. Perhaps maybe Wednesday is what I'm looking at.
+Dr.Sreekanth Yerramilli:  Just give me a quick minute. I'll try to check my calendar so that I can confirm you right away.
+Dr.Sreekanth Yerramilli:  Do you have any activities or events coming up next week? Because these days you are so busy with many, like, you know, you have, you know, the great Dioza, and then you have PICC, and then you have this now TEDx coming up.
+Dr.Sreekanth Yerramilli:  When is TED, by the way? Can anyone help me?
+Dr.Sreekanth Yerramilli:  Anyone? I think it's on November 30, like that.
+Dr.Sreekanth Yerramilli:  November 30. Okay.
+Dr.Sreekanth Yerramilli:  So next week we are available, right? Then we are free.
+Dr.Sreekanth Yerramilli:  So maybe the TEDx is at December first week or third week. So we have ample of time.
+Dr.Sreekanth Yerramilli:  No problem. So next week is free, right?
+Dr.Sreekanth Yerramilli:  So that's what I wanted to confirm. I want to be safe because we have activities in our session and also my presentation on cloud application, all that stuff.
+Dr.Sreekanth Yerramilli:  So I just don't want that to be messed up. So next week is largely available, or you have any of these things going on?
+Dr.Sreekanth Yerramilli:  Next week, 16th to 20th, I'm talking. That is like 16, 17, 18, 19, 20.
+Dr.Sreekanth Yerramilli:  No? Hello?
+Dr.Sreekanth Yerramilli:  Hello?
+Dr.Sreekanth Yerramilli:  Navya?
+Dr.Sreekanth Yerramilli:  Hi, Navyashree.
+Dr.Sreekanth Yerramilli:  Navyashree, hi.
+Dr.Sreekanth Yerramilli:  Navyashree, I think you're not able to respond back. Your mic is on mute.
+Dr.Sreekanth Yerramilli:  So but you're physically present, so in the virtual session. Navya?
+Dr.Sreekanth Yerramilli:  Yeah, sir, hi. Because I was trying to randomly count this for attendance, you know?
+Dr.Sreekanth Yerramilli:  Yes, sir. You are available.
+Dr.Sreekanth Yerramilli:  Can you answer that? So do you have anything in the next week coming up?
+Dr.Sreekanth Yerramilli:  Sir, I have no idea regarding it. No, no.
+Dr.Sreekanth Yerramilli:  Like, so far. Not the Soyim events.
+Dr.Sreekanth Yerramilli:  Your assignments, like PPT yesterday, like you have a planned photo session or PPT, you know, seminars going on, something like that.
+Dr.Sreekanth Yerramilli:  In your class. You can talk to.
+Dr.Sreekanth Yerramilli:  No, sir, hi. Okay.
+Dr.Sreekanth Yerramilli:  So maybe there is a mid-exam for BA, FS students. Oh, FS.
+Dr.Sreekanth Yerramilli:  Is there anyone from FS? Yes, sir, me.
+Dr.Sreekanth Yerramilli:  Oh, you're the only one?
+Dr.Sreekanth Yerramilli:  Okay. You might be missing on it then.
+Dr.Sreekanth Yerramilli:  So let us see. I'll try to talk with Pujitha ma'am to understand the schedule and try to accommodate it because we need two more important sessions there in the next week to understand.
+Dr.Sreekanth Yerramilli:  One is my presentation on understanding the cloud application for the big data sandbox environment. And another one is you presenting it on the five tasks being given to you today.
+Dr.Sreekanth Yerramilli:  I mean, yesterday. Okay?
+Dr.Sreekanth Yerramilli:  So we may need at least four hours qualitatively, give or take, two for me and two for you. So we will see how it works.
+Dr.Sreekanth Yerramilli:  Okay? For now, that's it.
+Dr.Sreekanth Yerramilli:  You got the link. Let me know if you're unable to download it.
+Dr.Sreekanth Yerramilli:  I'll try to, you know, retrive it for you and then share it, actually. This is a very classic textbook-style, you know, download that is available for you.
+Dr.Sreekanth Yerramilli:  Since you guys are asking, like, if there's any coordinates for you to understand, like, you know, big data in general and all that, this textbook is exactly the one on which we are having this schema of our class made. And another thing is we'll have a live class next time, obviously, and whatever you are connecting it, we'll make sure that you'll have the class presented.
+Dr.Sreekanth Yerramilli:  So please, please, please, I repeat it one more time, very important this one, last but not least, try to get the MaxHub somehow synced up because even if you are presenting or I am presenting or plugging in my sandbox or something like that, we need that MaxHub in place. Okay?
+Dr.Sreekanth Yerramilli:  Try to get the extension from there or you can talk with your AV teams there and get it for it. I tried to leave a message to your management yesterday because it's very much needed.
+Dr.Sreekanth Yerramilli:  It cannot happen purely on the virtual networks. We need to have some kind of HDMI plugins and something because we are not using that facility very well.
+Dr.Sreekanth Yerramilli:  Okay? Try to get it ready for the next sessions and your presentations.
+Dr.Sreekanth Yerramilli:  Clear? Yes, sir.
+Dr.Sreekanth Yerramilli:  Great. Thank you very much.
+Dr.Sreekanth Yerramilli:  You guys have a great day. Bye.
