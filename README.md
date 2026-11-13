@@ -1,13 +1,13 @@
 The subjects for Trimester 1, including:
 
 Academic Subjects
-1. Marketing Management (MM)
-2. Organizational Behaviour (OB)
-3. Financial Reporting and Analysis (FRA)
-4. Applied Economics for Business Decisions (AEBD)
-5. Microsoft Excel for Managers (Certification) (Excel)
-6. Business Communication - I (BC)
-7. Quantitative Methods (Data Science) I (QM)
+101 – Marketing Management (Faculty: Dr. Nagaraj Samala)   
+102 – Organizational Behaviour (Faculty: Prof. K. L. Revathi)   
+103 – Financial Reporting and Analysis (Faculty: Dr. Narsimhulu Siddula)   
+104 – Applied Economics for Business Decisions (Faculty: Prof. Dheeraj – Visiting Faculty)  
+105 – Microsoft Excel for Managers (Certification) (Faculty: Dr. Roopa Modam)   
+106 – Business Communication – I (Faculty: Dr. Subha Gora)   
+107 – Quantitative Methods (Data Science) – I (Faculty: Dr. Rajkumar Rayabaram) 
 
 Term - 4
 
