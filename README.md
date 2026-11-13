@@ -21,6 +21,16 @@ Term - 2
 206 – Production and Operations Management (Faculty: Pradeep – Visiting Faculty | 3 Credits)   
 207 – Business Intelligence Tools (Faculty: Dr. Roopa | 3 Credits)   
 
+Term - 3
+
+301 – Business Research Methods   
+302 – AI & Machine Learning in Business   
+303 – Data-Driven Decision Making using Python   
+304 – Data Management and SQL   
+305BA – Innovative Design Thinking for Entrepreneurship & Business Development   
+305FS – Equity Analysis and Valuation   
+306BA – Natural Language Processing (NLP) & Text Analytics 
+
 Term - 4
 
 403BA – Big Data Technologies & Cloud-Based Analytics   
