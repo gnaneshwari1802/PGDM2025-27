@@ -50,6 +50,22 @@ Term - 4
 407OM1 – Operational Analytics   
 407OM2 – Forecasting and Demand Planning   
 
+401
+Project Management (Certification)
+402
+Cybersecurity & Data Privacy
+403BA
+Big Data Technologies & Cloud-Based Analytics
+404BA
+Data Mining & Unstructured Data Analytics
+405BA
+Advanced Predictive Modeling & Decision Analytics
+407MM2
+Marketing Research
+407MM1
+Digital Marketing
+
+
 Additional Training
 1. Campus Recruitment Training (CRT)
 
