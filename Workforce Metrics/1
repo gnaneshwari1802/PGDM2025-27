@@ -24,6 +24,84 @@ So please be prepared and showcase your best work.
 
 All the best!
 
+PART 1 - 30 Mins: Case Study 1 - 
+BrightCall Solutions
+Metric	Value
+Employees at Start	200
+Employees at End	180
+Employees Left	25
+New Joiners	5
+Scheduled Days	22 days
+Total Absent Days	110 days
+Scheduled Hours	17,600 hours
+Productive Hours	14,080 hours
+Do This:
+1. Calculate Attrition Rate with formula
+2. Calculate Absenteeism Rate with formula
+3. Calculate Utilization %
+4. Write 5 lines: What is the main problem and why?
+5. Write 2 suggestions for Manager
+
+
+PART 2 - 60 Mins: Case Study 2 -
+FastKart E-commerce Support
+Metric	Value
+Expected Calls Per Day	4,800 calls
+Average Handling Time (AHT)	6 mins
+Working Hours Per Agent	8 hours
+Target Occupancy	85%
+Current Agents	55 agents
+Shrinkage	25%
+Attrition Last Month	12%
+Do This:
+1. Calculate Total Workload in minutes
+2. Calculate Required Agents without shrinkage
+3. Calculate Final Required Agents after shrinkage
+4. Calculate Gap - Shortage or Surplus? How many?
+5. If attrition is 12%, how many agents will leave next month from 55?
+6. Write a 10-line Action Plan for Manager to fill the gap in 2 weeks. Mention Hiring, Overtime, Cross-training, Reduce AHT - with pros and cons of each.
+7. Extra  Question: If you reduce AHT from 6 mins to 5 mins, how many agents will you save? Show calculation.
+
+Submission:
+- Write neatly on paper / notebook
+- Show all formulas + steps
+- Last page: Write your Name + Group No.
+
+1. Recruitment Metrics
+    Metric	                                            Formula
+Time to Hire	                        Date of Offer Acceptance − Date of Application
+Time to Fill	                        Date Position Filled − Date Requisition Approved
+Cost per Hire                 	Total Recruitment Cost ÷ Number of Hires
+Offer Acceptance Rate	(Offers Accepted ÷ Total Offers Made) × 100
+Selection Ratio	              (Number of Candidates Selected ÷ Total Candidates Applied) × 100
+Source of Hire	             (Hires from a Particular Source ÷ Total Hires) × 100
+
+2. Employee Turnover & Retention Metrics
+Metric	                                                          Formula
+Employee Turnover Rate	           (Number of Employees Separated ÷ Average Employee Headcount) × 100
+Average Headcount	                 (Opening Headcount + Closing Headcount) ÷ 2
+Retention Rate	                     (Employees at End who were Present at Beginning ÷ Employees at Beginning) × 100
+Voluntary Turnover Rate	     (Voluntary Resignations ÷ Average Headcount) × 100
+Involuntary Turnover Rate	(Involuntary Separations ÷ Average Headcount) × 100
+New Hire Turnover Rate	(New Employees Leaving Within a Defined Period ÷ Total New Hires in That Cohort) × 100
+
+3. Attendance & Absenteeism Metrics
+Metric	                                             Formula
+Absenteeism Rate	(Total Absent Working Days ÷ Total Available Working Days) × 100
+Attendance Rate	(Total Days Present ÷ Total Available Working Days) × 100
+Absence Frequency Rate	(Number of Absence Instances ÷ Average Headcount) × 100
+Lost Time Rate	(Total Hours Lost Due to Absence ÷ Total Scheduled Working Hours) × 100
+Overtime Rate	(Total Overtime Hours ÷ Total Scheduled Working Hours) × 100
+
+4. Training & Development Metrics
+Metric                                	Formula
+Training Cost per Employee	Total Training Cost ÷ Number of Employees Trained
+Training Hours per Employee	Total Training Hours ÷ Average Employee Headcount
+Training Completion Rate	(Employees Completing Training ÷ Employees Enrolled) × 100
+Training Effectiveness	(Post-Training Assessment Score − Pre-Training Assessment Score) ÷ Pre-Training Assessment Score × 100
+Training ROI	[(Monetary Benefits from Training − Training Cost) ÷ Training Cost] × 100
+
+
 Students, create a excel sheet with dummy data already in the last class i gave different cases services, manufacturing etc take that as an example take a dummy data and 
 apply the formulas of attrion rate, head count, absentism etc... use conditional formatting and give scores and tell me which manger having the highest attrition rates and
 which team needs the training first
