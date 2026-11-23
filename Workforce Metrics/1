@@ -11,3 +11,46 @@ Use Formulas to get Metrics:*
 - *Average Tenure:* `=AVERAGE(Tenure)`
 - *Cost per Hire:* `= Total Hiring Cost / No. of Hires`
 - *Training Hours per Employee:* `= Total Training Hours / Headcount`
+
+Solve in Excel:
+
+*PROBLEM: ABC Tech Pvt Ltd - Workforce Analytics*
+
+ABC Tech has 60 employees. Management is worried because many people are leaving. They gave you employee data in Excel.
+
+*Your Data has these columns:*
+Emp ID, Name, Department (Sales, HR, Operations), Manager (Mr. Ajay, Ms. Priya, Mr. Ravi), Joining Date, Salary, Total Leaves Taken in Year (out of 240 working days), Training Hours in Year, Performance Score (out of 5), Status (Working / Left), Exit Reason (Better Salary, Shift Issue, No Growth, Manager Issue)
+
+*TASK 1 - Basic Metrics (Use Formulas)*
+Find:
+1. Total Headcount
+2. Total Left
+3. Attrition Rate = Left / Headcount _ 100
+4. Average Salary
+5. Average Training Hours
+6. Average Absenteeism % = Leaves / 240 _ 100
+
+*TASK 2 - Pivot Table Analytics (Leading vs Lagging)*
+Make Pivot Tables and find:
+1. Attrition by Department - Which Dept has highest attrition?
+2. Attrition by Manager - Which Manager has highest attrition?
+3. Average Performance Score by Training Hours - Do people with less training have low performance?
+4. Exit Reason count - What is the No.1 reason for leaving?
+
+*TASK 3 - Benchmark & Target Table*
+Make this table and use Conditional Formatting (Red / Green):
+Metric	ABC Tech	Industry Benchmark	Target for Next Year
+Attrition Rate	?	13%	10%
+Absenteeism	?	4%	3%
+Avg Training Hours	?	40 Hours	50 Hours
+*TASK 4 - Dashboard (Charts)*
+Make 3 charts:
+1. Bar Chart - Attrition by Department
+2. Pie Chart - Exit Reasons
+3. Line Chart - If you have Month of Leaving data, show trend
+
+*TASK 5 - Final Decision (Analytics to Action)*
+Write 3 lines in Excel as your recommendation:
+1. Which department needs action first? Why?
+2. What is the Leading Indicator showing problem before people leave?
+3. What 1 action will reduce attrition?
