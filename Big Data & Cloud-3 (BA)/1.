@@ -9,3 +9,19 @@ PRESENTATION:+
 ....The marks will be allotted based on the presentation.ptesention marks are 20% of the total marks.
 
 https://jcer.in/jcer-docs/E-Learning/Digital%20Library%20/E-Books/Big%20Data%20Analytics%20by%20RaJ%20Kamal,%20Preethi%20Saxena,TMH.pdf
+
+A data warehouse stores clean, structured data for fast SQL analytics and business intelligence (BI). A data lake stores vast amounts of raw, unprocessed data in any format (structured, semi-structured, or unstructured) for data science and machine learning. A data lakehouse combines low-cost data lake storage with warehouse-style management, governance, and fast query performance on a single architecture.
+
+Core Differences
+
+• Data Types: Data warehouses handle structured, tabular data. Data lakes and lakehouses store structured, semi-structured, and unstructured data (such as logs, JSON, images, and video).
+• Schema Approach: Data warehouses use schema-on-write (data is structured and transformed before loading). Data lakes use schema-on-read (schema is applied when data is queried). Lakehouses support both.
+• Governance & Transactions: Data warehouses typically enforce strict schemas and ACID transactions. Basic data lakes often lack built-in governance and ACID transactions, whereas lakehouses add metadata and table layers (such as Delta Lake or Apache Iceberg) to provide ACID compliance, versioning, and governance over object storage.
+• Cost & Performance: Data warehouses deliver fast BI query performance but usually carry higher storage and scaling costs. Data lakes offer low-cost storage but can have slower query speeds on raw files. Lakehouses pair low-cost object storage with optimized query engines and table formats for strong BI and AI/ML performance.
+As explained by IBM and Striim, choosing the right pattern depends on your workloads and data types. There is a general consensus on Reddit that data warehouses focus on structured historical data, data lakes hold raw historical data, and lakehouses unify both raw and refined data.
+
+When to Choose Which
+
+• Data Warehouse: Best for standardized BI dashboards, financial reporting, and SQL analytics on structured data (e.g., Snowflake, Amazon Redshift, Google BigQuery).
+• Data Lake: Best for cheap, flexible ingestion of large raw datasets and exploratory machine learning (e.g., Amazon S3, Azure Data Lake Storage).
+• Data Lakehouse: Best when you need a single platform for BI and AI/ML workloads, real-time or streaming data, and reduced data duplication.
