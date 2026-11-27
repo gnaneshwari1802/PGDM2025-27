@@ -1,0 +1,1001 @@
+Patient_ID,Full_Name,Gender,Birth_Date,Age,ZIP_Code,Medical_Diagnosis,Clinical_Department,Admission_Type,Blood_Group,Treatment_Cost_INR,Admission_Date
+PAT-HYD-0001,Rajesh Sen,Male,1988-04-08,38,500084,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,A+,59000,2026-05-02
+PAT-HYD-0002,Sunita Sharma,Female,2000-04-08,26,110016,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,A+,381000,2026-04-17
+PAT-HYD-0003,Divya Joshi,Female,1968-05-26,58,500001,Rheumatoid Arthritis,Rheumatology,Elective ICU,O+,189000,2026-07-21
+PAT-HYD-0004,Arjun Mukherjee,Male,1984-02-03,42,400053,Essential Hypertension,Cardiology,Day Care Procedure,B+,324000,2026-07-25
+PAT-HYD-0005,Prasad Joshi,Male,1971-02-13,55,500072,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,A+,200000,2026-05-06
+PAT-HYD-0006,Ashwin Verma,Male,2003-11-08,23,560100,Essential Hypertension,Cardiology,Inpatient Emergency,AB+,209000,2026-07-21
+PAT-HYD-0007,Rashmi Pillai,Female,1982-03-12,44,400020,Major Depressive Disorder,Psychiatry,Inpatient Emergency,O+,326000,2026-04-21
+PAT-HYD-0008,Naveen Sen,Male,1990-03-15,36,400053,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B-,127000,2026-04-08
+PAT-HYD-0009,Shruti Mukherjee,Female,1956-01-08,70,500016,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,48000,2026-08-07
+PAT-HYD-0010,Deepa Bhat,Female,1974-07-21,52,400099,Coronary Artery Disease,Cardiology,Outpatient Consultation,A+,396000,2026-05-10
+PAT-HYD-0011,Preeti Mishra,Female,1978-10-13,48,400050,Major Depressive Disorder,Psychiatry,Outpatient Consultation,AB-,275000,2026-05-27
+PAT-HYD-0012,Siddharth Patel,Male,1950-02-05,76,560001,Rheumatoid Arthritis,Rheumatology,Specialist Referral,O+,47000,2026-06-24
+PAT-HYD-0013,Geeta Joshi,Female,1972-05-18,54,500001,Colorectal Adenocarcinoma,Oncology,Specialist Referral,O+,399000,2026-07-24
+PAT-HYD-0014,Sneha Singh,Female,1978-03-15,48,500001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,AB+,271000,2026-08-16
+PAT-HYD-0015,Kiran Bhat,Male,1986-11-17,40,110085,Major Depressive Disorder,Psychiatry,Outpatient Consultation,A+,291000,2026-05-18
+PAT-HYD-0016,Manish Khan,Male,1974-01-04,52,400050,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,B-,137000,2026-09-16
+PAT-HYD-0017,Tarun Mishra,Male,2000-02-24,26,110003,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,407000,2026-08-29
+PAT-HYD-0018,Vivek Deshmukh,Male,1970-03-09,56,110020,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,O+,291000,2026-04-07
+PAT-HYD-0019,Ashwin Singh,Male,1980-11-21,46,400050,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,AB+,76000,2026-07-29
+PAT-HYD-0020,Vikram Khan,Male,2004-10-18,22,560038,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,A+,377000,2026-04-22
+PAT-HYD-0021,Ramesh Verma,Male,1948-01-28,78,400012,Essential Hypertension,Cardiology,Day Care Procedure,B+,357000,2026-05-29
+PAT-HYD-0022,Naveen Iyer,Male,1959-10-19,67,110001,Major Depressive Disorder,Psychiatry,Elective ICU,O+,112000,2026-09-06
+PAT-HYD-0023,Vivek Menon,Male,1983-07-14,43,400099,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,O+,46000,2026-06-19
+PAT-HYD-0024,Vidya Chauhan,Female,1999-04-07,27,560025,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,B+,108000,2026-07-21
+PAT-HYD-0025,Divya Chauhan,Female,2001-08-26,25,110048,Essential Hypertension,Cardiology,Specialist Referral,A+,443000,2026-09-27
+PAT-HYD-0026,Vijay Mukherjee,Male,1951-04-06,75,400076,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,B+,45000,2026-08-19
+PAT-HYD-0027,Priya Bose,Female,1989-08-10,37,400080,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,O-,353000,2026-05-29
+PAT-HYD-0028,Arjun Singh,Male,1992-01-19,34,110025,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,O+,40000,2026-05-04
+PAT-HYD-0029,Rekha Kapoor,Female,1951-09-06,75,500028,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,A+,50000,2026-05-01
+PAT-HYD-0030,Vivek Chauhan,Male,1990-07-04,36,110065,Major Depressive Disorder,Psychiatry,Inpatient Emergency,B+,332000,2026-09-10
+PAT-HYD-0031,Anjali Mishra,Female,1969-09-11,57,560068,Major Depressive Disorder,Psychiatry,Day Care Procedure,O+,137000,2026-07-25
+PAT-HYD-0032,Kavita Mehta,Female,1964-05-15,62,400001,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,O+,19000,2026-06-05
+PAT-HYD-0033,Vikram Aggarwal,Male,1992-09-09,34,500084,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,B+,140000,2026-06-28
+PAT-HYD-0034,Pooja Joshi,Female,1952-09-23,74,560103,Breast Carcinoma (Invasive),Oncology,Specialist Referral,B-,19000,2026-04-13
+PAT-HYD-0035,Kavya Mehta,Female,1999-03-09,27,500082,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,A+,94000,2026-07-23
+PAT-HYD-0036,Geeta Rao,Female,1960-06-07,66,560068,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,62000,2026-04-21
+PAT-HYD-0037,Shruti Gupta,Female,2003-01-11,23,500084,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,A-,394000,2026-06-09
+PAT-HYD-0038,Nandini Sharma,Female,1998-02-23,28,500090,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,A+,313000,2026-05-12
+PAT-HYD-0039,Praveen Iyer,Male,2003-05-12,23,500016,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,B+,356000,2026-09-04
+PAT-HYD-0040,Sushma Aggarwal,Female,1949-07-20,77,500090,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,AB+,424000,2026-08-16
+PAT-HYD-0041,Priya Reddy,Female,1958-06-26,68,400076,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,O+,151000,2026-08-21
+PAT-HYD-0042,Sunil Chauhan,Male,2003-08-08,23,560025,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,AB+,171000,2026-08-03
+PAT-HYD-0043,Rajesh Mehta,Male,1993-07-11,33,560076,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,A+,194000,2026-04-19
+PAT-HYD-0044,Anjali Pillai,Female,1971-06-01,55,500082,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,A-,312000,2026-07-25
+PAT-HYD-0045,Mohammed Pandey,Male,1978-06-24,48,400001,Chronic Hepatitis C,Gastroenterology,Specialist Referral,O+,74000,2026-06-24
+PAT-HYD-0046,Sanjay Patel,Male,1960-07-01,66,110020,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,O+,201000,2026-06-12
+PAT-HYD-0047,Vivek Kapoor,Male,1984-10-11,42,500082,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,AB+,173000,2026-04-13
+PAT-HYD-0048,Swati Bose,Female,1961-05-18,65,500084,Major Depressive Disorder,Psychiatry,Elective ICU,B+,361000,2026-08-17
+PAT-HYD-0049,Ayesha Aggarwal,Female,1952-01-10,74,560100,Major Depressive Disorder,Psychiatry,Specialist Referral,B+,325000,2026-04-16
+PAT-HYD-0050,Neha Joshi,Female,1977-11-07,49,110016,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,O+,352000,2026-09-09
+PAT-HYD-0051,Rekha Mehta,Female,1965-10-11,61,500072,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,O-,359000,2026-07-13
+PAT-HYD-0052,Harish Rao,Male,1996-01-02,30,560066,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,O+,248000,2026-06-16
+PAT-HYD-0053,Ashwin Shah,Male,1981-08-13,45,560066,Coronary Artery Disease,Cardiology,Inpatient Emergency,O+,399000,2026-09-03
+PAT-HYD-0054,Divya Reddy,Female,1954-12-17,72,400099,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,B+,248000,2026-08-27
+PAT-HYD-0055,Anjali Kulkarni,Female,1970-10-11,56,400092,Breast Carcinoma (Invasive),Oncology,Specialist Referral,O+,233000,2026-05-13
+PAT-HYD-0056,Malini Reddy,Female,1958-08-15,68,560068,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A+,407000,2026-05-20
+PAT-HYD-0057,Rashmi Malhotra,Female,1988-08-03,38,560100,Major Depressive Disorder,Psychiatry,Day Care Procedure,A+,291000,2026-09-10
+PAT-HYD-0058,Suresh Malhotra,Male,1981-12-05,45,560034,Essential Hypertension,Cardiology,Day Care Procedure,B+,292000,2026-06-03
+PAT-HYD-0059,Sunita Rao,Female,1952-07-13,74,110075,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,A+,209000,2026-05-31
+PAT-HYD-0060,Deepak Singh,Male,1957-07-28,69,400076,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,O+,424000,2026-04-29
+PAT-HYD-0061,Rohan Malhotra,Male,1988-07-16,38,500003,Chronic Hepatitis C,Gastroenterology,Elective ICU,B+,385000,2026-08-19
+PAT-HYD-0062,Kavya Iyer,Female,1966-09-01,60,400069,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,B+,57000,2026-04-19
+PAT-HYD-0063,Kavita Chauhan,Female,1976-03-02,50,560068,Chronic Hepatitis C,Gastroenterology,Elective ICU,B+,182000,2026-07-06
+PAT-HYD-0064,Lakshmi Mukherjee,Female,1952-07-09,74,500072,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,A+,41000,2026-07-03
+PAT-HYD-0065,Alok Verma,Male,1956-11-02,70,500003,Major Depressive Disorder,Psychiatry,Inpatient Emergency,A+,333000,2026-08-22
+PAT-HYD-0066,Suresh Deshmukh,Male,1963-02-19,63,560034,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,O+,100000,2026-04-28
+PAT-HYD-0067,Siddharth Pillai,Male,1995-05-04,31,110075,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,AB+,361000,2026-06-26
+PAT-HYD-0068,Tanvi Rao,Female,2001-10-23,25,560066,Essential Hypertension,Cardiology,Day Care Procedure,O+,450000,2026-04-08
+PAT-HYD-0069,Harish Mishra,Male,1955-01-12,71,110025,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,O+,274000,2026-04-18
+PAT-HYD-0070,Priya Chauhan,Female,1979-08-04,47,400080,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,O+,377000,2026-08-22
+PAT-HYD-0071,Pooja Sen,Female,1972-11-09,54,110092,Rheumatoid Arthritis,Rheumatology,Elective ICU,AB+,253000,2026-06-11
+PAT-HYD-0072,Swati Chauhan,Female,1990-02-09,36,400092,Major Depressive Disorder,Psychiatry,Specialist Referral,O+,327000,2026-04-12
+PAT-HYD-0073,Swati Sharma,Female,1974-06-06,52,110003,Major Depressive Disorder,Psychiatry,Day Care Procedure,B+,189000,2026-07-21
+PAT-HYD-0074,Nandini Sharma,Female,1972-04-03,54,560066,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,B+,403000,2026-07-31
+PAT-HYD-0075,Rashmi Shah,Female,1974-08-26,52,500003,Essential Hypertension,Cardiology,Elective ICU,A+,369000,2026-07-30
+PAT-HYD-0076,Anjali Mishra,Female,1982-08-18,44,110020,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,B+,184000,2026-07-02
+PAT-HYD-0077,Lakshmi Singh,Female,1989-04-04,37,560025,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,A+,405000,2026-04-07
+PAT-HYD-0078,Arjun Rao,Male,1958-08-09,68,110075,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,66000,2026-08-12
+PAT-HYD-0079,Divya Choudhury,Female,1994-05-01,32,110025,Coronary Artery Disease,Cardiology,Inpatient Emergency,A+,298000,2026-07-18
+PAT-HYD-0080,Alok Chauhan,Male,1957-08-04,69,500001,Breast Carcinoma (Invasive),Oncology,Elective ICU,A+,240000,2026-07-05
+PAT-HYD-0081,Amit Gupta,Male,1950-08-04,76,500034,Chronic Hepatitis C,Gastroenterology,Specialist Referral,B+,337000,2026-04-08
+PAT-HYD-0082,Suresh Iyer,Male,1954-10-10,72,500072,Major Depressive Disorder,Psychiatry,Elective ICU,A+,325000,2026-05-01
+PAT-HYD-0083,Siddharth Kulkarni,Male,1981-08-15,45,560103,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,B+,171000,2026-05-08
+PAT-HYD-0084,Manish Sen,Male,1999-04-21,27,560034,Bipolar Affective Disorder,Psychiatry,Outpatient Consultation,O+,137000,2026-08-17
+PAT-HYD-0085,Rahul Sharma,Male,1979-08-23,47,110085,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,A+,162000,2026-07-20
+PAT-HYD-0086,Ananya Mehta,Female,1991-05-26,35,110075,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,O+,232000,2026-09-01
+PAT-HYD-0087,Alok Iyer,Male,1988-03-03,38,500028,Coronary Artery Disease,Cardiology,Specialist Referral,O+,398000,2026-05-08
+PAT-HYD-0088,Neha Nair,Female,1976-12-10,50,400069,Bipolar Affective Disorder,Psychiatry,Elective ICU,B+,239000,2026-09-10
+PAT-HYD-0089,Tarun Menon,Male,1958-06-20,68,560068,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,A+,315000,2026-09-25
+PAT-HYD-0090,Shilpa Patel,Female,1957-03-16,69,110020,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,B+,107000,2026-05-04
+PAT-HYD-0091,Rashmi Pillai,Female,1974-02-16,52,400020,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,B+,97000,2026-07-08
+PAT-HYD-0092,Tanvi Deshmukh,Female,1987-11-13,39,110048,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,B+,144000,2026-07-10
+PAT-HYD-0093,Siddharth Bose,Male,1950-09-27,76,500001,Colorectal Adenocarcinoma,Oncology,Elective ICU,AB+,226000,2026-09-17
+PAT-HYD-0094,Aditya Choudhury,Male,1966-08-21,60,400092,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A+,296000,2026-08-28
+PAT-HYD-0095,Neha Saxena,Female,1961-08-04,65,500003,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,O+,378000,2026-08-21
+PAT-HYD-0096,Nandini Sharma,Female,1970-07-03,56,560038,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,AB+,75000,2026-04-18
+PAT-HYD-0097,Rohan Kapoor,Male,1960-05-17,66,560076,Chronic Hepatitis C,Gastroenterology,Elective ICU,O+,139000,2026-06-06
+PAT-HYD-0098,Sunil Rao,Male,1967-09-24,59,500084,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,A+,189000,2026-05-24
+PAT-HYD-0099,Shruti Sharma,Female,1987-12-10,39,110075,Breast Carcinoma (Invasive),Oncology,Elective ICU,AB-,91000,2026-06-08
+PAT-HYD-0100,Fatima Khan,Female,1970-09-13,56,400099,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,B+,372000,2026-07-31
+PAT-HYD-0101,Divya Chauhan,Female,1956-07-02,70,400001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,212000,2026-04-14
+PAT-HYD-0102,Rohan Patel,Male,1997-09-19,29,400012,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,A+,66000,2026-05-19
+PAT-HYD-0103,Priya Sen,Female,1996-07-28,30,500090,Essential Hypertension,Cardiology,Day Care Procedure,B+,188000,2026-04-24
+PAT-HYD-0104,Rashmi Verma,Female,1951-06-28,75,110025,Chronic Hepatitis C,Gastroenterology,Elective ICU,O-,292000,2026-09-21
+PAT-HYD-0105,Ramesh Bhat,Male,1962-05-08,64,500072,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,A-,242000,2026-08-19
+PAT-HYD-0106,Malini Sharma,Female,2003-06-26,23,500028,Bipolar Affective Disorder,Psychiatry,Elective ICU,B+,89000,2026-07-30
+PAT-HYD-0107,Shilpa Mehta,Female,1955-03-06,71,560008,Essential Hypertension,Cardiology,Elective ICU,O+,332000,2026-04-09
+PAT-HYD-0108,Rohan Kapoor,Male,1968-03-08,58,400099,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,A+,356000,2026-09-28
+PAT-HYD-0109,Malini Singh,Female,1962-09-06,64,500034,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,O-,168000,2026-04-20
+PAT-HYD-0110,Tanvi Gupta,Female,1976-05-07,50,400053,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,B+,210000,2026-05-07
+PAT-HYD-0111,Shilpa Singh,Female,1961-05-01,65,400069,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,A+,325000,2026-05-26
+PAT-HYD-0112,Sushma Das,Female,1991-10-26,35,400020,Major Depressive Disorder,Psychiatry,Specialist Referral,O+,143000,2026-04-10
+PAT-HYD-0113,Alok Nair,Male,1948-11-21,78,500016,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,O+,311000,2026-06-29
+PAT-HYD-0114,Vikram Kapoor,Male,1987-06-24,39,400076,Coronary Artery Disease,Cardiology,Specialist Referral,A+,202000,2026-05-18
+PAT-HYD-0115,Shruti Reddy,Female,1989-08-26,37,560100,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,AB+,254000,2026-09-11
+PAT-HYD-0116,Siddharth Malhotra,Male,1950-11-24,76,400069,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,O+,61000,2026-06-21
+PAT-HYD-0117,Sanjay Aggarwal,Male,1998-08-12,28,560068,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,B+,70000,2026-04-11
+PAT-HYD-0118,Rohan Sharma,Male,1966-09-11,60,110092,Major Depressive Disorder,Psychiatry,Elective ICU,O+,373000,2026-07-15
+PAT-HYD-0119,Sneha Iyer,Female,2003-01-10,23,110003,Essential Hypertension,Cardiology,Specialist Referral,A+,84000,2026-06-23
+PAT-HYD-0120,Fatima Mehta,Female,1958-12-18,68,400076,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,O+,227000,2026-04-16
+PAT-HYD-0121,Farhan Deshmukh,Male,1966-07-09,60,500016,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,242000,2026-08-01
+PAT-HYD-0122,Sneha Mehta,Female,1982-09-21,44,400020,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,B+,77000,2026-06-06
+PAT-HYD-0123,Vivek Rao,Male,1964-11-20,62,500003,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,O+,79000,2026-05-09
+PAT-HYD-0124,Vikram Pillai,Male,1957-09-07,69,110075,Major Depressive Disorder,Psychiatry,Outpatient Consultation,O+,183000,2026-08-24
+PAT-HYD-0125,Sanjay Chauhan,Male,1996-03-18,30,560068,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,A+,82000,2026-09-27
+PAT-HYD-0126,Vidya Das,Female,1990-10-11,36,500003,Coronary Artery Disease,Cardiology,Outpatient Consultation,A+,394000,2026-06-15
+PAT-HYD-0127,Prasad Verma,Male,1975-08-25,51,400050,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,B+,272000,2026-08-05
+PAT-HYD-0128,Prasad Das,Male,1950-11-17,76,560103,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,O+,46000,2026-05-31
+PAT-HYD-0129,Shweta Mehta,Female,1999-08-23,27,400092,Essential Hypertension,Cardiology,Day Care Procedure,AB+,326000,2026-08-24
+PAT-HYD-0130,Suresh Gupta,Male,1966-11-19,60,110048,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,B+,286000,2026-07-17
+PAT-HYD-0131,Rekha Pandey,Female,1978-02-26,48,500082,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,O+,384000,2026-08-06
+PAT-HYD-0132,Neha Saxena,Female,1991-07-11,35,400099,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,B+,175000,2026-06-13
+PAT-HYD-0133,Anjali Gupta,Female,1982-03-22,44,110001,Essential Hypertension,Cardiology,Inpatient Emergency,A+,62000,2026-06-12
+PAT-HYD-0134,Prasad Sen,Male,1982-03-18,44,500028,Breast Carcinoma (Invasive),Oncology,Specialist Referral,O-,183000,2026-04-12
+PAT-HYD-0135,Praveen Choudhury,Male,1950-11-25,76,400080,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,AB+,162000,2026-04-30
+PAT-HYD-0136,Fatima Nair,Female,1969-09-07,57,500090,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,B+,194000,2026-05-11
+PAT-HYD-0137,Sneha Mukherjee,Female,1988-10-08,38,400080,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,B+,329000,2026-04-11
+PAT-HYD-0138,Manish Kapoor,Male,1963-12-09,63,500003,Coronary Artery Disease,Cardiology,Day Care Procedure,A+,188000,2026-07-03
+PAT-HYD-0139,Rahul Chauhan,Male,1996-10-22,30,400069,Essential Hypertension,Cardiology,Inpatient Emergency,A+,61000,2026-05-18
+PAT-HYD-0140,Sunil Menon,Male,1976-06-06,50,400050,Bipolar Affective Disorder,Psychiatry,Specialist Referral,O+,320000,2026-09-09
+PAT-HYD-0141,Suresh Reddy,Male,1957-10-02,69,500072,Bipolar Affective Disorder,Psychiatry,Elective ICU,B+,263000,2026-04-28
+PAT-HYD-0142,Shweta Gupta,Female,1992-09-04,34,400020,Chronic Hepatitis C,Gastroenterology,Specialist Referral,A+,264000,2026-05-19
+PAT-HYD-0143,Sunita Malhotra,Female,1980-10-02,46,500001,Major Depressive Disorder,Psychiatry,Outpatient Consultation,B+,407000,2026-08-26
+PAT-HYD-0144,Meera Khan,Female,1998-01-16,28,400080,Coronary Artery Disease,Cardiology,Specialist Referral,A+,375000,2026-08-03
+PAT-HYD-0145,Ananya Bose,Female,1950-12-02,76,400080,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,B+,175000,2026-05-06
+PAT-HYD-0146,Shilpa Bose,Female,1960-11-14,66,560100,Essential Hypertension,Cardiology,Day Care Procedure,B+,102000,2026-04-25
+PAT-HYD-0147,Shruti Shah,Female,1982-02-14,44,500081,Major Depressive Disorder,Psychiatry,Elective ICU,B+,283000,2026-09-10
+PAT-HYD-0148,Sangeeta Singh,Female,1958-06-08,68,400012,Rheumatoid Arthritis,Rheumatology,Specialist Referral,A+,339000,2026-09-01
+PAT-HYD-0149,Tarun Mukherjee,Male,1983-06-24,43,500090,Major Depressive Disorder,Psychiatry,Day Care Procedure,A+,116000,2026-08-17
+PAT-HYD-0150,Siddharth Mukherjee,Male,1964-02-06,62,110003,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,O+,244000,2026-04-09
+PAT-HYD-0151,Sangeeta Bhat,Female,1985-03-15,41,500034,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,B+,422000,2026-07-22
+PAT-HYD-0152,Deepak Kulkarni,Male,2001-05-15,25,400092,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,A+,54000,2026-04-18
+PAT-HYD-0153,Manish Pandey,Male,1973-07-15,53,110075,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,O-,245000,2026-05-07
+PAT-HYD-0154,Manoj Pandey,Male,1975-09-05,51,500028,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,A+,380000,2026-09-09
+PAT-HYD-0155,Amit Malhotra,Male,1960-08-15,66,110020,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,O+,205000,2026-07-20
+PAT-HYD-0156,Shweta Mukherjee,Female,1984-11-20,42,500028,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,O+,48000,2026-07-08
+PAT-HYD-0157,Naveen Mehta,Male,1981-05-09,45,110085,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,A+,313000,2026-04-14
+PAT-HYD-0158,Vijay Choudhury,Male,1986-11-23,40,400069,Coronary Artery Disease,Cardiology,Inpatient Emergency,B+,173000,2026-05-10
+PAT-HYD-0159,Rashmi Das,Female,1984-03-22,42,110020,Essential Hypertension,Cardiology,Elective ICU,O+,275000,2026-06-30
+PAT-HYD-0160,Deepak Singh,Male,1994-04-11,32,110003,Major Depressive Disorder,Psychiatry,Outpatient Consultation,A+,94000,2026-09-11
+PAT-HYD-0161,Sangeeta Das,Female,1999-09-25,27,110025,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,O+,34000,2026-04-14
+PAT-HYD-0162,Malini Mukherjee,Female,1966-03-20,60,400053,Coronary Artery Disease,Cardiology,Specialist Referral,A+,429000,2026-08-19
+PAT-HYD-0163,Sunita Menon,Female,1982-11-24,44,560066,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,O+,134000,2026-05-17
+PAT-HYD-0164,Anil Das,Male,1955-08-27,71,560025,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,O+,240000,2026-06-04
+PAT-HYD-0165,Sushma Bose,Female,1973-09-14,53,560001,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,85000,2026-07-28
+PAT-HYD-0166,Alok Deshmukh,Male,1950-06-18,76,500081,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,O+,160000,2026-09-09
+PAT-HYD-0167,Sanjay Joshi,Male,1948-09-05,78,400080,Essential Hypertension,Cardiology,Outpatient Consultation,O-,433000,2026-06-07
+PAT-HYD-0168,Kavya Sharma,Female,1979-01-13,47,110016,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,A+,206000,2026-08-04
+PAT-HYD-0169,Manoj Kapoor,Male,1999-12-21,27,400012,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,A+,161000,2026-06-02
+PAT-HYD-0170,Siddharth Shah,Male,1975-08-20,51,500001,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,A+,125000,2026-08-23
+PAT-HYD-0171,Sneha Mukherjee,Female,1987-04-10,39,500082,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,A+,249000,2026-09-14
+PAT-HYD-0172,Farhan Saxena,Male,1974-10-18,52,500003,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,B+,382000,2026-08-25
+PAT-HYD-0173,Shweta Sharma,Female,1966-06-08,60,110065,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,A+,283000,2026-06-30
+PAT-HYD-0174,Aditya Aggarwal,Male,1973-09-18,53,500003,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,AB+,340000,2026-06-23
+PAT-HYD-0175,Lakshmi Sen,Female,2004-06-26,22,500034,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,A+,410000,2026-05-05
+PAT-HYD-0176,Kavita Patel,Female,1983-09-11,43,560008,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,O+,371000,2026-05-31
+PAT-HYD-0177,Harish Iyer,Male,2001-12-25,25,400099,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,A+,420000,2026-08-10
+PAT-HYD-0178,Manoj Kapoor,Male,1986-09-13,40,110025,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,A+,161000,2026-07-01
+PAT-HYD-0179,Kiran Bhat,Male,1984-05-04,42,400050,Chronic Hepatitis C,Gastroenterology,Elective ICU,AB+,212000,2026-07-06
+PAT-HYD-0180,Rohan Shah,Male,1974-06-26,52,110020,Bipolar Affective Disorder,Psychiatry,Elective ICU,O+,55000,2026-06-12
+PAT-HYD-0181,Naveen Singh,Male,1985-02-03,41,400001,Colorectal Adenocarcinoma,Oncology,Elective ICU,A+,323000,2026-06-13
+PAT-HYD-0182,Ashwin Joshi,Male,1983-08-02,43,400020,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,AB-,342000,2026-09-16
+PAT-HYD-0183,Vivek Bhat,Male,1980-06-17,46,560001,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,A+,362000,2026-06-10
+PAT-HYD-0184,Suresh Verma,Male,1990-11-12,36,400050,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,O-,324000,2026-08-22
+PAT-HYD-0185,Fatima Choudhury,Female,1977-02-19,49,500084,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,B+,347000,2026-07-21
+PAT-HYD-0186,Mohammed Sharma,Male,1958-03-16,68,110020,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,AB+,149000,2026-07-26
+PAT-HYD-0187,Deepa Pandey,Female,1987-12-16,39,560025,Essential Hypertension,Cardiology,Inpatient Emergency,A+,246000,2026-08-17
+PAT-HYD-0188,Ananya Das,Female,1962-06-22,64,400020,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,A+,163000,2026-07-16
+PAT-HYD-0189,Ashwin Shah,Male,1961-11-06,65,400050,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,A+,420000,2026-08-26
+PAT-HYD-0190,Harish Deshmukh,Male,2004-06-18,22,110065,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,B+,81000,2026-04-27
+PAT-HYD-0191,Vikram Singh,Male,1980-12-24,46,110001,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,B+,436000,2026-05-06
+PAT-HYD-0192,Suresh Khan,Male,1964-02-15,62,400099,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,B+,439000,2026-05-12
+PAT-HYD-0193,Siddharth Iyer,Male,1978-09-28,48,500028,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,A+,170000,2026-08-19
+PAT-HYD-0194,Manoj Kapoor,Male,1960-04-12,66,110020,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,A+,143000,2026-08-11
+PAT-HYD-0195,Kavita Bhat,Female,1986-10-18,40,500072,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,O+,312000,2026-08-22
+PAT-HYD-0196,Vivek Pandey,Male,1959-10-11,67,110065,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,O+,56000,2026-09-19
+PAT-HYD-0197,Rashmi Rao,Female,1956-10-14,70,110092,Colorectal Adenocarcinoma,Oncology,Specialist Referral,A+,163000,2026-04-19
+PAT-HYD-0198,Ritu Malhotra,Female,1954-11-13,72,560103,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,A+,95000,2026-06-10
+PAT-HYD-0199,Ritu Joshi,Female,1992-06-20,34,500090,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,AB+,390000,2026-07-04
+PAT-HYD-0200,Kavita Mukherjee,Female,1982-09-18,44,500081,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,A+,151000,2026-06-07
+PAT-HYD-0201,Suresh Nair,Male,2002-05-13,24,110092,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,A+,431000,2026-07-09
+PAT-HYD-0202,Deepa Mukherjee,Female,1995-08-17,31,400099,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,AB+,26000,2026-09-07
+PAT-HYD-0203,Rekha Joshi,Female,1990-04-19,36,400020,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,A+,320000,2026-04-16
+PAT-HYD-0204,Meera Aggarwal,Female,2005-02-14,21,500084,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,A+,406000,2026-06-19
+PAT-HYD-0205,Sunita Bose,Female,2002-10-18,24,560025,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,B+,212000,2026-05-24
+PAT-HYD-0206,Sushma Aggarwal,Female,1988-10-22,38,110092,Essential Hypertension,Cardiology,Inpatient Emergency,A+,216000,2026-06-27
+PAT-HYD-0207,Nandini Choudhury,Female,1957-03-07,69,110085,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,38000,2026-09-21
+PAT-HYD-0208,Ashwin Khan,Male,1954-08-17,72,400099,Coronary Artery Disease,Cardiology,Specialist Referral,O+,86000,2026-07-09
+PAT-HYD-0209,Pooja Bose,Female,1966-12-27,60,560103,Breast Carcinoma (Invasive),Oncology,Specialist Referral,B+,287000,2026-05-28
+PAT-HYD-0210,Ritu Pillai,Female,2004-06-11,22,500082,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,B+,320000,2026-06-01
+PAT-HYD-0211,Rashmi Das,Female,1956-10-19,70,560038,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,A+,102000,2026-05-19
+PAT-HYD-0212,Kavita Pillai,Female,1962-04-02,64,110065,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,A+,240000,2026-07-12
+PAT-HYD-0213,Kavita Menon,Female,1961-04-14,65,110016,Rheumatoid Arthritis,Rheumatology,Elective ICU,O+,449000,2026-09-15
+PAT-HYD-0214,Aditya Rao,Male,1970-06-22,56,110001,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,B+,250000,2026-05-17
+PAT-HYD-0215,Nandini Choudhury,Female,1962-12-22,64,560068,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,B+,157000,2026-05-11
+PAT-HYD-0216,Divya Singh,Female,1956-05-23,70,560034,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,O+,260000,2026-07-03
+PAT-HYD-0217,Meera Nair,Female,1969-11-18,57,400053,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,B-,410000,2026-08-24
+PAT-HYD-0218,Sunita Singh,Female,1960-02-12,66,400092,Colorectal Adenocarcinoma,Oncology,Elective ICU,A+,124000,2026-08-10
+PAT-HYD-0219,Kavya Aggarwal,Female,1961-05-05,65,500081,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,O+,139000,2026-09-18
+PAT-HYD-0220,Alok Malhotra,Male,2002-02-14,24,400012,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,B+,17000,2026-05-13
+PAT-HYD-0221,Praveen Bhat,Male,1949-08-16,77,560025,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A-,161000,2026-04-18
+PAT-HYD-0222,Vijay Mukherjee,Male,2000-11-19,26,560038,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,O+,104000,2026-06-16
+PAT-HYD-0223,Vijay Kapoor,Male,2003-07-26,23,110003,Coronary Artery Disease,Cardiology,Day Care Procedure,O-,34000,2026-09-28
+PAT-HYD-0224,Shilpa Pandey,Female,1999-06-10,27,400099,Colorectal Adenocarcinoma,Oncology,Elective ICU,B+,83000,2026-05-24
+PAT-HYD-0225,Lakshmi Rao,Female,1954-02-11,72,560001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,B+,382000,2026-08-14
+PAT-HYD-0226,Prasad Khan,Male,1955-05-19,71,560025,Coronary Artery Disease,Cardiology,Elective ICU,O+,438000,2026-06-13
+PAT-HYD-0227,Ananya Bose,Female,1963-02-06,63,500084,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,B+,18000,2026-07-26
+PAT-HYD-0228,Divya Joshi,Female,1957-05-11,69,560103,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,O+,148000,2026-04-16
+PAT-HYD-0229,Tanvi Malhotra,Female,2002-11-04,24,400099,Bipolar Affective Disorder,Psychiatry,Specialist Referral,A+,375000,2026-07-13
+PAT-HYD-0230,Alok Kapoor,Male,1987-06-20,39,560038,Major Depressive Disorder,Psychiatry,Elective ICU,O-,93000,2026-06-06
+PAT-HYD-0231,Shweta Shah,Female,1970-08-25,56,110025,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,O+,405000,2026-07-29
+PAT-HYD-0232,Aditya Joshi,Male,1972-12-12,54,500034,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,B+,439000,2026-05-13
+PAT-HYD-0233,Gaurav Aggarwal,Male,1996-03-11,30,110020,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,A+,382000,2026-05-04
+PAT-HYD-0234,Ananya Saxena,Female,1973-08-26,53,500028,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,A+,248000,2026-05-09
+PAT-HYD-0235,Naveen Joshi,Male,1962-05-24,64,500003,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,A+,396000,2026-08-06
+PAT-HYD-0236,Amit Menon,Male,1983-12-03,43,110025,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,O-,256000,2026-09-22
+PAT-HYD-0237,Shweta Reddy,Female,1956-03-25,70,400076,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,AB-,244000,2026-06-26
+PAT-HYD-0238,Ananya Mehta,Female,1963-09-05,63,400020,Essential Hypertension,Cardiology,Specialist Referral,A+,216000,2026-05-18
+PAT-HYD-0239,Prasad Malhotra,Male,1952-01-25,74,500003,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,232000,2026-05-17
+PAT-HYD-0240,Shruti Malhotra,Female,1990-08-12,36,500090,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,A+,31000,2026-04-14
+PAT-HYD-0241,Geeta Mukherjee,Female,1949-01-08,77,560034,Essential Hypertension,Cardiology,Inpatient Emergency,A+,243000,2026-04-30
+PAT-HYD-0242,Ramesh Sen,Male,2003-07-15,23,560038,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,A+,86000,2026-05-25
+PAT-HYD-0243,Divya Pillai,Female,1959-10-11,67,110065,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,O+,136000,2026-07-15
+PAT-HYD-0244,Vivek Kulkarni,Male,1991-07-10,35,560076,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,B+,391000,2026-08-17
+PAT-HYD-0245,Nandini Deshmukh,Female,2002-06-21,24,400053,Rheumatoid Arthritis,Rheumatology,Elective ICU,B+,224000,2026-08-23
+PAT-HYD-0246,Ayesha Reddy,Female,1957-09-16,69,560066,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,A+,427000,2026-06-04
+PAT-HYD-0247,Naveen Menon,Male,1979-09-17,47,500084,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,A+,184000,2026-04-18
+PAT-HYD-0248,Vijay Joshi,Male,1951-06-03,75,110025,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,O+,152000,2026-06-26
+PAT-HYD-0249,Kiran Verma,Male,1993-10-24,33,110048,Major Depressive Disorder,Psychiatry,Day Care Procedure,B+,170000,2026-09-27
+PAT-HYD-0250,Vijay Rao,Male,1958-02-24,68,110001,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,A+,375000,2026-08-09
+PAT-HYD-0251,Kavya Malhotra,Female,1970-06-25,56,560100,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,B+,172000,2026-07-26
+PAT-HYD-0252,Rekha Saxena,Female,1974-08-04,52,110001,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,O+,204000,2026-07-12
+PAT-HYD-0253,Sunita Mishra,Female,1950-04-24,76,500090,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,A+,311000,2026-06-16
+PAT-HYD-0254,Kavita Rao,Female,1984-04-13,42,110065,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,350000,2026-04-08
+PAT-HYD-0255,Lakshmi Mukherjee,Female,1953-08-24,73,110003,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,A+,101000,2026-08-26
+PAT-HYD-0256,Pooja Kapoor,Female,1949-09-21,77,500028,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,A+,433000,2026-04-12
+PAT-HYD-0257,Siddharth Sharma,Male,1979-03-27,47,560038,Essential Hypertension,Cardiology,Inpatient Emergency,O+,126000,2026-05-24
+PAT-HYD-0258,Fatima Patel,Female,1966-11-22,60,110092,Generalized Anxiety Disorder,Psychiatry,Elective ICU,B+,23000,2026-09-29
+PAT-HYD-0259,Priya Sharma,Female,1972-12-09,54,110025,Bipolar Affective Disorder,Psychiatry,Elective ICU,A+,427000,2026-08-16
+PAT-HYD-0260,Vijay Nair,Male,1972-03-08,54,560025,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,B+,151000,2026-06-21
+PAT-HYD-0261,Deepak Bose,Male,1976-10-08,50,560038,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,O+,349000,2026-04-17
+PAT-HYD-0262,Vikram Bose,Male,1981-07-18,45,110001,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,O+,57000,2026-05-26
+PAT-HYD-0263,Rashmi Das,Female,1984-10-28,42,500081,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,B+,132000,2026-08-07
+PAT-HYD-0264,Lakshmi Patel,Female,2001-11-09,25,110025,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,O+,450000,2026-07-12
+PAT-HYD-0265,Arjun Mishra,Male,1996-12-27,30,400069,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,A+,303000,2026-07-31
+PAT-HYD-0266,Anjali Saxena,Female,1971-06-13,55,500084,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,B-,271000,2026-07-04
+PAT-HYD-0267,Mohammed Menon,Male,1991-02-11,35,110085,Rheumatoid Arthritis,Rheumatology,Specialist Referral,O+,218000,2026-07-09
+PAT-HYD-0268,Alok Gupta,Male,1955-08-16,71,560038,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,B+,236000,2026-08-14
+PAT-HYD-0269,Ananya Mukherjee,Female,1966-05-26,60,560066,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,A+,93000,2026-06-25
+PAT-HYD-0270,Prasad Bose,Male,1985-06-04,41,500072,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,O-,199000,2026-07-23
+PAT-HYD-0271,Suresh Verma,Male,1994-07-15,32,110048,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,28000,2026-09-08
+PAT-HYD-0272,Nandini Verma,Female,1967-10-26,59,400001,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,B+,226000,2026-06-23
+PAT-HYD-0273,Prasad Saxena,Male,1970-04-19,56,110020,Coronary Artery Disease,Cardiology,Outpatient Consultation,O+,86000,2026-07-24
+PAT-HYD-0274,Lakshmi Deshmukh,Female,1996-02-06,30,400080,Bipolar Affective Disorder,Psychiatry,Elective ICU,B+,415000,2026-09-11
+PAT-HYD-0275,Lakshmi Malhotra,Female,1959-11-16,67,110085,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,A+,84000,2026-07-15
+PAT-HYD-0276,Sunil Khan,Male,1952-10-13,74,400012,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,B+,84000,2026-07-16
+PAT-HYD-0277,Geeta Shah,Female,1993-08-11,33,560008,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,A-,391000,2026-04-06
+PAT-HYD-0278,Shilpa Das,Female,1990-06-13,36,560076,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,O+,73000,2026-05-09
+PAT-HYD-0279,Gaurav Aggarwal,Male,1994-11-25,32,110048,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,O-,377000,2026-08-08
+PAT-HYD-0280,Vidya Singh,Female,1952-12-03,74,400076,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,B+,138000,2026-07-28
+PAT-HYD-0281,Ashwin Menon,Male,1955-07-03,71,400092,Breast Carcinoma (Invasive),Oncology,Elective ICU,B+,288000,2026-05-24
+PAT-HYD-0282,Nandini Patel,Female,1955-06-23,71,110025,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,O+,70000,2026-07-29
+PAT-HYD-0283,Pooja Bhat,Female,1966-01-19,60,400069,Rheumatoid Arthritis,Rheumatology,Elective ICU,B+,69000,2026-09-28
+PAT-HYD-0284,Sanjay Malhotra,Male,1973-12-17,53,110048,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,O+,243000,2026-06-27
+PAT-HYD-0285,Neha Mukherjee,Female,1962-10-23,64,110016,Coronary Artery Disease,Cardiology,Inpatient Emergency,B+,262000,2026-09-04
+PAT-HYD-0286,Shweta Kapoor,Female,2000-02-27,26,500090,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,B+,416000,2026-08-09
+PAT-HYD-0287,Fatima Deshmukh,Female,1999-08-24,27,400092,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,A+,429000,2026-09-01
+PAT-HYD-0288,Kiran Khan,Male,1964-02-22,62,560001,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,B-,279000,2026-08-17
+PAT-HYD-0289,Manoj Aggarwal,Male,1978-08-08,48,400069,Colorectal Adenocarcinoma,Oncology,Elective ICU,A+,217000,2026-09-23
+PAT-HYD-0290,Karthik Mishra,Male,1978-07-01,48,560034,Major Depressive Disorder,Psychiatry,Inpatient Emergency,A+,310000,2026-09-04
+PAT-HYD-0291,Deepak Khan,Male,1993-08-04,33,560068,Colorectal Adenocarcinoma,Oncology,Specialist Referral,AB+,342000,2026-07-12
+PAT-HYD-0292,Geeta Bose,Female,1968-02-12,58,400020,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,B+,431000,2026-04-11
+PAT-HYD-0293,Kavya Pandey,Female,1968-02-22,58,500084,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,A+,74000,2026-08-15
+PAT-HYD-0294,Tanvi Iyer,Female,1973-07-14,53,110085,Coronary Artery Disease,Cardiology,Elective ICU,B+,110000,2026-05-29
+PAT-HYD-0295,Naveen Reddy,Male,1974-05-05,52,560008,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,O+,42000,2026-07-01
+PAT-HYD-0296,Rohan Iyer,Male,1993-07-18,33,110016,Colorectal Adenocarcinoma,Oncology,Elective ICU,B+,227000,2026-06-09
+PAT-HYD-0297,Pooja Verma,Female,1969-01-26,57,560038,Bipolar Affective Disorder,Psychiatry,Outpatient Consultation,A+,290000,2026-07-19
+PAT-HYD-0298,Siddharth Joshi,Male,1969-12-25,57,110003,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,B+,73000,2026-07-24
+PAT-HYD-0299,Nandini Pillai,Female,1957-01-25,69,400092,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,A+,67000,2026-04-16
+PAT-HYD-0300,Anil Chauhan,Male,2003-08-09,23,400020,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,O+,75000,2026-08-01
+PAT-HYD-0301,Harish Sen,Male,1968-12-12,58,110092,Colorectal Adenocarcinoma,Oncology,Specialist Referral,B+,86000,2026-08-09
+PAT-HYD-0302,Harish Patel,Male,1969-06-18,57,560076,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,B+,375000,2026-07-18
+PAT-HYD-0303,Shilpa Gupta,Female,1951-09-22,75,500081,Coronary Artery Disease,Cardiology,Elective ICU,A-,45000,2026-07-22
+PAT-HYD-0304,Ashwin Chauhan,Male,1997-04-05,29,400001,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,A+,265000,2026-08-25
+PAT-HYD-0305,Rashmi Menon,Female,1981-08-03,45,500072,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,B+,370000,2026-06-28
+PAT-HYD-0306,Ritu Khan,Female,1968-01-28,58,500072,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,A-,450000,2026-09-14
+PAT-HYD-0307,Deepa Menon,Female,1953-04-16,73,560076,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,O+,295000,2026-05-06
+PAT-HYD-0308,Gaurav Chauhan,Male,1974-06-22,52,500028,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,A+,23000,2026-08-30
+PAT-HYD-0309,Karthik Joshi,Male,2005-07-07,21,500084,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,O+,155000,2026-09-07
+PAT-HYD-0310,Lakshmi Verma,Female,1982-11-21,44,560001,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,B+,386000,2026-04-04
+PAT-HYD-0311,Praveen Bhat,Male,2000-12-04,26,500001,Major Depressive Disorder,Psychiatry,Outpatient Consultation,B+,318000,2026-08-04
+PAT-HYD-0312,Priya Sharma,Female,1961-06-27,65,500082,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,B+,259000,2026-09-12
+PAT-HYD-0313,Sunil Verma,Male,1959-02-04,67,400001,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,AB+,210000,2026-08-27
+PAT-HYD-0314,Vikram Kulkarni,Male,1969-01-20,57,560001,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,B+,336000,2026-08-23
+PAT-HYD-0315,Geeta Mehta,Female,1977-04-03,49,500081,Coronary Artery Disease,Cardiology,Specialist Referral,O+,388000,2026-06-24
+PAT-HYD-0316,Shweta Khan,Female,1955-03-08,71,560076,Colorectal Adenocarcinoma,Oncology,Specialist Referral,A+,322000,2026-04-30
+PAT-HYD-0317,Sushma Shah,Female,2004-11-10,22,560034,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,O+,397000,2026-06-22
+PAT-HYD-0318,Rashmi Patel,Female,1955-04-16,71,400053,Essential Hypertension,Cardiology,Specialist Referral,A+,51000,2026-05-18
+PAT-HYD-0319,Deepak Kapoor,Male,1985-03-13,41,110065,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,B+,405000,2026-06-02
+PAT-HYD-0320,Rajesh Mishra,Male,2001-01-09,25,560034,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,AB+,274000,2026-07-19
+PAT-HYD-0321,Shweta Shah,Female,1980-02-21,46,110025,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,O+,57000,2026-07-13
+PAT-HYD-0322,Aditya Kapoor,Male,1992-03-18,34,400001,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,B+,173000,2026-04-05
+PAT-HYD-0323,Preeti Chauhan,Female,1990-01-08,36,500072,Generalized Anxiety Disorder,Psychiatry,Elective ICU,B+,328000,2026-04-28
+PAT-HYD-0324,Anil Mehta,Male,1958-11-24,68,560008,Essential Hypertension,Cardiology,Outpatient Consultation,A+,374000,2026-09-28
+PAT-HYD-0325,Rohan Choudhury,Male,1972-09-26,54,560068,Coronary Artery Disease,Cardiology,Day Care Procedure,B+,390000,2026-08-31
+PAT-HYD-0326,Manoj Das,Male,1978-05-17,48,500034,Bipolar Affective Disorder,Psychiatry,Specialist Referral,O+,336000,2026-09-11
+PAT-HYD-0327,Neha Kulkarni,Female,1982-01-16,44,110065,Coronary Artery Disease,Cardiology,Day Care Procedure,B+,410000,2026-09-04
+PAT-HYD-0328,Ramesh Sen,Male,1973-01-02,53,500001,Major Depressive Disorder,Psychiatry,Day Care Procedure,A+,211000,2026-08-23
+PAT-HYD-0329,Vijay Chauhan,Male,2003-09-26,23,400076,Major Depressive Disorder,Psychiatry,Elective ICU,B+,383000,2026-07-11
+PAT-HYD-0330,Shruti Verma,Female,1969-06-04,57,110016,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,AB+,129000,2026-05-21
+PAT-HYD-0331,Sunil Verma,Male,1949-08-28,77,560100,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,O+,59000,2026-05-12
+PAT-HYD-0332,Priya Choudhury,Female,1993-05-19,33,560103,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,O+,203000,2026-05-02
+PAT-HYD-0333,Sushma Mukherjee,Female,1993-12-18,33,560066,Coronary Artery Disease,Cardiology,Elective ICU,A+,27000,2026-08-02
+PAT-HYD-0334,Rashmi Pillai,Female,1961-01-11,65,500001,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,O+,68000,2026-08-09
+PAT-HYD-0335,Praveen Deshmukh,Male,2002-03-23,24,560076,Essential Hypertension,Cardiology,Outpatient Consultation,A+,447000,2026-05-20
+PAT-HYD-0336,Tanvi Saxena,Female,1982-08-24,44,500072,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,A+,341000,2026-06-22
+PAT-HYD-0337,Gaurav Mishra,Male,2002-07-22,24,500084,Major Depressive Disorder,Psychiatry,Day Care Procedure,A+,425000,2026-06-22
+PAT-HYD-0338,Swati Joshi,Female,1988-04-03,38,560025,Coronary Artery Disease,Cardiology,Specialist Referral,O+,70000,2026-08-22
+PAT-HYD-0339,Rahul Joshi,Male,1976-06-14,50,500082,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,B+,246000,2026-07-14
+PAT-HYD-0340,Lakshmi Chauhan,Female,1998-02-06,28,560103,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,O+,35000,2026-08-06
+PAT-HYD-0341,Kavita Verma,Female,1960-04-12,66,400069,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,A+,148000,2026-08-17
+PAT-HYD-0342,Sunil Chauhan,Male,1977-09-24,49,110048,Major Depressive Disorder,Psychiatry,Inpatient Emergency,A+,426000,2026-08-26
+PAT-HYD-0343,Rajesh Patel,Male,1952-04-05,74,560025,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,B+,313000,2026-05-03
+PAT-HYD-0344,Kavya Pillai,Female,2001-01-03,25,560025,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,O+,62000,2026-07-08
+PAT-HYD-0345,Amit Joshi,Male,2002-03-19,24,400080,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,O+,30000,2026-06-25
+PAT-HYD-0346,Pooja Choudhury,Female,1992-03-09,34,560076,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,AB+,329000,2026-04-25
+PAT-HYD-0347,Alok Singh,Male,1974-07-18,52,110001,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,A+,85000,2026-06-15
+PAT-HYD-0348,Alok Saxena,Male,1954-09-08,72,110025,Rheumatoid Arthritis,Rheumatology,Elective ICU,A+,415000,2026-07-01
+PAT-HYD-0349,Nandini Das,Female,1974-06-19,52,110016,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,B+,28000,2026-07-11
+PAT-HYD-0350,Rajesh Saxena,Male,1954-05-02,72,110001,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,B+,134000,2026-08-21
+PAT-HYD-0351,Ramesh Mehta,Male,1990-05-18,36,500028,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,AB-,309000,2026-06-23
+PAT-HYD-0352,Kavya Pillai,Female,1951-03-06,75,560066,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,B+,317000,2026-09-23
+PAT-HYD-0353,Shilpa Mishra,Female,1996-10-07,30,110003,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,B+,34000,2026-09-07
+PAT-HYD-0354,Ramesh Pandey,Male,1991-01-17,35,110001,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,B+,118000,2026-08-28
+PAT-HYD-0355,Tanvi Reddy,Female,1954-06-02,72,500003,Coronary Artery Disease,Cardiology,Outpatient Consultation,B+,411000,2026-09-02
+PAT-HYD-0356,Ananya Choudhury,Female,1960-11-13,66,110075,Essential Hypertension,Cardiology,Day Care Procedure,B+,84000,2026-08-21
+PAT-HYD-0357,Vidya Bhat,Female,1974-11-11,52,560008,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,A-,417000,2026-07-01
+PAT-HYD-0358,Vivek Mishra,Male,1953-03-13,73,560103,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,O+,105000,2026-09-30
+PAT-HYD-0359,Sangeeta Mukherjee,Female,1969-01-06,57,110085,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,AB+,128000,2026-04-20
+PAT-HYD-0360,Vijay Deshmukh,Male,1996-06-24,30,500034,Major Depressive Disorder,Psychiatry,Day Care Procedure,B+,100000,2026-04-21
+PAT-HYD-0361,Farhan Shah,Male,1963-11-24,63,400012,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,A+,142000,2026-04-06
+PAT-HYD-0362,Deepak Gupta,Male,1955-02-24,71,500001,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,B+,100000,2026-06-17
+PAT-HYD-0363,Malini Bose,Female,1983-09-13,43,500081,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,B+,348000,2026-04-08
+PAT-HYD-0364,Rahul Joshi,Male,2001-01-10,25,500003,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,A+,52000,2026-07-05
+PAT-HYD-0365,Tarun Bose,Male,1995-12-03,31,110048,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,A-,319000,2026-04-26
+PAT-HYD-0366,Tanvi Sharma,Female,1978-11-06,48,110085,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,B+,66000,2026-07-08
+PAT-HYD-0367,Arjun Menon,Male,1961-09-24,65,110025,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,O+,136000,2026-09-06
+PAT-HYD-0368,Sunil Mishra,Male,1970-08-05,56,500028,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,A+,165000,2026-04-14
+PAT-HYD-0369,Deepa Nair,Female,2004-04-06,22,560100,Essential Hypertension,Cardiology,Inpatient Emergency,B+,172000,2026-06-21
+PAT-HYD-0370,Ritu Saxena,Female,1963-05-03,63,110025,Chronic Hepatitis C,Gastroenterology,Elective ICU,A+,204000,2026-08-14
+PAT-HYD-0371,Sunita Gupta,Female,1977-08-09,49,560038,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,A+,92000,2026-04-05
+PAT-HYD-0372,Vikram Mehta,Male,1983-09-14,43,110075,Major Depressive Disorder,Psychiatry,Elective ICU,B+,434000,2026-05-20
+PAT-HYD-0373,Nandini Mehta,Female,1950-08-19,76,560066,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,A+,380000,2026-09-22
+PAT-HYD-0374,Mohammed Mukherjee,Male,1977-03-06,49,560034,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,A+,231000,2026-09-10
+PAT-HYD-0375,Deepa Pillai,Female,1965-03-27,61,110085,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,B+,59000,2026-06-23
+PAT-HYD-0376,Nandini Khan,Female,1951-05-17,75,400099,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,AB+,315000,2026-05-20
+PAT-HYD-0377,Sneha Menon,Female,1996-03-19,30,110075,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,O+,69000,2026-05-09
+PAT-HYD-0378,Harish Singh,Male,1950-09-12,76,400076,Bipolar Affective Disorder,Psychiatry,Elective ICU,B+,307000,2026-04-28
+PAT-HYD-0379,Sunita Reddy,Female,1988-07-05,38,110092,Breast Carcinoma (Invasive),Oncology,Elective ICU,O+,34000,2026-06-21
+PAT-HYD-0380,Tanvi Malhotra,Female,2002-12-16,24,560076,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,B+,433000,2026-07-15
+PAT-HYD-0381,Lakshmi Pillai,Female,1974-12-22,52,500081,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,A+,395000,2026-06-09
+PAT-HYD-0382,Lakshmi Sen,Female,1979-10-21,47,500072,Major Depressive Disorder,Psychiatry,Elective ICU,B+,394000,2026-05-29
+PAT-HYD-0383,Shruti Patel,Female,1973-03-03,53,560103,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,B+,414000,2026-05-19
+PAT-HYD-0384,Rahul Rao,Male,1949-04-27,77,500028,Major Depressive Disorder,Psychiatry,Inpatient Emergency,A+,199000,2026-08-11
+PAT-HYD-0385,Fatima Pillai,Female,1976-09-13,50,500082,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,A+,265000,2026-05-01
+PAT-HYD-0386,Pooja Chauhan,Female,1975-10-18,51,400020,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,A+,398000,2026-04-07
+PAT-HYD-0387,Anil Sharma,Male,1981-01-06,45,110065,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,A-,346000,2026-08-04
+PAT-HYD-0388,Sanjay Bhat,Male,1979-09-01,47,500001,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,AB+,322000,2026-09-28
+PAT-HYD-0389,Sanjay Pandey,Male,1954-05-23,72,560076,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,AB+,250000,2026-07-28
+PAT-HYD-0390,Karthik Singh,Male,1962-09-27,64,110092,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,B+,276000,2026-04-14
+PAT-HYD-0391,Nandini Bhat,Female,1967-10-10,59,560103,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,A+,187000,2026-07-22
+PAT-HYD-0392,Sangeeta Gupta,Female,1989-11-23,37,560103,Major Depressive Disorder,Psychiatry,Outpatient Consultation,A+,44000,2026-04-30
+PAT-HYD-0393,Anjali Khan,Female,1962-03-24,64,500003,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,B+,147000,2026-06-15
+PAT-HYD-0394,Ayesha Sen,Female,2003-10-23,23,110065,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,A+,366000,2026-05-17
+PAT-HYD-0395,Kavya Mehta,Female,1983-09-10,43,560001,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,O+,107000,2026-07-17
+PAT-HYD-0396,Rohan Iyer,Male,1958-05-24,68,110048,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,AB+,350000,2026-09-08
+PAT-HYD-0397,Deepak Malhotra,Male,1958-05-14,68,400012,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,A+,252000,2026-08-31
+PAT-HYD-0398,Sunita Chauhan,Female,1965-10-19,61,110092,Essential Hypertension,Cardiology,Outpatient Consultation,B+,271000,2026-08-31
+PAT-HYD-0399,Rekha Singh,Female,1979-01-28,47,500090,Coronary Artery Disease,Cardiology,Day Care Procedure,AB-,224000,2026-05-08
+PAT-HYD-0400,Kavita Khan,Female,1950-12-06,76,500072,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,B+,175000,2026-04-21
+PAT-HYD-0401,Rajesh Joshi,Male,1988-04-25,38,560001,Breast Carcinoma (Invasive),Oncology,Elective ICU,O+,417000,2026-09-08
+PAT-HYD-0402,Manish Menon,Male,1965-07-13,61,400080,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,B+,288000,2026-08-10
+PAT-HYD-0403,Priya Saxena,Female,1985-09-07,41,500003,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,A+,130000,2026-04-06
+PAT-HYD-0404,Meera Iyer,Female,1999-07-17,27,110075,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,A+,167000,2026-07-18
+PAT-HYD-0405,Preeti Kulkarni,Female,1967-09-11,59,400080,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,O+,190000,2026-05-28
+PAT-HYD-0406,Sushma Rao,Female,1995-07-01,31,560038,Major Depressive Disorder,Psychiatry,Outpatient Consultation,O+,123000,2026-09-25
+PAT-HYD-0407,Mohammed Choudhury,Male,1960-11-26,66,500016,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,AB+,409000,2026-05-17
+PAT-HYD-0408,Manish Patel,Male,1963-02-21,63,500003,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,O+,242000,2026-06-25
+PAT-HYD-0409,Naveen Gupta,Male,1975-12-05,51,560034,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,O+,169000,2026-06-15
+PAT-HYD-0410,Vivek Kulkarni,Male,1988-10-20,38,500084,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,O+,276000,2026-04-25
+PAT-HYD-0411,Anil Nair,Male,1955-02-16,71,560025,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,A+,440000,2026-05-20
+PAT-HYD-0412,Deepak Shah,Male,1979-05-06,47,500016,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,B+,367000,2026-05-30
+PAT-HYD-0413,Divya Sharma,Female,2005-11-03,21,500082,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,B+,91000,2026-09-07
+PAT-HYD-0414,Prasad Sen,Male,1999-05-21,27,560038,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,B-,150000,2026-06-04
+PAT-HYD-0415,Mohammed Pillai,Male,1994-01-28,32,560100,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,O+,233000,2026-09-01
+PAT-HYD-0416,Kiran Mukherjee,Male,1949-01-01,77,500084,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,O+,198000,2026-06-10
+PAT-HYD-0417,Malini Sen,Female,2000-06-27,26,400012,Coronary Artery Disease,Cardiology,Elective ICU,A+,248000,2026-07-23
+PAT-HYD-0418,Tanvi Chauhan,Female,1975-07-21,51,560001,Essential Hypertension,Cardiology,Inpatient Emergency,A+,447000,2026-08-21
+PAT-HYD-0419,Praveen Kapoor,Male,1968-08-26,58,110065,Colorectal Adenocarcinoma,Oncology,Specialist Referral,B+,209000,2026-07-01
+PAT-HYD-0420,Kiran Mehta,Male,1949-12-05,77,110001,Generalized Anxiety Disorder,Psychiatry,Elective ICU,B+,240000,2026-09-19
+PAT-HYD-0421,Sanjay Bhat,Male,1985-01-23,41,110020,Rheumatoid Arthritis,Rheumatology,Specialist Referral,O+,129000,2026-04-12
+PAT-HYD-0422,Rekha Kulkarni,Female,1961-12-20,65,500081,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,O+,261000,2026-07-04
+PAT-HYD-0423,Kavita Pillai,Female,1953-09-20,73,500028,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,O+,273000,2026-06-02
+PAT-HYD-0424,Sangeeta Reddy,Female,2001-08-11,25,560066,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,A-,274000,2026-08-04
+PAT-HYD-0425,Ayesha Pillai,Female,1990-02-15,36,400092,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,B+,270000,2026-06-08
+PAT-HYD-0426,Sneha Deshmukh,Female,1958-11-01,68,500081,Chronic Hepatitis C,Gastroenterology,Specialist Referral,B+,296000,2026-09-30
+PAT-HYD-0427,Harish Pandey,Male,1966-11-10,60,110016,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,A+,189000,2026-06-29
+PAT-HYD-0428,Farhan Malhotra,Male,1951-08-11,75,110048,Rheumatoid Arthritis,Rheumatology,Elective ICU,O+,381000,2026-04-15
+PAT-HYD-0429,Tanvi Joshi,Female,1998-02-25,28,560038,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,B+,295000,2026-05-20
+PAT-HYD-0430,Tanvi Nair,Female,2003-03-16,23,500084,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,O+,69000,2026-07-27
+PAT-HYD-0431,Arjun Nair,Male,1951-07-07,75,400099,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,O+,70000,2026-06-16
+PAT-HYD-0432,Vijay Bhat,Male,1952-11-19,74,500082,Rheumatoid Arthritis,Rheumatology,Elective ICU,AB+,352000,2026-05-03
+PAT-HYD-0433,Rohan Sharma,Male,1972-12-02,54,110048,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,B+,262000,2026-05-23
+PAT-HYD-0434,Ashwin Mishra,Male,1994-12-27,32,500084,Essential Hypertension,Cardiology,Specialist Referral,B+,325000,2026-07-10
+PAT-HYD-0435,Shweta Pandey,Female,1961-04-09,65,400069,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,A-,427000,2026-08-27
+PAT-HYD-0436,Praveen Pandey,Male,1961-12-17,65,560103,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,O+,379000,2026-05-12
+PAT-HYD-0437,Arjun Rao,Male,1966-12-10,60,400020,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,O+,272000,2026-05-15
+PAT-HYD-0438,Tanvi Nair,Female,1957-06-18,69,110001,Breast Carcinoma (Invasive),Oncology,Elective ICU,B+,360000,2026-05-17
+PAT-HYD-0439,Malini Chauhan,Female,1978-01-17,48,500081,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,B+,358000,2026-09-16
+PAT-HYD-0440,Sanjay Mukherjee,Male,1955-03-10,71,560068,Coronary Artery Disease,Cardiology,Day Care Procedure,O+,119000,2026-05-15
+PAT-HYD-0441,Deepak Pillai,Male,1977-02-20,49,110048,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,214000,2026-08-01
+PAT-HYD-0442,Tanvi Mehta,Female,2002-07-13,24,400076,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A-,297000,2026-09-17
+PAT-HYD-0443,Prasad Gupta,Male,1993-10-28,33,400092,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,A+,401000,2026-05-03
+PAT-HYD-0444,Siddharth Sen,Male,1993-05-15,33,560008,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,A+,391000,2026-05-22
+PAT-HYD-0445,Sunil Patel,Male,1978-05-18,48,560068,Coronary Artery Disease,Cardiology,Day Care Procedure,A+,17000,2026-07-08
+PAT-HYD-0446,Tanvi Kapoor,Female,1996-01-05,30,400001,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,446000,2026-04-14
+PAT-HYD-0447,Ritu Das,Female,1969-09-12,57,500034,Rheumatoid Arthritis,Rheumatology,Specialist Referral,O+,127000,2026-08-14
+PAT-HYD-0448,Harish Kulkarni,Male,1995-07-18,31,110025,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,A+,124000,2026-04-14
+PAT-HYD-0449,Swati Choudhury,Female,1987-04-25,39,110092,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,B+,436000,2026-04-17
+PAT-HYD-0450,Mohammed Mehta,Male,1983-08-08,43,110092,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,O+,364000,2026-07-10
+PAT-HYD-0451,Kavya Das,Female,1998-07-09,28,110025,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,A+,435000,2026-06-27
+PAT-HYD-0452,Ritu Patel,Female,1987-11-07,39,400001,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,A+,100000,2026-05-16
+PAT-HYD-0453,Alok Verma,Male,1992-11-21,34,560034,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,O+,120000,2026-05-16
+PAT-HYD-0454,Rashmi Pillai,Female,2001-12-22,25,500090,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,B+,34000,2026-09-08
+PAT-HYD-0455,Amit Reddy,Male,1955-05-18,71,500034,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,O+,223000,2026-06-23
+PAT-HYD-0456,Rashmi Bose,Female,1978-06-01,48,400053,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,A+,343000,2026-04-25
+PAT-HYD-0457,Siddharth Sen,Male,1968-01-23,58,500034,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,AB+,163000,2026-04-08
+PAT-HYD-0458,Geeta Verma,Female,1987-08-13,39,400069,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,O+,95000,2026-05-17
+PAT-HYD-0459,Suresh Sen,Male,1980-09-10,46,500090,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,O+,20000,2026-05-12
+PAT-HYD-0460,Mohammed Patel,Male,2005-10-20,21,400069,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,171000,2026-08-08
+PAT-HYD-0461,Deepa Menon,Female,1948-11-28,78,110016,Coronary Artery Disease,Cardiology,Outpatient Consultation,A+,330000,2026-07-28
+PAT-HYD-0462,Mohammed Reddy,Male,1963-10-28,63,500028,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,O+,251000,2026-04-18
+PAT-HYD-0463,Anil Mehta,Male,2001-05-04,25,560025,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,B+,197000,2026-08-29
+PAT-HYD-0464,Mohammed Singh,Male,1966-02-07,60,400001,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,B+,352000,2026-07-14
+PAT-HYD-0465,Gaurav Mishra,Male,1982-06-14,44,560001,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,B+,379000,2026-04-19
+PAT-HYD-0466,Lakshmi Pillai,Female,1982-03-22,44,400012,Generalized Anxiety Disorder,Psychiatry,Elective ICU,B+,198000,2026-07-14
+PAT-HYD-0467,Nandini Nair,Female,1994-11-20,32,500072,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,A+,290000,2026-08-11
+PAT-HYD-0468,Preeti Saxena,Female,1965-02-24,61,500034,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,A+,338000,2026-09-23
+PAT-HYD-0469,Sushma Mishra,Female,1992-01-18,34,560068,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,AB+,256000,2026-04-16
+PAT-HYD-0470,Deepak Bose,Male,1991-10-24,35,560100,Coronary Artery Disease,Cardiology,Specialist Referral,B+,61000,2026-06-21
+PAT-HYD-0471,Rekha Sharma,Female,1963-04-28,63,110092,Colorectal Adenocarcinoma,Oncology,Specialist Referral,A+,86000,2026-06-08
+PAT-HYD-0472,Rahul Mishra,Male,1969-11-28,57,500090,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,O+,35000,2026-08-05
+PAT-HYD-0473,Divya Verma,Female,1989-06-08,37,500016,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,A+,213000,2026-06-02
+PAT-HYD-0474,Malini Patel,Female,2003-11-11,23,500081,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,A-,442000,2026-07-25
+PAT-HYD-0475,Sunil Bhat,Male,1981-06-19,45,500034,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,A+,279000,2026-06-19
+PAT-HYD-0476,Shruti Chauhan,Female,1983-08-26,43,110001,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,O+,86000,2026-06-10
+PAT-HYD-0477,Ramesh Verma,Male,1973-11-09,53,560034,Coronary Artery Disease,Cardiology,Day Care Procedure,A+,323000,2026-08-31
+PAT-HYD-0478,Praveen Das,Male,1984-12-04,42,110001,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,B+,317000,2026-08-20
+PAT-HYD-0479,Priya Malhotra,Female,2003-03-19,23,110075,Coronary Artery Disease,Cardiology,Specialist Referral,A+,35000,2026-05-07
+PAT-HYD-0480,Amit Reddy,Male,1989-03-17,37,400069,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,A-,383000,2026-04-14
+PAT-HYD-0481,Ananya Rao,Female,1977-10-16,49,110001,Coronary Artery Disease,Cardiology,Elective ICU,A+,322000,2026-08-25
+PAT-HYD-0482,Manish Mehta,Male,1973-05-06,53,400012,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,B+,50000,2026-08-03
+PAT-HYD-0483,Ayesha Iyer,Female,1999-01-07,27,110020,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,AB+,438000,2026-08-23
+PAT-HYD-0484,Rahul Deshmukh,Male,1948-10-20,78,500016,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,O+,400000,2026-08-31
+PAT-HYD-0485,Rohan Mehta,Male,1997-10-18,29,500001,Generalized Anxiety Disorder,Psychiatry,Elective ICU,O-,282000,2026-06-15
+PAT-HYD-0486,Sangeeta Patel,Female,1961-09-14,65,560038,Rheumatoid Arthritis,Rheumatology,Elective ICU,B+,194000,2026-05-03
+PAT-HYD-0487,Praveen Iyer,Male,1989-08-25,37,560038,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,AB+,321000,2026-05-14
+PAT-HYD-0488,Lakshmi Rao,Female,2005-12-24,21,500001,Breast Carcinoma (Invasive),Oncology,Specialist Referral,B+,18000,2026-06-26
+PAT-HYD-0489,Ashwin Das,Male,1985-07-12,41,500081,Coronary Artery Disease,Cardiology,Specialist Referral,B+,144000,2026-07-26
+PAT-HYD-0490,Shilpa Choudhury,Female,1966-05-22,60,400069,Rheumatoid Arthritis,Rheumatology,Specialist Referral,A+,416000,2026-05-11
+PAT-HYD-0491,Pooja Choudhury,Female,1970-09-16,56,560068,Bipolar Affective Disorder,Psychiatry,Elective ICU,B+,391000,2026-08-26
+PAT-HYD-0492,Prasad Malhotra,Male,1977-12-06,49,500081,Major Depressive Disorder,Psychiatry,Day Care Procedure,B+,425000,2026-05-13
+PAT-HYD-0493,Rahul Bose,Male,1965-01-26,61,500072,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,237000,2026-09-08
+PAT-HYD-0494,Sanjay Malhotra,Male,1982-02-20,44,500016,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,329000,2026-04-16
+PAT-HYD-0495,Tanvi Pandey,Female,2002-03-21,24,110003,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,A+,161000,2026-08-12
+PAT-HYD-0496,Harish Pandey,Male,1973-09-23,53,560038,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,A+,199000,2026-07-31
+PAT-HYD-0497,Rahul Verma,Male,1988-07-12,38,400069,Chronic Hepatitis C,Gastroenterology,Specialist Referral,B+,22000,2026-09-13
+PAT-HYD-0498,Naveen Singh,Male,1959-09-19,67,400020,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,A-,130000,2026-04-28
+PAT-HYD-0499,Karthik Kapoor,Male,1980-10-01,46,560068,Coronary Artery Disease,Cardiology,Inpatient Emergency,B+,301000,2026-09-12
+PAT-HYD-0500,Swati Nair,Female,1954-09-09,72,110025,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,O+,370000,2026-06-09
+PAT-HYD-0501,Shilpa Deshmukh,Female,1956-04-25,70,400012,Rheumatoid Arthritis,Rheumatology,Elective ICU,B+,315000,2026-09-23
+PAT-HYD-0502,Sneha Gupta,Female,2001-07-21,25,560038,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,O+,226000,2026-07-02
+PAT-HYD-0503,Ashwin Pillai,Male,1989-04-10,37,500072,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,O+,53000,2026-05-12
+PAT-HYD-0504,Rohan Khan,Male,1983-04-19,43,560076,Coronary Artery Disease,Cardiology,Outpatient Consultation,O-,270000,2026-08-10
+PAT-HYD-0505,Prasad Malhotra,Male,1950-05-07,76,560038,Major Depressive Disorder,Psychiatry,Specialist Referral,O+,197000,2026-08-22
+PAT-HYD-0506,Mohammed Kapoor,Male,2000-11-22,26,110003,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,36000,2026-05-30
+PAT-HYD-0507,Geeta Khan,Female,1974-10-28,52,560076,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,A+,158000,2026-06-21
+PAT-HYD-0508,Siddharth Mishra,Male,1997-01-17,29,400080,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,O-,272000,2026-07-04
+PAT-HYD-0509,Sangeeta Mehta,Female,1956-03-15,70,500082,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,B+,367000,2026-09-28
+PAT-HYD-0510,Vivek Rao,Male,1981-10-04,45,400001,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,O+,110000,2026-05-13
+PAT-HYD-0511,Divya Gupta,Female,1975-10-11,51,400050,Coronary Artery Disease,Cardiology,Outpatient Consultation,B+,229000,2026-04-04
+PAT-HYD-0512,Fatima Chauhan,Female,1980-05-15,46,560008,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,366000,2026-08-03
+PAT-HYD-0513,Prasad Gupta,Male,1954-04-18,72,400080,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,B+,424000,2026-08-23
+PAT-HYD-0514,Vidya Sharma,Female,1994-07-16,32,500084,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,O+,288000,2026-07-12
+PAT-HYD-0515,Meera Gupta,Female,1970-10-02,56,400069,Essential Hypertension,Cardiology,Inpatient Emergency,O+,125000,2026-07-27
+PAT-HYD-0516,Shruti Bhat,Female,1999-08-24,27,400012,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,300000,2026-07-27
+PAT-HYD-0517,Priya Menon,Female,1998-06-28,28,110085,Major Depressive Disorder,Psychiatry,Specialist Referral,B+,104000,2026-07-20
+PAT-HYD-0518,Swati Mehta,Female,1973-08-25,53,400092,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,A+,161000,2026-06-04
+PAT-HYD-0519,Kiran Reddy,Male,1965-06-14,61,110092,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,B+,55000,2026-08-20
+PAT-HYD-0520,Divya Khan,Female,1985-11-10,41,560076,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,O+,242000,2026-06-30
+PAT-HYD-0521,Shweta Reddy,Female,1994-01-05,32,560066,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,A+,122000,2026-08-19
+PAT-HYD-0522,Sneha Nair,Female,2001-08-18,25,500028,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,O+,406000,2026-09-09
+PAT-HYD-0523,Sanjay Pandey,Male,1996-02-21,30,400053,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,A+,241000,2026-04-23
+PAT-HYD-0524,Suresh Kulkarni,Male,1952-03-01,74,500016,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,B+,258000,2026-06-03
+PAT-HYD-0525,Nandini Joshi,Female,1997-12-18,29,560008,Breast Carcinoma (Invasive),Oncology,Specialist Referral,B+,237000,2026-05-19
+PAT-HYD-0526,Kavya Choudhury,Female,1975-09-08,51,500072,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,B+,148000,2026-08-22
+PAT-HYD-0527,Priya Sharma,Female,1972-03-12,54,560100,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,B+,401000,2026-05-31
+PAT-HYD-0528,Priya Mukherjee,Female,1978-05-20,48,560038,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A+,111000,2026-06-17
+PAT-HYD-0529,Ayesha Malhotra,Female,1995-12-24,31,400053,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,B+,55000,2026-06-14
+PAT-HYD-0530,Aditya Mukherjee,Male,1954-10-26,72,560076,Bipolar Affective Disorder,Psychiatry,Specialist Referral,O+,429000,2026-07-24
+PAT-HYD-0531,Deepa Chauhan,Female,2001-03-05,25,560100,Essential Hypertension,Cardiology,Specialist Referral,O+,246000,2026-07-23
+PAT-HYD-0532,Deepa Khan,Female,2004-03-02,22,110025,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,A+,159000,2026-07-24
+PAT-HYD-0533,Ashwin Joshi,Male,1959-01-08,67,500072,Coronary Artery Disease,Cardiology,Outpatient Consultation,A+,190000,2026-06-15
+PAT-HYD-0534,Vidya Das,Female,1974-06-15,52,500016,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,A+,43000,2026-07-24
+PAT-HYD-0535,Ananya Aggarwal,Female,1975-03-07,51,560068,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,B+,77000,2026-07-29
+PAT-HYD-0536,Sushma Joshi,Female,1990-12-02,36,560025,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,O+,281000,2026-04-13
+PAT-HYD-0537,Rohan Bose,Male,1962-05-11,64,560001,Colorectal Adenocarcinoma,Oncology,Specialist Referral,O+,281000,2026-08-30
+PAT-HYD-0538,Ritu Bhat,Female,1986-04-12,40,500028,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,O+,135000,2026-04-21
+PAT-HYD-0539,Swati Sharma,Female,1995-05-19,31,500082,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,O+,36000,2026-05-05
+PAT-HYD-0540,Tanvi Pandey,Female,1996-06-25,30,500072,Major Depressive Disorder,Psychiatry,Inpatient Emergency,A+,366000,2026-04-25
+PAT-HYD-0541,Kavya Mukherjee,Female,1965-01-02,61,400020,Colorectal Adenocarcinoma,Oncology,Specialist Referral,A+,420000,2026-09-03
+PAT-HYD-0542,Rohan Malhotra,Male,1985-09-26,41,400020,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,AB+,25000,2026-04-07
+PAT-HYD-0543,Fatima Sen,Female,1997-05-02,29,110003,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,B+,292000,2026-04-05
+PAT-HYD-0544,Deepa Mishra,Female,1994-09-12,32,400001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,B+,298000,2026-08-20
+PAT-HYD-0545,Aditya Iyer,Male,1977-05-27,49,560068,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,412000,2026-04-20
+PAT-HYD-0546,Preeti Reddy,Female,1949-01-20,77,400050,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,O+,384000,2026-09-14
+PAT-HYD-0547,Deepa Kulkarni,Female,1962-08-25,64,110048,Coronary Artery Disease,Cardiology,Day Care Procedure,O+,224000,2026-04-19
+PAT-HYD-0548,Sneha Nair,Female,1972-11-03,54,500016,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,O-,31000,2026-08-10
+PAT-HYD-0549,Rohan Rao,Male,1999-01-19,27,400053,Colorectal Adenocarcinoma,Oncology,Specialist Referral,B+,374000,2026-05-02
+PAT-HYD-0550,Sunita Choudhury,Female,1991-10-23,35,500034,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,O-,350000,2026-05-28
+PAT-HYD-0551,Karthik Das,Male,1965-01-12,61,110048,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,O-,435000,2026-06-28
+PAT-HYD-0552,Farhan Pandey,Male,1988-09-02,38,500034,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,B+,280000,2026-09-06
+PAT-HYD-0553,Prasad Malhotra,Male,1971-07-07,55,560025,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,O+,335000,2026-08-16
+PAT-HYD-0554,Preeti Nair,Female,1956-11-19,70,400020,Colorectal Adenocarcinoma,Oncology,Elective ICU,B+,68000,2026-08-19
+PAT-HYD-0555,Naveen Bose,Male,1973-06-22,53,560001,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,AB-,195000,2026-07-12
+PAT-HYD-0556,Sangeeta Choudhury,Female,1979-11-14,47,400001,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,124000,2026-06-26
+PAT-HYD-0557,Fatima Joshi,Female,1977-07-01,49,500016,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,84000,2026-07-15
+PAT-HYD-0558,Anil Malhotra,Male,1992-06-01,34,560076,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,B+,307000,2026-05-07
+PAT-HYD-0559,Mohammed Patel,Male,1976-06-05,50,500084,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,142000,2026-08-02
+PAT-HYD-0560,Vidya Singh,Female,2000-10-13,26,110065,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,A+,385000,2026-07-09
+PAT-HYD-0561,Pooja Deshmukh,Female,1953-12-23,73,110065,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,AB+,343000,2026-07-16
+PAT-HYD-0562,Prasad Das,Male,1969-07-03,57,500028,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,O+,433000,2026-06-11
+PAT-HYD-0563,Kavya Chauhan,Female,1998-04-24,28,110085,Generalized Anxiety Disorder,Psychiatry,Elective ICU,A+,42000,2026-07-14
+PAT-HYD-0564,Manoj Aggarwal,Male,1969-03-11,57,110016,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,A+,359000,2026-06-22
+PAT-HYD-0565,Sushma Pandey,Female,1969-09-03,57,560038,Chronic Hepatitis C,Gastroenterology,Elective ICU,A+,90000,2026-08-28
+PAT-HYD-0566,Ananya Deshmukh,Female,1969-12-02,57,110048,Chronic Hepatitis C,Gastroenterology,Elective ICU,A+,271000,2026-06-11
+PAT-HYD-0567,Siddharth Iyer,Male,1975-09-07,51,110003,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,O+,302000,2026-04-26
+PAT-HYD-0568,Ramesh Verma,Male,1988-07-11,38,110065,Essential Hypertension,Cardiology,Elective ICU,A+,231000,2026-06-29
+PAT-HYD-0569,Deepa Khan,Female,1983-10-21,43,500003,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,330000,2026-06-09
+PAT-HYD-0570,Karthik Patel,Male,1953-04-07,73,400050,Coronary Artery Disease,Cardiology,Inpatient Emergency,O+,72000,2026-09-17
+PAT-HYD-0571,Manish Kapoor,Male,1996-05-01,30,400012,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,O+,245000,2026-06-02
+PAT-HYD-0572,Manoj Rao,Male,1958-09-07,68,560034,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,B+,295000,2026-05-30
+PAT-HYD-0573,Ashwin Shah,Male,1963-01-13,63,110075,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,O+,145000,2026-08-18
+PAT-HYD-0574,Anil Rao,Male,1955-12-20,71,560076,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,B+,49000,2026-06-23
+PAT-HYD-0575,Anjali Chauhan,Female,1963-06-28,63,500081,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,A+,133000,2026-06-25
+PAT-HYD-0576,Tarun Khan,Male,1974-10-18,52,500072,Coronary Artery Disease,Cardiology,Elective ICU,A+,302000,2026-09-25
+PAT-HYD-0577,Ramesh Kapoor,Male,1972-05-11,54,110003,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,O+,192000,2026-04-08
+PAT-HYD-0578,Fatima Bhat,Female,1986-04-17,40,560076,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A+,213000,2026-09-23
+PAT-HYD-0579,Divya Iyer,Female,1984-07-22,42,500084,Essential Hypertension,Cardiology,Specialist Referral,O+,362000,2026-04-27
+PAT-HYD-0580,Praveen Malhotra,Male,1969-03-14,57,560103,Generalized Anxiety Disorder,Psychiatry,Elective ICU,O+,292000,2026-08-28
+PAT-HYD-0581,Alok Iyer,Male,1968-09-22,58,560025,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,84000,2026-06-12
+PAT-HYD-0582,Alok Kapoor,Male,1969-03-11,57,500034,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,109000,2026-07-11
+PAT-HYD-0583,Prasad Sharma,Male,1957-06-14,69,400076,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,B+,92000,2026-08-13
+PAT-HYD-0584,Suresh Reddy,Male,2004-10-20,22,560076,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,B+,320000,2026-08-02
+PAT-HYD-0585,Vivek Sharma,Male,1983-02-23,43,110001,Coronary Artery Disease,Cardiology,Specialist Referral,B+,255000,2026-04-17
+PAT-HYD-0586,Pooja Chauhan,Female,1981-08-16,45,500084,Coronary Artery Disease,Cardiology,Inpatient Emergency,A+,224000,2026-09-27
+PAT-HYD-0587,Shweta Malhotra,Female,1958-11-07,68,560034,Essential Hypertension,Cardiology,Elective ICU,A+,330000,2026-05-28
+PAT-HYD-0588,Sangeeta Joshi,Female,1949-04-14,77,400069,Rheumatoid Arthritis,Rheumatology,Elective ICU,A+,383000,2026-07-12
+PAT-HYD-0589,Geeta Sen,Female,1969-10-18,57,110020,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,AB+,281000,2026-09-03
+PAT-HYD-0590,Neha Pillai,Female,1949-01-08,77,110020,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,300000,2026-06-23
+PAT-HYD-0591,Arjun Singh,Male,1977-07-10,49,560100,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,A+,328000,2026-09-17
+PAT-HYD-0592,Karthik Pillai,Male,1964-08-03,62,110016,Essential Hypertension,Cardiology,Specialist Referral,A+,371000,2026-05-14
+PAT-HYD-0593,Sunil Menon,Male,1985-08-01,41,560008,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,B+,247000,2026-09-07
+PAT-HYD-0594,Swati Shah,Female,1964-12-26,62,560001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,O+,73000,2026-06-07
+PAT-HYD-0595,Ananya Kulkarni,Female,1960-07-24,66,110016,Breast Carcinoma (Invasive),Oncology,Elective ICU,O-,296000,2026-06-25
+PAT-HYD-0596,Siddharth Reddy,Male,1984-10-28,42,500090,Coronary Artery Disease,Cardiology,Outpatient Consultation,AB+,408000,2026-09-17
+PAT-HYD-0597,Meera Singh,Female,1959-08-10,67,560008,Essential Hypertension,Cardiology,Outpatient Consultation,AB+,16000,2026-04-24
+PAT-HYD-0598,Priya Joshi,Female,1974-08-18,52,500001,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,AB+,126000,2026-05-03
+PAT-HYD-0599,Neha Menon,Female,1977-02-20,49,110085,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,A+,157000,2026-04-25
+PAT-HYD-0600,Amit Reddy,Male,1996-01-21,30,400020,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,A+,356000,2026-05-06
+PAT-HYD-0601,Swati Kapoor,Female,2000-01-04,26,400076,Coronary Artery Disease,Cardiology,Day Care Procedure,A+,327000,2026-04-14
+PAT-HYD-0602,Karthik Sen,Male,1968-06-02,58,500072,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A+,209000,2026-09-13
+PAT-HYD-0603,Shruti Aggarwal,Female,2001-05-16,25,500084,Essential Hypertension,Cardiology,Day Care Procedure,O+,183000,2026-05-19
+PAT-HYD-0604,Rekha Rao,Female,1961-04-20,65,500028,Essential Hypertension,Cardiology,Specialist Referral,B+,59000,2026-05-30
+PAT-HYD-0605,Shweta Pandey,Female,1951-06-09,75,110020,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,AB-,81000,2026-04-26
+PAT-HYD-0606,Rekha Sen,Female,1965-08-16,61,560008,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,O+,114000,2026-09-30
+PAT-HYD-0607,Rajesh Joshi,Male,1965-02-24,61,560034,Rheumatoid Arthritis,Rheumatology,Elective ICU,O+,226000,2026-09-19
+PAT-HYD-0608,Fatima Aggarwal,Female,1954-11-07,72,500001,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,A+,145000,2026-09-13
+PAT-HYD-0609,Meera Kulkarni,Female,1970-06-25,56,500001,Essential Hypertension,Cardiology,Day Care Procedure,O+,217000,2026-05-08
+PAT-HYD-0610,Farhan Reddy,Male,1993-06-27,33,400012,Generalized Anxiety Disorder,Psychiatry,Elective ICU,O+,423000,2026-09-21
+PAT-HYD-0611,Rohan Iyer,Male,1965-08-28,61,110025,Generalized Anxiety Disorder,Psychiatry,Elective ICU,B+,395000,2026-09-16
+PAT-HYD-0612,Shilpa Sen,Female,1962-06-18,64,110025,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,A+,424000,2026-07-02
+PAT-HYD-0613,Suresh Gupta,Male,1952-01-11,74,400053,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,B+,307000,2026-04-28
+PAT-HYD-0614,Pooja Pandey,Female,1998-05-23,28,400001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,A+,59000,2026-05-26
+PAT-HYD-0615,Deepak Joshi,Male,1952-05-07,74,110020,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,A+,416000,2026-09-21
+PAT-HYD-0616,Vijay Verma,Male,1977-09-01,49,110001,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,B+,189000,2026-05-30
+PAT-HYD-0617,Sushma Khan,Female,1996-02-27,30,110020,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,AB-,385000,2026-09-21
+PAT-HYD-0618,Ayesha Shah,Female,1950-09-04,76,500001,Bipolar Affective Disorder,Psychiatry,Specialist Referral,O-,59000,2026-07-07
+PAT-HYD-0619,Malini Patel,Female,1999-09-25,27,560103,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,B+,342000,2026-08-08
+PAT-HYD-0620,Deepa Rao,Female,1987-05-18,39,400001,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,B+,154000,2026-08-23
+PAT-HYD-0621,Sanjay Nair,Male,2005-10-18,21,110016,Essential Hypertension,Cardiology,Day Care Procedure,A+,296000,2026-07-11
+PAT-HYD-0622,Kavita Shah,Female,1954-05-19,72,560066,Coronary Artery Disease,Cardiology,Specialist Referral,A+,188000,2026-05-15
+PAT-HYD-0623,Sunita Iyer,Female,2004-08-22,22,500028,Essential Hypertension,Cardiology,Inpatient Emergency,B+,233000,2026-06-22
+PAT-HYD-0624,Ashwin Pandey,Male,1948-10-21,78,400092,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,B+,433000,2026-08-11
+PAT-HYD-0625,Vijay Mukherjee,Male,1957-08-19,69,500084,Essential Hypertension,Cardiology,Elective ICU,O+,64000,2026-06-06
+PAT-HYD-0626,Anjali Bhat,Female,1960-08-16,66,560038,Major Depressive Disorder,Psychiatry,Specialist Referral,A+,147000,2026-06-29
+PAT-HYD-0627,Pooja Shah,Female,1963-06-26,63,400001,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,B+,258000,2026-09-02
+PAT-HYD-0628,Ritu Joshi,Female,1951-03-10,75,400020,Breast Carcinoma (Invasive),Oncology,Specialist Referral,B+,67000,2026-06-19
+PAT-HYD-0629,Manoj Aggarwal,Male,1964-02-26,62,560103,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,B+,226000,2026-07-31
+PAT-HYD-0630,Naveen Reddy,Male,1975-07-03,51,400012,Major Depressive Disorder,Psychiatry,Specialist Referral,O+,235000,2026-06-11
+PAT-HYD-0631,Nandini Shah,Female,1990-03-22,36,500034,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,O-,443000,2026-05-29
+PAT-HYD-0632,Gaurav Pandey,Male,1976-06-18,50,500081,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,B+,222000,2026-09-13
+PAT-HYD-0633,Vivek Pillai,Male,1967-07-11,59,110003,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,O+,126000,2026-08-26
+PAT-HYD-0634,Siddharth Iyer,Male,1963-03-15,63,110025,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,243000,2026-08-11
+PAT-HYD-0635,Vivek Saxena,Male,1985-05-19,41,560103,Generalized Anxiety Disorder,Psychiatry,Elective ICU,O-,382000,2026-07-04
+PAT-HYD-0636,Gaurav Sharma,Male,1966-09-13,60,500084,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,A+,296000,2026-09-17
+PAT-HYD-0637,Ashwin Aggarwal,Male,1953-06-04,73,560100,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,A+,374000,2026-05-02
+PAT-HYD-0638,Rashmi Khan,Female,1960-07-13,66,400053,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,B+,258000,2026-08-26
+PAT-HYD-0639,Naveen Bose,Male,1952-06-27,74,400076,Coronary Artery Disease,Cardiology,Outpatient Consultation,A+,83000,2026-09-28
+PAT-HYD-0640,Alok Sharma,Male,1996-12-16,30,400080,Coronary Artery Disease,Cardiology,Elective ICU,A+,248000,2026-04-05
+PAT-HYD-0641,Geeta Reddy,Female,1976-09-14,50,110048,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,B+,130000,2026-08-14
+PAT-HYD-0642,Geeta Sharma,Female,1969-08-28,57,560066,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,294000,2026-05-06
+PAT-HYD-0643,Sunita Patel,Female,1969-08-23,57,400050,Essential Hypertension,Cardiology,Inpatient Emergency,B+,87000,2026-05-19
+PAT-HYD-0644,Neha Kulkarni,Female,2000-09-20,26,500072,Major Depressive Disorder,Psychiatry,Inpatient Emergency,B+,365000,2026-04-21
+PAT-HYD-0645,Geeta Patel,Female,1948-06-18,78,500001,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,B+,308000,2026-07-08
+PAT-HYD-0646,Fatima Das,Female,1987-05-06,39,500016,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,AB+,387000,2026-05-09
+PAT-HYD-0647,Sunita Bhat,Female,1975-10-06,51,110065,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,O+,429000,2026-04-24
+PAT-HYD-0648,Anil Deshmukh,Male,2000-03-17,26,500034,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,O+,82000,2026-04-26
+PAT-HYD-0649,Lakshmi Chauhan,Female,1989-01-24,37,500082,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,393000,2026-08-23
+PAT-HYD-0650,Fatima Das,Female,1994-05-26,32,560066,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,A+,31000,2026-07-05
+PAT-HYD-0651,Suresh Pandey,Male,1953-03-27,73,110003,Rheumatoid Arthritis,Rheumatology,Elective ICU,AB-,136000,2026-04-14
+PAT-HYD-0652,Preeti Bhat,Female,1995-04-19,31,400020,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,O+,41000,2026-08-19
+PAT-HYD-0653,Ayesha Deshmukh,Female,1986-08-24,40,110025,Major Depressive Disorder,Psychiatry,Elective ICU,B+,257000,2026-07-25
+PAT-HYD-0654,Aditya Chauhan,Male,1978-01-10,48,400092,Chronic Hepatitis C,Gastroenterology,Specialist Referral,O+,364000,2026-09-20
+PAT-HYD-0655,Vijay Aggarwal,Male,1965-06-28,61,400080,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,AB+,186000,2026-07-23
+PAT-HYD-0656,Vidya Nair,Female,1989-11-19,37,400069,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,O+,390000,2026-04-11
+PAT-HYD-0657,Aditya Khan,Male,1962-12-06,64,400001,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,A+,440000,2026-09-13
+PAT-HYD-0658,Praveen Nair,Male,1972-02-22,54,400092,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,A+,143000,2026-08-12
+PAT-HYD-0659,Rajesh Pandey,Male,2000-01-20,26,560034,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,O+,59000,2026-04-29
+PAT-HYD-0660,Sunil Mehta,Male,1957-11-19,69,560008,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,A+,144000,2026-07-17
+PAT-HYD-0661,Anjali Kapoor,Female,2001-11-15,25,560076,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,146000,2026-08-20
+PAT-HYD-0662,Sanjay Mukherjee,Male,2002-07-13,24,400012,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,A+,106000,2026-06-10
+PAT-HYD-0663,Rohan Kapoor,Male,1993-10-13,33,560008,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,B+,291000,2026-06-12
+PAT-HYD-0664,Manish Bhat,Male,1999-08-23,27,560068,Essential Hypertension,Cardiology,Inpatient Emergency,A+,307000,2026-07-28
+PAT-HYD-0665,Priya Saxena,Female,1974-03-21,52,500001,Generalized Anxiety Disorder,Psychiatry,Elective ICU,A+,151000,2026-08-23
+PAT-HYD-0666,Malini Bose,Female,1969-01-17,57,110003,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,B+,291000,2026-08-04
+PAT-HYD-0667,Sunil Shah,Male,1953-08-04,73,110065,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,O-,185000,2026-04-09
+PAT-HYD-0668,Ayesha Patel,Female,1965-11-03,61,400050,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,AB+,56000,2026-06-05
+PAT-HYD-0669,Rashmi Rao,Female,1994-09-02,32,400053,Colorectal Adenocarcinoma,Oncology,Elective ICU,A+,69000,2026-04-22
+PAT-HYD-0670,Ritu Verma,Female,1949-11-15,77,560025,Coronary Artery Disease,Cardiology,Inpatient Emergency,A+,383000,2026-05-02
+PAT-HYD-0671,Rohan Bose,Male,2001-09-21,25,560103,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,B+,23000,2026-09-21
+PAT-HYD-0672,Sunita Khan,Female,1955-12-02,71,400069,Essential Hypertension,Cardiology,Specialist Referral,A+,249000,2026-04-10
+PAT-HYD-0673,Prasad Mishra,Male,1991-02-02,35,500090,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,O+,331000,2026-09-19
+PAT-HYD-0674,Ashwin Bhat,Male,1997-01-06,29,500028,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,B+,248000,2026-04-27
+PAT-HYD-0675,Farhan Mishra,Male,2001-02-04,25,110003,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,O+,47000,2026-08-10
+PAT-HYD-0676,Swati Das,Female,1952-12-22,74,400069,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,A+,294000,2026-08-26
+PAT-HYD-0677,Shruti Das,Female,1992-01-19,34,560008,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,A+,87000,2026-06-16
+PAT-HYD-0678,Ashwin Choudhury,Male,1970-03-15,56,560066,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,B+,66000,2026-04-22
+PAT-HYD-0679,Sushma Reddy,Female,2004-08-03,22,500001,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,A+,376000,2026-04-17
+PAT-HYD-0680,Shweta Shah,Female,1954-08-23,72,500084,Major Depressive Disorder,Psychiatry,Day Care Procedure,A+,282000,2026-06-07
+PAT-HYD-0681,Divya Reddy,Female,1966-12-02,60,110085,Coronary Artery Disease,Cardiology,Specialist Referral,O+,60000,2026-04-23
+PAT-HYD-0682,Fatima Menon,Female,2005-09-08,21,560025,Essential Hypertension,Cardiology,Inpatient Emergency,B-,331000,2026-06-30
+PAT-HYD-0683,Karthik Mukherjee,Male,1965-11-07,61,560076,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,A+,365000,2026-06-01
+PAT-HYD-0684,Pooja Reddy,Female,1963-01-02,63,400050,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,A+,186000,2026-04-26
+PAT-HYD-0685,Sunita Nair,Female,1958-01-18,68,560008,Coronary Artery Disease,Cardiology,Elective ICU,O+,278000,2026-09-01
+PAT-HYD-0686,Tarun Malhotra,Male,1959-08-19,67,110075,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,B+,132000,2026-09-02
+PAT-HYD-0687,Divya Nair,Female,1990-12-14,36,560025,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,AB+,256000,2026-05-04
+PAT-HYD-0688,Sunita Saxena,Female,1978-03-07,48,110092,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,A+,84000,2026-06-05
+PAT-HYD-0689,Alok Choudhury,Male,1988-04-11,38,500084,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,O+,158000,2026-08-27
+PAT-HYD-0690,Kiran Joshi,Male,1976-07-06,50,400012,Major Depressive Disorder,Psychiatry,Specialist Referral,AB+,95000,2026-04-20
+PAT-HYD-0691,Gaurav Aggarwal,Male,1951-04-03,75,400076,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,B+,317000,2026-06-01
+PAT-HYD-0692,Lakshmi Sharma,Female,1959-07-24,67,560066,Major Depressive Disorder,Psychiatry,Specialist Referral,B+,128000,2026-05-02
+PAT-HYD-0693,Vijay Mishra,Male,1948-01-14,78,500016,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,AB-,32000,2026-06-14
+PAT-HYD-0694,Ritu Das,Female,1954-12-27,72,500081,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,B+,300000,2026-09-27
+PAT-HYD-0695,Deepa Iyer,Female,1983-05-08,43,500072,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,B+,97000,2026-06-05
+PAT-HYD-0696,Karthik Joshi,Male,1956-03-28,70,400069,Coronary Artery Disease,Cardiology,Day Care Procedure,O+,335000,2026-06-04
+PAT-HYD-0697,Kiran Bhat,Male,2001-07-23,25,400012,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,A+,400000,2026-07-23
+PAT-HYD-0698,Harish Mehta,Male,2000-10-11,26,500028,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,O-,41000,2026-09-02
+PAT-HYD-0699,Fatima Joshi,Female,1966-01-12,60,400050,Coronary Artery Disease,Cardiology,Inpatient Emergency,O+,302000,2026-08-09
+PAT-HYD-0700,Manoj Malhotra,Male,1971-02-21,55,110001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,O-,374000,2026-08-08
+PAT-HYD-0701,Manoj Choudhury,Male,1948-05-17,78,400080,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,A+,191000,2026-06-07
+PAT-HYD-0702,Rekha Kulkarni,Female,1952-02-16,74,110025,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,O+,246000,2026-04-25
+PAT-HYD-0703,Vidya Mehta,Female,1961-02-07,65,400099,Essential Hypertension,Cardiology,Outpatient Consultation,A+,162000,2026-09-11
+PAT-HYD-0704,Rahul Gupta,Male,1998-12-05,28,110003,Coronary Artery Disease,Cardiology,Specialist Referral,AB+,336000,2026-09-25
+PAT-HYD-0705,Shweta Mehta,Female,1971-03-16,55,400020,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,B+,164000,2026-08-13
+PAT-HYD-0706,Rajesh Chauhan,Male,1954-04-27,72,110020,Colorectal Adenocarcinoma,Oncology,Specialist Referral,B+,190000,2026-04-16
+PAT-HYD-0707,Ritu Mishra,Female,1963-12-17,63,110048,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,B+,82000,2026-07-14
+PAT-HYD-0708,Harish Gupta,Male,1991-08-12,35,560100,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,O+,195000,2026-07-20
+PAT-HYD-0709,Pooja Pandey,Female,1995-12-18,31,560100,Coronary Artery Disease,Cardiology,Outpatient Consultation,A-,97000,2026-08-01
+PAT-HYD-0710,Amit Khan,Male,1969-03-15,57,560068,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,A+,377000,2026-09-22
+PAT-HYD-0711,Fatima Iyer,Female,1982-08-18,44,560001,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,222000,2026-05-26
+PAT-HYD-0712,Karthik Kapoor,Male,1985-03-01,41,110025,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,B+,257000,2026-07-18
+PAT-HYD-0713,Harish Mishra,Male,1959-08-11,67,500082,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,B+,86000,2026-04-10
+PAT-HYD-0714,Anil Sharma,Male,1980-10-27,46,560038,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,B+,43000,2026-04-28
+PAT-HYD-0715,Gaurav Kulkarni,Male,1991-05-07,35,500003,Essential Hypertension,Cardiology,Elective ICU,B+,361000,2026-04-12
+PAT-HYD-0716,Aditya Bose,Male,1993-08-11,33,110085,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,B+,356000,2026-06-30
+PAT-HYD-0717,Kavita Shah,Female,1951-07-12,75,400053,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,A+,194000,2026-07-14
+PAT-HYD-0718,Sangeeta Aggarwal,Female,2000-04-24,26,400092,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,AB-,162000,2026-08-20
+PAT-HYD-0719,Preeti Saxena,Female,1979-03-27,47,110075,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,A+,170000,2026-06-01
+PAT-HYD-0720,Ananya Kapoor,Female,1968-07-03,58,500001,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,O+,227000,2026-08-17
+PAT-HYD-0721,Tanvi Mishra,Female,1957-03-07,69,560008,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,B+,266000,2026-09-20
+PAT-HYD-0722,Shruti Mishra,Female,1986-08-18,40,400099,Major Depressive Disorder,Psychiatry,Inpatient Emergency,A+,93000,2026-07-25
+PAT-HYD-0723,Rashmi Pillai,Female,1965-08-04,61,560100,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,A+,29000,2026-08-31
+PAT-HYD-0724,Ritu Verma,Female,1967-12-12,59,110075,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,B+,336000,2026-04-08
+PAT-HYD-0725,Tanvi Pillai,Female,1998-06-17,28,110065,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,O+,312000,2026-09-16
+PAT-HYD-0726,Manoj Joshi,Male,1949-12-05,77,400020,Coronary Artery Disease,Cardiology,Day Care Procedure,A+,229000,2026-04-21
+PAT-HYD-0727,Sunita Singh,Female,1987-09-21,39,500034,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,A+,406000,2026-09-06
+PAT-HYD-0728,Naveen Khan,Male,1950-06-27,76,560103,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,O+,64000,2026-05-17
+PAT-HYD-0729,Shruti Iyer,Female,2005-03-17,21,560100,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,O+,189000,2026-08-20
+PAT-HYD-0730,Arjun Iyer,Male,1973-04-27,53,560025,Rheumatoid Arthritis,Rheumatology,Specialist Referral,AB+,368000,2026-05-19
+PAT-HYD-0731,Praveen Joshi,Male,2001-02-27,25,500084,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,A+,174000,2026-04-07
+PAT-HYD-0732,Kavita Pillai,Female,1977-10-17,49,400012,Coronary Artery Disease,Cardiology,Inpatient Emergency,O+,396000,2026-08-31
+PAT-HYD-0733,Suresh Chauhan,Male,1961-03-23,65,560038,Bipolar Affective Disorder,Psychiatry,Outpatient Consultation,A+,55000,2026-06-14
+PAT-HYD-0734,Vikram Sharma,Male,1956-08-25,70,400080,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,A+,421000,2026-04-15
+PAT-HYD-0735,Rohan Nair,Male,1989-01-03,37,560103,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,A+,415000,2026-08-30
+PAT-HYD-0736,Gaurav Saxena,Male,1993-03-22,33,400020,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,A+,311000,2026-07-03
+PAT-HYD-0737,Pooja Chauhan,Female,1973-12-20,53,560066,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,B+,434000,2026-05-05
+PAT-HYD-0738,Aditya Rao,Male,1960-04-10,66,560001,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,O+,386000,2026-09-05
+PAT-HYD-0739,Vijay Kulkarni,Male,1951-12-16,75,400050,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,359000,2026-09-03
+PAT-HYD-0740,Farhan Choudhury,Male,1981-07-07,45,110016,Major Depressive Disorder,Psychiatry,Day Care Procedure,B+,78000,2026-06-03
+PAT-HYD-0741,Aditya Iyer,Male,1974-06-23,52,560100,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,O+,182000,2026-05-27
+PAT-HYD-0742,Sunil Singh,Male,1976-10-24,50,560103,Colorectal Adenocarcinoma,Oncology,Elective ICU,A-,130000,2026-05-12
+PAT-HYD-0743,Meera Chauhan,Female,1978-04-28,48,500034,Generalized Anxiety Disorder,Psychiatry,Elective ICU,O+,362000,2026-06-28
+PAT-HYD-0744,Rajesh Mehta,Male,1974-11-04,52,400069,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,B+,76000,2026-08-25
+PAT-HYD-0745,Ayesha Shah,Female,1968-02-24,58,560001,Essential Hypertension,Cardiology,Outpatient Consultation,B+,188000,2026-08-10
+PAT-HYD-0746,Sneha Malhotra,Female,1952-07-24,74,110003,Bipolar Affective Disorder,Psychiatry,Specialist Referral,O+,318000,2026-07-23
+PAT-HYD-0747,Fatima Deshmukh,Female,1963-10-13,63,110003,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,A+,70000,2026-08-30
+PAT-HYD-0748,Ritu Deshmukh,Female,1991-11-05,35,500003,Essential Hypertension,Cardiology,Inpatient Emergency,O+,270000,2026-04-10
+PAT-HYD-0749,Rahul Bose,Male,1967-11-11,59,500090,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,O+,404000,2026-09-11
+PAT-HYD-0750,Vidya Joshi,Female,1993-05-22,33,110003,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,B+,190000,2026-05-15
+PAT-HYD-0751,Siddharth Patel,Male,1978-02-13,48,400092,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,AB+,250000,2026-09-21
+PAT-HYD-0752,Rahul Aggarwal,Male,1963-05-23,63,560001,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,B+,381000,2026-06-23
+PAT-HYD-0753,Sushma Nair,Female,1969-11-16,57,110048,Colorectal Adenocarcinoma,Oncology,Elective ICU,B+,258000,2026-05-10
+PAT-HYD-0754,Aditya Patel,Male,1980-05-16,46,110075,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,O+,407000,2026-07-20
+PAT-HYD-0755,Sunita Sharma,Female,1968-01-05,58,400050,HIV-1 Positive Infection,Infectious Diseases,Specialist Referral,O+,28000,2026-04-23
+PAT-HYD-0756,Ayesha Nair,Female,1978-06-12,48,400076,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,A+,141000,2026-08-01
+PAT-HYD-0757,Shilpa Verma,Female,1961-02-28,65,560103,Essential Hypertension,Cardiology,Inpatient Emergency,B+,290000,2026-07-09
+PAT-HYD-0758,Karthik Mehta,Male,1950-07-19,76,110016,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,B+,371000,2026-06-02
+PAT-HYD-0759,Manoj Bose,Male,1969-07-11,57,110065,Essential Hypertension,Cardiology,Inpatient Emergency,O+,368000,2026-04-11
+PAT-HYD-0760,Manoj Deshmukh,Male,1973-11-11,53,560001,Breast Carcinoma (Invasive),Oncology,Elective ICU,A+,118000,2026-05-26
+PAT-HYD-0761,Farhan Chauhan,Male,1971-04-10,55,560068,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,A+,220000,2026-08-04
+PAT-HYD-0762,Ashwin Chauhan,Male,1968-02-19,58,400012,Bipolar Affective Disorder,Psychiatry,Specialist Referral,A+,258000,2026-06-13
+PAT-HYD-0763,Deepak Das,Male,2001-11-27,25,560103,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,O+,354000,2026-05-15
+PAT-HYD-0764,Deepa Menon,Female,1980-05-20,46,110016,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,O+,107000,2026-09-26
+PAT-HYD-0765,Gaurav Deshmukh,Male,1992-11-27,34,400099,Bipolar Affective Disorder,Psychiatry,Specialist Referral,O-,429000,2026-04-26
+PAT-HYD-0766,Kavya Mishra,Female,1959-11-02,67,110020,Major Depressive Disorder,Psychiatry,Outpatient Consultation,B+,138000,2026-08-23
+PAT-HYD-0767,Sangeeta Menon,Female,1979-06-28,47,500034,Colorectal Adenocarcinoma,Oncology,Elective ICU,A+,151000,2026-07-19
+PAT-HYD-0768,Sanjay Mehta,Male,1967-04-13,59,560066,Essential Hypertension,Cardiology,Inpatient Emergency,A+,140000,2026-07-13
+PAT-HYD-0769,Ritu Aggarwal,Female,1978-07-21,48,500016,Major Depressive Disorder,Psychiatry,Outpatient Consultation,A+,29000,2026-07-26
+PAT-HYD-0770,Anjali Aggarwal,Female,1994-11-28,32,500016,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,B+,43000,2026-09-09
+PAT-HYD-0771,Geeta Singh,Female,1950-02-14,76,400050,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,O+,218000,2026-08-26
+PAT-HYD-0772,Mohammed Mishra,Male,1958-09-04,68,110020,Colorectal Adenocarcinoma,Oncology,Specialist Referral,O+,143000,2026-05-26
+PAT-HYD-0773,Ramesh Pandey,Male,1998-06-11,28,110075,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,B+,231000,2026-08-06
+PAT-HYD-0774,Mohammed Reddy,Male,1992-05-15,34,400076,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,AB+,266000,2026-05-17
+PAT-HYD-0775,Tanvi Nair,Female,1985-09-14,41,110001,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,A+,416000,2026-08-24
+PAT-HYD-0776,Ritu Shah,Female,1982-05-01,44,110085,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,O+,368000,2026-04-12
+PAT-HYD-0777,Sanjay Aggarwal,Male,1981-05-21,45,400050,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,O+,288000,2026-08-01
+PAT-HYD-0778,Ayesha Sharma,Female,1980-05-10,46,500072,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,O+,167000,2026-08-08
+PAT-HYD-0779,Vijay Joshi,Male,1965-06-26,61,400076,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,A+,436000,2026-05-28
+PAT-HYD-0780,Preeti Menon,Female,1952-06-23,74,400080,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,AB+,437000,2026-08-20
+PAT-HYD-0781,Rekha Verma,Female,1983-07-20,43,110048,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,B+,405000,2026-09-17
+PAT-HYD-0782,Alok Joshi,Male,1955-11-05,71,500001,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,A+,175000,2026-05-06
+PAT-HYD-0783,Mohammed Reddy,Male,1990-09-23,36,500084,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,B+,420000,2026-07-11
+PAT-HYD-0784,Ritu Chauhan,Female,1958-03-09,68,560008,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,B+,424000,2026-07-20
+PAT-HYD-0785,Vikram Menon,Male,1982-03-13,44,400053,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,AB+,25000,2026-09-25
+PAT-HYD-0786,Vijay Verma,Male,1976-04-09,50,560001,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,B+,322000,2026-07-26
+PAT-HYD-0787,Vikram Choudhury,Male,1995-10-04,31,500001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,438000,2026-04-11
+PAT-HYD-0788,Sneha Malhotra,Female,1960-04-07,66,560076,Bipolar Affective Disorder,Psychiatry,Elective ICU,O+,81000,2026-06-12
+PAT-HYD-0789,Manish Rao,Male,1953-05-24,73,560025,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,A+,29000,2026-07-18
+PAT-HYD-0790,Divya Pandey,Female,1977-04-12,49,110075,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,O+,20000,2026-06-02
+PAT-HYD-0791,Kiran Khan,Male,1961-07-22,65,560034,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,391000,2026-05-01
+PAT-HYD-0792,Ananya Nair,Female,1970-01-02,56,400012,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,A+,325000,2026-04-12
+PAT-HYD-0793,Rajesh Gupta,Male,1973-10-13,53,560103,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,O+,301000,2026-09-20
+PAT-HYD-0794,Sanjay Reddy,Male,1973-08-11,53,400099,Coronary Artery Disease,Cardiology,Specialist Referral,A+,236000,2026-08-25
+PAT-HYD-0795,Sneha Khan,Female,2003-03-16,23,560076,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,159000,2026-07-25
+PAT-HYD-0796,Rekha Khan,Female,1978-03-11,48,110003,Rheumatoid Arthritis,Rheumatology,Specialist Referral,O-,351000,2026-04-21
+PAT-HYD-0797,Sunita Rao,Female,1996-01-08,30,560008,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,B+,376000,2026-06-03
+PAT-HYD-0798,Sneha Saxena,Female,1974-01-15,52,400020,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,B+,267000,2026-09-02
+PAT-HYD-0799,Mohammed Choudhury,Male,2000-04-28,26,560100,Coronary Artery Disease,Cardiology,Specialist Referral,O+,436000,2026-07-23
+PAT-HYD-0800,Gaurav Sharma,Male,1972-10-06,54,400076,Generalized Anxiety Disorder,Psychiatry,Elective ICU,A+,361000,2026-09-06
+PAT-HYD-0801,Priya Singh,Female,1962-11-04,64,400069,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,B+,443000,2026-07-10
+PAT-HYD-0802,Rajesh Verma,Male,1976-12-22,50,110001,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,O+,319000,2026-04-15
+PAT-HYD-0803,Manoj Patel,Male,1964-10-15,62,400001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,AB-,81000,2026-08-07
+PAT-HYD-0804,Harish Bhat,Male,1987-06-26,39,500028,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,A+,210000,2026-09-07
+PAT-HYD-0805,Lakshmi Reddy,Female,1990-07-03,36,500003,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,A+,414000,2026-06-19
+PAT-HYD-0806,Rashmi Mukherjee,Female,1964-03-04,62,560103,Early-Stage Alzheimer's Dementia,Neurology,Day Care Procedure,O+,365000,2026-04-29
+PAT-HYD-0807,Deepak Mehta,Male,1999-06-17,27,560025,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,B+,258000,2026-07-24
+PAT-HYD-0808,Ananya Mukherjee,Female,1978-06-20,48,560008,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,O+,35000,2026-05-22
+PAT-HYD-0809,Neha Mehta,Female,1991-11-22,35,500090,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,B+,57000,2026-07-18
+PAT-HYD-0810,Shweta Verma,Female,1954-08-10,72,500090,Coronary Artery Disease,Cardiology,Day Care Procedure,O+,445000,2026-07-29
+PAT-HYD-0811,Meera Mishra,Female,2002-09-03,24,500016,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,A+,226000,2026-09-06
+PAT-HYD-0812,Anjali Sen,Female,1969-05-12,57,560068,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,23000,2026-09-01
+PAT-HYD-0813,Pooja Das,Female,1994-07-02,32,500072,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,AB+,175000,2026-05-03
+PAT-HYD-0814,Sushma Mehta,Female,1977-10-26,49,560068,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,A-,123000,2026-08-14
+PAT-HYD-0815,Prasad Pandey,Male,1989-11-04,37,400080,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,A+,74000,2026-09-27
+PAT-HYD-0816,Alok Deshmukh,Male,1976-12-13,50,110085,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,B+,431000,2026-04-26
+PAT-HYD-0817,Tanvi Mehta,Female,1961-11-13,65,560103,Essential Hypertension,Cardiology,Inpatient Emergency,A+,112000,2026-09-02
+PAT-HYD-0818,Ashwin Rao,Male,1951-01-07,75,110001,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,A+,238000,2026-04-23
+PAT-HYD-0819,Vikram Singh,Male,1956-08-05,70,110001,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,A+,93000,2026-04-04
+PAT-HYD-0820,Ritu Deshmukh,Female,2004-08-19,22,560066,Major Depressive Disorder,Psychiatry,Elective ICU,A+,41000,2026-07-07
+PAT-HYD-0821,Mohammed Bhat,Male,1951-12-14,75,400076,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,B+,320000,2026-05-12
+PAT-HYD-0822,Sunita Deshmukh,Female,1980-08-17,46,110075,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,O+,133000,2026-09-15
+PAT-HYD-0823,Praveen Mishra,Male,1985-09-03,41,560076,Generalized Anxiety Disorder,Psychiatry,Elective ICU,O+,74000,2026-05-27
+PAT-HYD-0824,Neha Shah,Female,1978-01-06,48,560100,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,A+,239000,2026-08-02
+PAT-HYD-0825,Gaurav Kapoor,Male,1962-06-20,64,400099,Coronary Artery Disease,Cardiology,Elective ICU,AB+,228000,2026-04-11
+PAT-HYD-0826,Vidya Deshmukh,Female,1954-03-20,72,560034,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,O+,356000,2026-05-30
+PAT-HYD-0827,Rahul Rao,Male,1995-10-16,31,500081,Rheumatoid Arthritis,Rheumatology,Elective ICU,B+,170000,2026-08-01
+PAT-HYD-0828,Naveen Patel,Male,2004-06-09,22,400020,Colorectal Adenocarcinoma,Oncology,Specialist Referral,A+,31000,2026-09-14
+PAT-HYD-0829,Shweta Nair,Female,1966-04-04,60,110048,Major Depressive Disorder,Psychiatry,Day Care Procedure,B+,416000,2026-07-02
+PAT-HYD-0830,Siddharth Saxena,Male,1970-05-05,56,110016,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,O+,239000,2026-06-05
+PAT-HYD-0831,Mohammed Das,Male,1966-10-26,60,500081,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,B+,68000,2026-08-19
+PAT-HYD-0832,Kiran Rao,Male,1982-03-24,44,560100,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Specialist Referral,B+,270000,2026-09-05
+PAT-HYD-0833,Alok Choudhury,Male,1984-03-04,42,560025,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,A-,140000,2026-06-01
+PAT-HYD-0834,Meera Kulkarni,Female,1995-02-09,31,400050,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,O+,337000,2026-04-13
+PAT-HYD-0835,Suresh Mukherjee,Male,1957-09-14,69,560038,Coronary Artery Disease,Cardiology,Elective ICU,O+,224000,2026-06-05
+PAT-HYD-0836,Priya Joshi,Female,1996-01-23,30,110020,Essential Hypertension,Cardiology,Day Care Procedure,A+,220000,2026-08-19
+PAT-HYD-0837,Sunita Bose,Female,1957-01-22,69,500090,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,B+,166000,2026-06-15
+PAT-HYD-0838,Malini Mehta,Female,1961-09-28,65,560103,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,O+,19000,2026-07-21
+PAT-HYD-0839,Ashwin Bose,Male,1977-11-07,49,110025,Breast Carcinoma (Invasive),Oncology,Elective ICU,O+,372000,2026-07-04
+PAT-HYD-0840,Sushma Rao,Female,1949-05-03,77,500016,Chronic Kidney Disease (Stage 3),Nephrology,Outpatient Consultation,B+,281000,2026-05-15
+PAT-HYD-0841,Deepa Verma,Female,1973-09-10,53,110020,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,O+,26000,2026-09-23
+PAT-HYD-0842,Divya Pillai,Female,1956-05-24,70,400080,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,A+,445000,2026-06-27
+PAT-HYD-0843,Rashmi Kulkarni,Female,1983-02-02,43,500082,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,A+,247000,2026-07-06
+PAT-HYD-0844,Harish Sen,Male,1968-10-23,58,110025,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,B+,168000,2026-07-20
+PAT-HYD-0845,Ashwin Bose,Male,1972-12-08,54,500081,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,B+,436000,2026-06-30
+PAT-HYD-0846,Sneha Iyer,Female,1960-07-27,66,400076,Essential Hypertension,Cardiology,Elective ICU,A+,81000,2026-06-01
+PAT-HYD-0847,Karthik Verma,Male,1982-11-17,44,400069,Breast Carcinoma (Invasive),Oncology,Elective ICU,B+,150000,2026-05-04
+PAT-HYD-0848,Rashmi Menon,Female,1977-12-16,49,400076,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,80000,2026-05-29
+PAT-HYD-0849,Kavita Shah,Female,1973-09-04,53,560034,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,B+,301000,2026-06-28
+PAT-HYD-0850,Manish Chauhan,Male,1979-02-04,47,400050,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,93000,2026-08-31
+PAT-HYD-0851,Meera Choudhury,Female,1986-05-16,40,500003,Rheumatoid Arthritis,Rheumatology,Specialist Referral,A+,230000,2026-09-18
+PAT-HYD-0852,Malini Singh,Female,1992-03-27,34,110003,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,A+,49000,2026-09-19
+PAT-HYD-0853,Ritu Mishra,Female,1986-10-15,40,400012,Rheumatoid Arthritis,Rheumatology,Specialist Referral,B+,82000,2026-08-26
+PAT-HYD-0854,Sushma Joshi,Female,1963-08-05,63,400001,Essential Hypertension,Cardiology,Specialist Referral,O+,224000,2026-06-23
+PAT-HYD-0855,Tarun Bose,Male,1984-09-02,42,400092,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,A+,99000,2026-09-24
+PAT-HYD-0856,Nandini Bhat,Female,1998-11-18,28,500072,Major Depressive Disorder,Psychiatry,Specialist Referral,O-,310000,2026-09-17
+PAT-HYD-0857,Siddharth Deshmukh,Male,1973-01-04,53,110025,Coronary Artery Disease,Cardiology,Day Care Procedure,A-,417000,2026-08-09
+PAT-HYD-0858,Farhan Shah,Male,1952-10-15,74,500072,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,220000,2026-05-03
+PAT-HYD-0859,Rohan Chauhan,Male,2004-06-14,22,560008,Chronic Hepatitis C,Gastroenterology,Specialist Referral,A+,177000,2026-06-25
+PAT-HYD-0860,Ananya Nair,Female,1999-09-06,27,560100,Coronary Artery Disease,Cardiology,Inpatient Emergency,A+,93000,2026-07-14
+PAT-HYD-0861,Anjali Reddy,Female,2002-10-11,24,560008,Type 2 Diabetes Mellitus,Endocrinology,Day Care Procedure,O+,214000,2026-09-05
+PAT-HYD-0862,Kavita Menon,Female,1948-06-09,78,400053,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,AB+,118000,2026-07-31
+PAT-HYD-0863,Rohan Kulkarni,Male,1957-09-13,69,500082,Bipolar Affective Disorder,Psychiatry,Elective ICU,A+,298000,2026-06-18
+PAT-HYD-0864,Rohan Sharma,Male,1979-11-08,47,500003,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,360000,2026-09-05
+PAT-HYD-0865,Siddharth Aggarwal,Male,1964-03-10,62,110065,Chronic Hepatitis C,Gastroenterology,Specialist Referral,B+,119000,2026-08-25
+PAT-HYD-0866,Nandini Reddy,Female,1955-04-18,71,400080,Generalized Anxiety Disorder,Psychiatry,Inpatient Emergency,B+,15000,2026-06-04
+PAT-HYD-0867,Rashmi Reddy,Female,2005-01-16,21,560076,Breast Carcinoma (Invasive),Oncology,Elective ICU,A+,194000,2026-04-22
+PAT-HYD-0868,Gaurav Pillai,Male,1973-05-02,53,560001,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,B+,168000,2026-09-08
+PAT-HYD-0869,Tanvi Nair,Female,1952-03-24,74,110048,Bipolar Affective Disorder,Psychiatry,Outpatient Consultation,AB+,327000,2026-05-24
+PAT-HYD-0870,Malini Mehta,Female,1984-11-09,42,400092,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,A+,189000,2026-08-08
+PAT-HYD-0871,Geeta Khan,Female,2004-12-05,22,500001,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,B+,359000,2026-08-17
+PAT-HYD-0872,Nandini Saxena,Female,1961-12-16,65,400069,Chronic Kidney Disease (Stage 3),Nephrology,Inpatient Emergency,A+,290000,2026-09-23
+PAT-HYD-0873,Anjali Nair,Female,1983-07-27,43,110085,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,B+,78000,2026-06-04
+PAT-HYD-0874,Kavya Rao,Female,1977-01-08,49,500003,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A+,113000,2026-09-07
+PAT-HYD-0875,Vidya Shah,Female,1991-04-16,35,400050,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,A+,122000,2026-09-29
+PAT-HYD-0876,Farhan Bhat,Male,1980-02-28,46,560076,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,B+,297000,2026-08-12
+PAT-HYD-0877,Vikram Mishra,Male,1997-12-03,29,500084,Bipolar Affective Disorder,Psychiatry,Outpatient Consultation,O-,282000,2026-07-22
+PAT-HYD-0878,Kiran Mehta,Male,2004-12-22,22,110025,Breast Carcinoma (Invasive),Oncology,Specialist Referral,A+,247000,2026-09-30
+PAT-HYD-0879,Rashmi Mehta,Female,1964-01-28,62,400001,Chronic Hepatitis C,Gastroenterology,Elective ICU,O+,155000,2026-08-30
+PAT-HYD-0880,Ritu Choudhury,Female,1972-01-24,54,560038,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,A+,287000,2026-06-08
+PAT-HYD-0881,Priya Bose,Female,1993-06-03,33,110065,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,A+,368000,2026-06-14
+PAT-HYD-0882,Vijay Malhotra,Male,1993-03-11,33,560103,Essential Hypertension,Cardiology,Inpatient Emergency,O+,29000,2026-05-31
+PAT-HYD-0883,Vidya Sharma,Female,1968-11-11,58,560068,Major Depressive Disorder,Psychiatry,Outpatient Consultation,A+,189000,2026-09-17
+PAT-HYD-0884,Rekha Das,Female,1990-02-25,36,110085,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,B+,335000,2026-06-08
+PAT-HYD-0885,Vikram Patel,Male,2003-07-11,23,500034,Rheumatoid Arthritis,Rheumatology,Elective ICU,A+,43000,2026-07-15
+PAT-HYD-0886,Ananya Nair,Female,1962-01-18,64,500028,Bipolar Affective Disorder,Psychiatry,Elective ICU,O+,64000,2026-04-25
+PAT-HYD-0887,Divya Chauhan,Female,1967-11-20,59,500001,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,B+,332000,2026-04-25
+PAT-HYD-0888,Manoj Bhat,Male,1962-01-15,64,110020,HIV-1 Positive Infection,Infectious Diseases,Inpatient Emergency,B+,67000,2026-09-27
+PAT-HYD-0889,Gaurav Das,Male,1952-04-19,74,500084,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,B+,230000,2026-05-30
+PAT-HYD-0890,Pooja Malhotra,Female,1997-01-02,29,500084,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,348000,2026-07-01
+PAT-HYD-0891,Shilpa Saxena,Female,1971-03-05,55,110001,Bipolar Affective Disorder,Psychiatry,Day Care Procedure,O+,203000,2026-09-28
+PAT-HYD-0892,Amit Malhotra,Male,1973-09-28,53,500028,Chronic Hepatitis C,Gastroenterology,Outpatient Consultation,B+,342000,2026-08-10
+PAT-HYD-0893,Manoj Rao,Male,1963-08-23,63,400099,Breast Carcinoma (Invasive),Oncology,Specialist Referral,O+,304000,2026-07-07
+PAT-HYD-0894,Shweta Khan,Female,1995-02-15,31,500016,Early-Stage Alzheimer's Dementia,Neurology,Inpatient Emergency,A+,342000,2026-08-04
+PAT-HYD-0895,Karthik Pandey,Male,1992-04-16,34,400012,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,O+,219000,2026-08-14
+PAT-HYD-0896,Deepak Sharma,Male,2001-06-01,25,110048,Essential Hypertension,Cardiology,Elective ICU,A+,114000,2026-04-22
+PAT-HYD-0897,Sunita Sharma,Female,1993-04-10,33,560008,Major Depressive Disorder,Psychiatry,Outpatient Consultation,AB+,188000,2026-05-12
+PAT-HYD-0898,Rahul Rao,Male,2004-03-27,22,560068,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,A+,209000,2026-04-16
+PAT-HYD-0899,Manoj Kapoor,Male,1992-05-15,34,560066,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,O+,284000,2026-04-24
+PAT-HYD-0900,Malini Shah,Female,2001-02-05,25,500084,Rheumatoid Arthritis,Rheumatology,Specialist Referral,A+,208000,2026-04-06
+PAT-HYD-0901,Swati Pandey,Female,1978-11-08,48,500016,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,O+,289000,2026-07-17
+PAT-HYD-0902,Manoj Malhotra,Male,2002-11-26,24,560076,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,A+,314000,2026-05-28
+PAT-HYD-0903,Prasad Verma,Male,1955-08-26,71,110092,Essential Hypertension,Cardiology,Elective ICU,A+,399000,2026-04-18
+PAT-HYD-0904,Ritu Kulkarni,Female,1976-03-11,50,400050,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,O+,257000,2026-07-24
+PAT-HYD-0905,Rashmi Kapoor,Female,1955-10-21,71,500016,Major Depressive Disorder,Psychiatry,Outpatient Consultation,A+,246000,2026-08-01
+PAT-HYD-0906,Deepa Singh,Female,1978-07-19,48,560001,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,O+,296000,2026-09-09
+PAT-HYD-0907,Siddharth Verma,Male,1987-08-17,39,400020,Major Depressive Disorder,Psychiatry,Elective ICU,B+,277000,2026-04-24
+PAT-HYD-0908,Shweta Joshi,Female,1976-07-14,50,400050,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,210000,2026-09-24
+PAT-HYD-0909,Karthik Malhotra,Male,1989-11-03,37,400020,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,A+,277000,2026-05-14
+PAT-HYD-0910,Harish Gupta,Male,1991-02-04,35,500034,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,A+,185000,2026-08-11
+PAT-HYD-0911,Lakshmi Singh,Female,1958-11-28,68,560076,Major Depressive Disorder,Psychiatry,Outpatient Consultation,O+,400000,2026-05-14
+PAT-HYD-0912,Priya Mukherjee,Female,1986-05-27,40,400020,Rheumatoid Arthritis,Rheumatology,Elective ICU,AB-,435000,2026-05-05
+PAT-HYD-0913,Rohan Bhat,Male,1973-03-28,53,400069,Major Depressive Disorder,Psychiatry,Outpatient Consultation,A+,257000,2026-08-02
+PAT-HYD-0914,Preeti Pillai,Female,1976-06-26,50,500072,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,O+,409000,2026-04-05
+PAT-HYD-0915,Deepa Joshi,Female,1977-09-01,49,400050,Coronary Artery Disease,Cardiology,Outpatient Consultation,B+,171000,2026-09-28
+PAT-HYD-0916,Vidya Mehta,Female,1952-06-11,74,560038,Chronic Hepatitis C,Gastroenterology,Elective ICU,B+,405000,2026-04-07
+PAT-HYD-0917,Swati Mishra,Female,2004-10-26,22,500016,Generalized Anxiety Disorder,Psychiatry,Day Care Procedure,A+,305000,2026-04-22
+PAT-HYD-0918,Ayesha Rao,Female,1980-02-18,46,400053,Major Depressive Disorder,Psychiatry,Day Care Procedure,B+,306000,2026-06-07
+PAT-HYD-0919,Ananya Reddy,Female,1999-11-18,27,560008,Type 2 Diabetes Mellitus,Endocrinology,Specialist Referral,O+,265000,2026-09-24
+PAT-HYD-0920,Arjun Verma,Male,1981-05-07,45,560038,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,O+,247000,2026-09-16
+PAT-HYD-0921,Rekha Sharma,Female,1995-06-28,31,400076,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,A+,81000,2026-05-16
+PAT-HYD-0922,Ritu Sen,Female,2001-07-28,25,560034,Coronary Artery Disease,Cardiology,Day Care Procedure,AB+,236000,2026-04-13
+PAT-HYD-0923,Pooja Pandey,Female,1969-05-19,57,560025,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,O+,156000,2026-08-10
+PAT-HYD-0924,Suresh Joshi,Male,2001-07-20,25,560066,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,B+,266000,2026-06-05
+PAT-HYD-0925,Shilpa Patel,Female,1958-02-10,68,400099,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,O+,215000,2026-04-27
+PAT-HYD-0926,Praveen Malhotra,Male,1994-10-24,32,400080,Early-Stage Alzheimer's Dementia,Neurology,Outpatient Consultation,B+,372000,2026-05-08
+PAT-HYD-0927,Sunil Shah,Male,2003-04-28,23,560001,Bipolar Affective Disorder,Psychiatry,Specialist Referral,AB+,164000,2026-04-13
+PAT-HYD-0928,Ashwin Sen,Male,1959-04-16,67,400076,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,54000,2026-09-04
+PAT-HYD-0929,Shweta Joshi,Female,1995-05-07,31,110016,Type 2 Diabetes Mellitus,Endocrinology,Inpatient Emergency,B+,342000,2026-04-06
+PAT-HYD-0930,Ayesha Khan,Female,1958-07-28,68,560025,Chronic Hepatitis C,Gastroenterology,Day Care Procedure,A+,73000,2026-08-27
+PAT-HYD-0931,Anjali Sen,Female,1976-08-15,50,500034,Essential Hypertension,Cardiology,Outpatient Consultation,B+,380000,2026-06-10
+PAT-HYD-0932,Rohan Pillai,Male,1988-03-06,38,500003,Breast Carcinoma (Invasive),Oncology,Day Care Procedure,A+,78000,2026-05-17
+PAT-HYD-0933,Pooja Verma,Female,1963-01-22,63,560076,Coronary Artery Disease,Cardiology,Outpatient Consultation,B+,125000,2026-09-22
+PAT-HYD-0934,Karthik Shah,Male,2002-11-26,24,110020,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,O+,214000,2026-04-07
+PAT-HYD-0935,Neha Patel,Female,1967-01-02,59,400053,Rheumatoid Arthritis,Rheumatology,Outpatient Consultation,A+,206000,2026-07-31
+PAT-HYD-0936,Vikram Sharma,Male,1979-01-01,47,400012,Chronic Obstructive Pulmonary Disease,Pulmonology,Inpatient Emergency,A+,127000,2026-09-06
+PAT-HYD-0937,Prasad Reddy,Male,2003-07-17,23,500081,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,B+,335000,2026-08-13
+PAT-HYD-0938,Vijay Aggarwal,Male,1980-07-04,46,560038,Major Depressive Disorder,Psychiatry,Day Care Procedure,A+,103000,2026-09-27
+PAT-HYD-0939,Rashmi Khan,Female,2005-07-07,21,400099,Major Depressive Disorder,Psychiatry,Day Care Procedure,A+,347000,2026-04-24
+PAT-HYD-0940,Sunita Verma,Female,1949-04-14,77,560103,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,B+,379000,2026-05-16
+PAT-HYD-0941,Sanjay Nair,Male,1967-06-21,59,400053,Colorectal Adenocarcinoma,Oncology,Outpatient Consultation,AB+,185000,2026-08-17
+PAT-HYD-0942,Sangeeta Mehta,Female,1975-02-11,51,500003,Breast Carcinoma (Invasive),Oncology,Elective ICU,AB+,210000,2026-05-23
+PAT-HYD-0943,Aditya Mishra,Male,1960-01-08,66,500003,Breast Carcinoma (Invasive),Oncology,Inpatient Emergency,O+,173000,2026-08-01
+PAT-HYD-0944,Sushma Malhotra,Female,1966-02-02,60,500084,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,B+,92000,2026-06-26
+PAT-HYD-0945,Alok Patel,Male,1990-12-20,36,400092,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,AB+,157000,2026-07-11
+PAT-HYD-0946,Aditya Das,Male,1979-11-27,47,560100,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,A+,190000,2026-07-30
+PAT-HYD-0947,Naveen Patel,Male,1963-04-26,63,560038,Breast Carcinoma (Invasive),Oncology,Specialist Referral,AB+,179000,2026-08-15
+PAT-HYD-0948,Rashmi Sharma,Female,2001-08-03,25,560025,Type 2 Diabetes Mellitus,Endocrinology,Outpatient Consultation,O+,119000,2026-08-29
+PAT-HYD-0949,Rahul Mishra,Male,1970-04-08,56,110016,Essential Hypertension,Cardiology,Elective ICU,B+,174000,2026-08-19
+PAT-HYD-0950,Ramesh Menon,Male,1994-10-08,32,560103,Bipolar Affective Disorder,Psychiatry,Outpatient Consultation,B+,154000,2026-05-30
+PAT-HYD-0951,Deepak Bose,Male,1981-03-16,45,400092,Chronic Hepatitis C,Gastroenterology,Elective ICU,B+,404000,2026-08-22
+PAT-HYD-0952,Priya Mukherjee,Female,1981-07-28,45,500072,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,AB+,319000,2026-05-16
+PAT-HYD-0953,Naveen Sen,Male,1994-05-13,32,400099,Bipolar Affective Disorder,Psychiatry,Elective ICU,B+,302000,2026-04-28
+PAT-HYD-0954,Ananya Khan,Female,1997-12-16,29,560025,Coronary Artery Disease,Cardiology,Inpatient Emergency,AB+,21000,2026-05-25
+PAT-HYD-0955,Ritu Bose,Female,1979-07-24,47,400050,Chronic Hepatitis C,Gastroenterology,Specialist Referral,B+,51000,2026-06-18
+PAT-HYD-0956,Vijay Nair,Male,1981-10-06,45,560025,Rheumatoid Arthritis,Rheumatology,Day Care Procedure,B+,409000,2026-07-03
+PAT-HYD-0957,Rashmi Shah,Female,1982-12-02,44,400053,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,B+,139000,2026-05-31
+PAT-HYD-0958,Vijay Pillai,Male,1982-11-23,44,500003,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,O+,148000,2026-04-29
+PAT-HYD-0959,Anjali Iyer,Female,1989-04-20,37,110075,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,O+,74000,2026-09-07
+PAT-HYD-0960,Ayesha Shah,Female,1968-02-17,58,560025,Generalized Anxiety Disorder,Psychiatry,Elective ICU,B+,144000,2026-04-06
+PAT-HYD-0961,Rekha Aggarwal,Female,1963-07-19,63,560103,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Inpatient Emergency,B+,70000,2026-04-21
+PAT-HYD-0962,Shruti Iyer,Female,1988-12-07,38,400069,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,B+,432000,2026-05-28
+PAT-HYD-0963,Mohammed Verma,Male,1956-12-14,70,110020,Chronic Hepatitis C,Gastroenterology,Elective ICU,O+,102000,2026-08-16
+PAT-HYD-0964,Pooja Shah,Female,1997-04-16,29,560008,Chronic Kidney Disease (Stage 3),Nephrology,Elective ICU,O-,305000,2026-08-07
+PAT-HYD-0965,Arjun Patel,Male,1958-03-26,68,560025,Bipolar Affective Disorder,Psychiatry,Elective ICU,B-,240000,2026-04-23
+PAT-HYD-0966,Kiran Bhat,Male,1995-02-10,31,500072,Chronic Hepatitis C,Gastroenterology,Inpatient Emergency,A+,190000,2026-09-23
+PAT-HYD-0967,Rohan Deshmukh,Male,1962-02-01,64,500028,Bipolar Affective Disorder,Psychiatry,Inpatient Emergency,O+,355000,2026-05-04
+PAT-HYD-0968,Mohammed Rao,Male,1972-01-13,54,110085,Chronic Kidney Disease (Stage 3),Nephrology,Day Care Procedure,B-,263000,2026-06-01
+PAT-HYD-0969,Geeta Menon,Female,1984-06-22,42,400012,HIV-1 Positive Infection,Infectious Diseases,Day Care Procedure,O+,355000,2026-06-20
+PAT-HYD-0970,Geeta Patel,Female,1983-06-26,43,500081,Type 2 Diabetes Mellitus,Endocrinology,Elective ICU,B+,386000,2026-08-26
+PAT-HYD-0971,Manish Nair,Male,1950-09-09,76,560066,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,B+,278000,2026-06-17
+PAT-HYD-0972,Rajesh Bhat,Male,1953-06-01,73,400050,Chronic Obstructive Pulmonary Disease,Pulmonology,Day Care Procedure,A+,362000,2026-06-09
+PAT-HYD-0973,Manish Deshmukh,Male,1980-12-20,46,500072,HIV-1 Positive Infection,Infectious Diseases,Elective ICU,B+,352000,2026-04-04
+PAT-HYD-0974,Prasad Bose,Male,1987-10-07,39,500090,Chronic Obstructive Pulmonary Disease,Pulmonology,Specialist Referral,B+,416000,2026-05-24
+PAT-HYD-0975,Suresh Deshmukh,Male,1955-02-10,71,110048,Chronic Obstructive Pulmonary Disease,Pulmonology,Elective ICU,B+,74000,2026-05-30
+PAT-HYD-0976,Ramesh Rao,Male,1995-11-23,31,500072,Essential Hypertension,Cardiology,Inpatient Emergency,B+,97000,2026-07-09
+PAT-HYD-0977,Sushma Gupta,Female,1991-12-09,35,110001,Generalized Anxiety Disorder,Psychiatry,Outpatient Consultation,O+,288000,2026-04-21
+PAT-HYD-0978,Ananya Das,Female,1961-06-28,65,560038,Generalized Anxiety Disorder,Psychiatry,Specialist Referral,B+,48000,2026-04-19
+PAT-HYD-0979,Ayesha Kapoor,Female,1960-12-24,66,400053,Colorectal Adenocarcinoma,Oncology,Specialist Referral,O+,238000,2026-08-02
+PAT-HYD-0980,Sanjay Nair,Male,1987-02-04,39,500072,HIV-1 Positive Infection,Infectious Diseases,Outpatient Consultation,O+,396000,2026-09-01
+PAT-HYD-0981,Kavita Chauhan,Female,1985-07-19,41,500001,Bipolar Affective Disorder,Psychiatry,Specialist Referral,A+,112000,2026-06-23
+PAT-HYD-0982,Swati Mukherjee,Female,1982-11-26,44,500084,Chronic Kidney Disease (Stage 3),Nephrology,Specialist Referral,O+,128000,2026-09-03
+PAT-HYD-0983,Priya Aggarwal,Female,1951-08-11,75,500090,Chronic Obstructive Pulmonary Disease,Pulmonology,Outpatient Consultation,O-,270000,2026-04-09
+PAT-HYD-0984,Kavita Pandey,Female,1987-03-24,39,500016,Breast Carcinoma (Invasive),Oncology,Specialist Referral,B+,367000,2026-08-30
+PAT-HYD-0985,Sangeeta Shah,Female,1969-08-21,57,560034,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,A+,45000,2026-07-07
+PAT-HYD-0986,Farhan Shah,Male,1992-12-26,34,560038,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,O+,264000,2026-06-22
+PAT-HYD-0987,Shruti Mehta,Female,1951-03-01,75,110048,Chronic Hepatitis C,Gastroenterology,Elective ICU,B+,193000,2026-06-22
+PAT-HYD-0988,Ananya Kulkarni,Female,1959-05-10,67,560025,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Elective ICU,AB+,64000,2026-08-28
+PAT-HYD-0989,Sushma Das,Female,1968-01-28,58,560103,Early-Stage Alzheimer's Dementia,Neurology,Specialist Referral,O+,85000,2026-06-09
+PAT-HYD-0990,Meera Saxena,Female,1996-04-07,30,560025,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Day Care Procedure,O+,386000,2026-05-06
+PAT-HYD-0991,Vivek Das,Male,1951-03-13,75,400080,Colorectal Adenocarcinoma,Oncology,Inpatient Emergency,O+,64000,2026-07-01
+PAT-HYD-0992,Pooja Patel,Female,1998-09-21,28,400012,Breast Carcinoma (Invasive),Oncology,Outpatient Consultation,B+,336000,2026-06-19
+PAT-HYD-0993,Amit Nair,Male,1990-07-16,36,560103,Substance Use Disorder (Opioid Dependency),Addiction Medicine,Outpatient Consultation,B+,349000,2026-06-26
+PAT-HYD-0994,Siddharth Joshi,Male,1950-11-13,76,560076,Colorectal Adenocarcinoma,Oncology,Day Care Procedure,O+,20000,2026-08-31
+PAT-HYD-0995,Vikram Nair,Male,1974-11-22,52,110016,Major Depressive Disorder,Psychiatry,Specialist Referral,A+,308000,2026-05-31
+PAT-HYD-0996,Tanvi Sen,Female,1999-10-06,27,400053,Early-Stage Alzheimer's Dementia,Neurology,Elective ICU,AB-,167000,2026-05-07
+PAT-HYD-0997,Mohammed Khan,Male,2001-12-28,25,110025,Coronary Artery Disease,Cardiology,Inpatient Emergency,B+,216000,2026-05-11
+PAT-HYD-0998,Ananya Kulkarni,Female,1952-10-18,74,500082,Rheumatoid Arthritis,Rheumatology,Inpatient Emergency,O+,107000,2026-04-30
+PAT-HYD-0999,Rajesh Aggarwal,Male,1977-06-04,49,500016,Coronary Artery Disease,Cardiology,Outpatient Consultation,B+,59000,2026-05-10
+PAT-HYD-1000,Sangeeta Mukherjee,Female,2003-02-04,23,110016,Bipolar Affective Disorder,Psychiatry,Specialist Referral,B+,102000,2026-06-14
