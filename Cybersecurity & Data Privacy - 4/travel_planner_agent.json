@@ -1,0 +1,167 @@
+{
+  "name": "travel_planner_agent",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -192,
+        -96
+      ],
+      "id": "3e21ff95-c0d0-4923-bbb4-b58271ba8213",
+      "name": "When chat message received",
+      "webhookId": "c924d0e7-50ee-43b2-ac3f-cb6108230ea7"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "=You are an expert AI Travel Planner & Concierge. Your objective is to assist users in planning complete, memorable trips.\n\nWhen a user specifies a destination, dates, budget, or preferences:\n1. Check the weather forecast for the destination using the weather tool.\n2. Search for top attractions and activities matching their interests.\n3. Formulate a structured day-by-day itinerary including:\n   - Morning, Afternoon, Evening recommendations\n   - Estimated daily budget breakdown\n   - Local transportation tips & safety guidelines\n   - Recommended packing items based on forecasted weather\n\nAlways maintain an enthusiastic, helpful, and culturally respectful tone."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        48,
+        -96
+      ],
+      "id": "642cf496-3557-4754-bfa1-9b001acca76a",
+      "name": "Travel Planner AI Agent"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "travel-session-01",
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        96,
+        128
+      ],
+      "id": "e507a596-ae1c-4db7-8579-657b983a71f7",
+      "name": "Window Buffer Memory"
+    },
+    {
+      "parameters": {
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=17.385&longitude=78.486&current=temperature_2m,relative_humidity_2m,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=auto"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        304,
+        128
+      ],
+      "id": "c61a4e1a-a4be-4d48-bb89-1a736d812953",
+      "name": "Destination Weather Tool"
+    },
+    {
+      "parameters": {
+        "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Hyderabad+tourism+attractions&format=json"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        496,
+        128
+      ],
+      "id": "4e95b2f6-834e-4cf2-8f5c-a406dcf8c397",
+      "name": "Attractions & Hotels Tool"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatMoonshot",
+      "typeVersion": 1.1,
+      "position": [
+        -80,
+        112
+      ],
+      "id": "194b5030-e44b-4fc2-b1c4-47e75696464b",
+      "name": "Moonshot Kimi Chat Model",
+      "credentials": {
+        "moonshotApi": {
+          "id": null,
+          "name": "",
+          "__aiGatewayManaged": true
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Travel Planner AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Travel Planner AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Destination Weather Tool": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Planner AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attractions & Hotels Tool": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Planner AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Moonshot Kimi Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Travel Planner AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": true
+  },
+  "versionId": "c1947b2c-e70d-4437-be35-80f3737cda8f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8c7b49699843b0b952a2cb2e498f34f2b4fac7cf3282ac5587c12523256d444a"
+  },
+  "nodeGroups": [],
+  "id": "2orVdueHFoSOPCsg",
+  "tags": []
+}
